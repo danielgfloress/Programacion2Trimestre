@@ -1,6 +1,6 @@
 package proyectoLiga.liga;
 
-import proyectoLiga.partidos.AbstractPartido;
+import proyectoLiga.partidos.Partido;
 
 import java.util.List;
 import java.util.Objects;
@@ -8,10 +8,10 @@ import java.util.Objects;
 public class Jornada {
 
     private int numero;
-    private List<AbstractPartido> partidos;
+    private List<Partido> partidos;
     private boolean jugada;
 
-    public Jornada(int numero, List<AbstractPartido> partidos, boolean jugada) {
+    public Jornada(int numero, List<Partido> partidos, boolean jugada) {
         this.numero = numero;
         this.partidos = partidos;
         this.jugada = jugada;
@@ -25,11 +25,11 @@ public class Jornada {
         this.numero = numero;
     }
 
-    public List<AbstractPartido> getPartidos() {
+    public List<Partido> getPartidos() {
         return partidos;
     }
 
-    public void setPartidos(List<AbstractPartido> partidos) {
+    public void setPartidos(List<Partido> partidos) {
         this.partidos = partidos;
     }
 

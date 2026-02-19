@@ -6,7 +6,7 @@ import proyectoLiga.liga.Jornada;
 import java.util.List;
 import java.util.Objects;
 
-public class AbstractPartido {
+public class Partido {
 
     private Equipo equipoLocal;
     private Equipo equipoVisitante;
@@ -17,7 +17,7 @@ public class AbstractPartido {
     private List<TarjetaAmarilla> tarjetasAmarillas;
     private List<TarjetaRoja> tarjetasRojas;
 
-    public AbstractPartido(Equipo equipoLocal, Equipo equipoVisitante, int golesLocal, int golesVisitante, Jornada jornada, List<Gol> goles, List<TarjetaAmarilla> tarjetasAmarillas, List<TarjetaRoja> tarjetasRojas) {
+    public Partido(Equipo equipoLocal, Equipo equipoVisitante, int golesLocal, int golesVisitante, Jornada jornada, List<Gol> goles, List<TarjetaAmarilla> tarjetasAmarillas, List<TarjetaRoja> tarjetasRojas) {
         this.equipoLocal = equipoLocal;
         this.equipoVisitante = equipoVisitante;
         this.golesLocal = golesLocal;
@@ -107,7 +107,7 @@ public class AbstractPartido {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        AbstractPartido that = (AbstractPartido) o;
+        Partido that = (Partido) o;
         return Objects.equals(equipoLocal, that.equipoLocal) && Objects.equals(equipoVisitante, that.equipoVisitante);
     }
 

@@ -1,0 +1,302 @@
+ESTADIO;Santiago Bernabéu;Madrid;85000;Real Madrid
+ESTADIO;Spotify Camp Nou;Barcelona;99000;FC Barcelona
+ESTADIO;Metropolitano;Madrid;68000;Atlético de Madrid
+ESTADIO;Reale Arena;San Sebastián;40000;Real Sociedad
+ESTADIO;San Mamés;Bilbao;53000;Athletic Club
+ESTADIO;Benito Villamarín;Sevilla;60000;Real Betis
+ESTADIO;Ramón Sánchez-Pizjuán;Sevilla;43000;Sevilla FC
+ESTADIO;Mestalla;Valencia;49000;Valencia CF
+ESTADIO;La Cerámica;Villarreal;23500;Villarreal CF
+ESTADIO;Nuevo Mirandilla;Cádiz;20000;Cádiz CF
+ESTADIO;Coliseum Alfonso Pérez;Getafe;17000;Getafe CF
+ESTADIO;Montilivi;Girona;14500;Girona FC
+ESTADIO;Abanca Balaídos;Vigo;29000;Celta de Vigo
+ESTADIO;Los Cármenes;Granada;19500;Granada CF
+ESTADIO;El Sadar;Pamplona;23500;CA Osasuna
+ESTADIO;Mendizorroza;Vitoria;19840;Deportivo Alavés
+ESTADIO;Vallecas;Madrid;14700;Rayo Vallecano
+ESTADIO;Ipurua;Eibar;8100;SD Eibar
+ESTADIO;José Zorrilla;Valladolid;26500;Real Valladolid
+ESTADIO;Gran Canaria;Las Palmas;32500;UD Las Palmas
+
+EQUIPO;Real Madrid;Santiago Bernabéu
+EQUIPO;FC Barcelona;Spotify Camp Nou
+EQUIPO;Atlético de Madrid;Metropolitano
+EQUIPO;Real Sociedad;Reale Arena
+EQUIPO;Athletic Club;San Mamés
+EQUIPO;Real Betis;Benito Villamarín
+EQUIPO;Sevilla FC;Ramón Sánchez-Pizjuán
+EQUIPO;Valencia CF;Mestalla
+EQUIPO;Villarreal CF;La Cerámica
+EQUIPO;Cádiz CF;Nuevo Mirandilla
+EQUIPO;Getafe CF;Coliseum Alfonso Pérez
+EQUIPO;Girona FC;Montilivi
+EQUIPO;Celta de Vigo;Abanca Balaídos
+EQUIPO;Granada CF;Los Cármenes
+EQUIPO;CA Osasuna;El Sadar
+EQUIPO;Deportivo Alavés;Mendizorroza
+EQUIPO;Rayo Vallecano;Vallecas
+EQUIPO;SD Eibar;Ipurua
+EQUIPO;Real Valladolid;José Zorrilla
+EQUIPO;UD Las Palmas;Gran Canaria
+
+ENTRENADOR;Carlo;Ancelotti;Real Madrid;Italia;1959-06-10;25;Posesión
+ENTRENADOR;Xavi;Hernández;FC Barcelona;España;1980-01-25;8;Tiki-Taka
+ENTRENADOR;Diego;Simeone;Atlético de Madrid;Argentina;1970-04-28;15;Defensivo
+ENTRENADOR;Imanol;Alguacil;Real Sociedad;España;1971-07-04;10;Presión alta
+ENTRENADOR;Ernesto;Valverde;Athletic Club;España;1964-02-09;20;Equilibrado
+ENTRENADOR;Manuel;Pellegrini;Real Betis;Chile;1953-09-16;30;Ofensivo
+ENTRENADOR;Quique;Flores;Sevilla FC;España;1965-02-05;18;Defensa ordenada
+ENTRENADOR;Rubén;Baraja;Valencia CF;España;1975-07-11;6;Transiciones
+ENTRENADOR;Marcelino;García;Villarreal CF;España;1965-08-14;22;Vertical
+ENTRENADOR;Sergio;González;Cádiz CF;España;1976-03-10;8;Defensivo
+ENTRENADOR;José;Bordalás;Getafe CF;España;1964-03-05;15;Intensidad
+ENTRENADOR;Míchel;Sánchez;Girona FC;España;1975-02-30;7;Ofensivo
+ENTRENADOR;Rafa;Benítez;Celta de Vigo;España;1960-04-16;25;Orden táctico
+ENTRENADOR;Alexander;Medina;Granada CF;Uruguay;1978-08-08;5;Presión
+ENTRENADOR;Jagoba;Arrasate;CA Osasuna;España;1978-04-22;10;Equilibrado
+ENTRENADOR;Luis;García;Deportivo Alavés;España;1972-06-01;12;Ofensivo
+ENTRENADOR;Francisco;Rodríguez;Rayo Vallecano;España;1978-09-19;9;Vertical
+ENTRENADOR;Gaizka;Garitano;SD Eibar;España;1975-07-09;14;Defensivo
+ENTRENADOR;Paulo;Pezzolano;Real Valladolid;Uruguay;1983-04-25;6;Presión alta
+ENTRENADOR;García;Pimienta;UD Las Palmas;España;1974-08-18;10;Posesión
+
+JUGADOR;Thibaut;Courtois;Real Madrid;Bélgica;1992-05-11;Portero;1;0;0;0;0
+JUGADOR;Dani;Carvajal;Real Madrid;España;1992-01-11;Defensa;2;0;0;0;0
+JUGADOR;David;Alaba;Real Madrid;Austria;1992-06-24;Defensa;4;0;0;0;0
+JUGADOR;Éder;Militão;Real Madrid;Brasil;1998-01-18;Defensa;3;0;0;0;0
+JUGADOR;Ferland;Mendy;Real Madrid;Francia;1995-06-08;Defensa;23;0;0;0;0
+JUGADOR;Toni;Kroos;Real Madrid;Alemania;1990-01-04;Centrocampista;8;0;0;0;0
+JUGADOR;Luka;Modric;Real Madrid;Croacia;1985-09-09;Centrocampista;10;0;0;0;0
+JUGADOR;Federico;Valverde;Real Madrid;Uruguay;1998-07-22;Centrocampista;15;0;0;0;0
+JUGADOR;Vinícius;Junior;Real Madrid;Brasil;2000-07-12;Delantero;7;0;0;0;0
+JUGADOR;Rodrygo;Goes;Real Madrid;Brasil;2001-01-09;Delantero;11;0;0;0;0
+JUGADOR;Jude;Bellingham;Real Madrid;Inglaterra;2003-06-29;Centrocampista;5;0;0;0;0
+
+JUGADOR;Marc-André;ter Stegen;FC Barcelona;Alemania;1992-04-30;Portero;1;0;0;0;0
+JUGADOR;Ronald;Araújo;FC Barcelona;Uruguay;1999-03-07;Defensa;4;0;0;0;0
+JUGADOR;Jules;Koundé;FC Barcelona;Francia;1998-11-12;Defensa;23;0;0;0;0
+JUGADOR;Alejandro;Balde;FC Barcelona;España;2003-10-18;Defensa;28;0;0;0;0
+JUGADOR;Andreas;Christensen;FC Barcelona;Dinamarca;1996-04-10;Defensa;15;0;0;0;0
+JUGADOR;Gavi;;FC Barcelona;España;2004-08-05;Centrocampista;6;0;0;0;0
+JUGADOR;Pedri;;FC Barcelona;España;2002-11-25;Centrocampista;8;0;0;0;0
+JUGADOR;Frenkie;de Jong;FC Barcelona;Países Bajos;1997-05-12;Centrocampista;21;0;0;0;0
+JUGADOR;Robert;Lewandowski;FC Barcelona;Polonia;1988-08-21;Delantero;9;0;0;0;0
+JUGADOR;Raphinha;;FC Barcelona;Brasil;1996-12-14;Delantero;11;0;0;0;0
+JUGADOR;Lamine;Yamal;FC Barcelona;España;2007-07-13;Delantero;27;0;0;0;0
+
+JUGADOR;Jan;Oblak;Atlético de Madrid;Eslovenia;1993-01-07;Portero;13;0;0;0;0
+JUGADOR;José María;Giménez;Atlético de Madrid;Uruguay;1995-01-20;Defensa;2;0;0;0;0
+JUGADOR;Stefan;Savic;Atlético de Madrid;Montenegro;1991-01-08;Defensa;15;0;0;0;0
+JUGADOR;Mario;Hermoso;Atlético de Madrid;España;1995-06-18;Defensa;22;0;0;0;0
+JUGADOR;Nahuel;Molina;Atlético de Madrid;Argentina;1998-04-06;Defensa;16;0;0;0;0
+JUGADOR;Koke;;Atlético de Madrid;España;1992-01-08;Centrocampista;6;0;0;0;0
+JUGADOR;Rodrigo;de Paul;Atlético de Madrid;Argentina;1994-05-24;Centrocampista;5;0;0;0;0
+JUGADOR;Saúl;Ñíguez;Atlético de Madrid;España;1994-11-21;Centrocampista;8;0;0;0;0
+JUGADOR;Álvaro;Morata;Atlético de Madrid;España;1992-10-23;Delantero;19;0;0;0;0
+JUGADOR;Antoine;Griezmann;Atlético de Madrid;Francia;1991-03-21;Delantero;7;0;0;0;0
+JUGADOR;Memphis;Depay;Atlético de Madrid;Países Bajos;1994-02-13;Delantero;9;0;0;0;0
+
+JUGADOR;Álex;Remiro;Real Sociedad;España;1995-03-24;Portero;1;0;0;0;0
+JUGADOR;Robin;Le Normand;Real Sociedad;Francia;1996-11-11;Defensa;24;0;0;0;0
+JUGADOR;Igor;Zubeldia;Real Sociedad;España;1997-03-30;Defensa;5;0;0;0;0
+JUGADOR;Aritz;Elustondo;Real Sociedad;España;1994-03-28;Defensa;6;0;0;0;0
+JUGADOR;Hamari;Traoré;Real Sociedad;Mali;1992-01-27;Defensa;18;0;0;0;0
+JUGADOR;Mikel;Merino;Real Sociedad;España;1996-06-22;Centrocampista;8;0;0;0;0
+JUGADOR;Brais;Méndez;Real Sociedad;España;1997-01-07;Centrocampista;23;0;0;0;0
+JUGADOR;Martín;Zubimendi;Real Sociedad;España;1999-02-02;Centrocampista;4;0;0;0;0
+JUGADOR;Takefusa;Kubo;Real Sociedad;Japón;2001-06-04;Delantero;14;0;0;0;0
+JUGADOR;Mikel;Oyarzabal;Real Sociedad;España;1997-04-21;Delantero;10;0;0;0;0
+JUGADOR;André;Silva;Real Sociedad;Portugal;1995-11-06;Delantero;9;0;0;0;0
+
+JUGADOR;Unai;Simón;Athletic Club;España;1997-06-11;Portero;1;0;0;0;0
+JUGADOR;Óscar;de Marcos;Athletic Club;España;1989-04-14;Defensa;18;0;0;0;0
+JUGADOR;Yeray;Álvarez;Athletic Club;España;1995-01-24;Defensa;5;0;0;0;0
+JUGADOR;Iñigo;Lekue;Athletic Club;España;1993-05-04;Defensa;15;0;0;0;0
+JUGADOR;Aitor;Paredes;Athletic Club;España;2000-04-29;Defensa;4;0;0;0;0
+JUGADOR;Iker;Muniain;Athletic Club;España;1992-12-19;Centrocampista;10;0;0;0;0
+JUGADOR;Oihan;Sancet;Athletic Club;España;2000-04-25;Centrocampista;8;0;0;0;0
+JUGADOR;Dani;García;Athletic Club;España;1990-05-24;Centrocampista;14;0;0;0;0
+JUGADOR;Nico;Williams;Athletic Club;España;2002-07-12;Delantero;11;0;0;0;0
+JUGADOR;Iñaki;Williams;Athletic Club;Ghana;1994-06-15;Delantero;9;0;0;0;0
+JUGADOR;Gorka;Guruzeta;Athletic Club;España;1996-09-12;Delantero;12;0;0;0;0
+
+JUGADOR;Claudio;Bravo;Real Betis;Chile;1983-04-13;Portero;1;0;0;0;0
+JUGADOR;Héctor;Bellerín;Real Betis;España;1995-03-19;Defensa;2;0;0;0;0
+JUGADOR;Germán;Pezzella;Real Betis;Argentina;1991-06-27;Defensa;6;0;0;0;0
+JUGADOR;Luiz;Felipe;Real Betis;Brasil;1997-03-22;Defensa;19;0;0;0;0
+JUGADOR;Juan;Miranda;Real Betis;España;2000-01-19;Defensa;3;0;0;0;0
+JUGADOR;Guido;Rodríguez;Real Betis;Argentina;1994-04-12;Centrocampista;5;0;0;0;0
+JUGADOR;William;Carvalho;Real Betis;Portugal;1992-04-07;Centrocampista;14;0;0;0;0
+JUGADOR;Nabil;Fekir;Real Betis;Francia;1993-07-18;Centrocampista;8;0;0;0;0
+JUGADOR;Ayoze;Pérez;Real Betis;España;1993-07-29;Delantero;10;0;0;0;0
+JUGADOR;Willian;José;Real Betis;Brasil;1991-11-23;Delantero;12;0;0;0;0
+JUGADOR;Assane;Diao;Real Betis;España;2005-09-07;Delantero;38;0;0;0;0
+
+JUGADOR;Marko;Dmitrović;Sevilla FC;Serbia;1992-01-24;Portero;1;0;0;0;0
+JUGADOR;Jesús;Navas;Sevilla FC;España;1985-11-21;Defensa;16;0;0;0;0
+JUGADOR;Loïc;Badé;Sevilla FC;Francia;2000-04-11;Defensa;22;0;0;0;0
+JUGADOR;Marcos;Acuña;Sevilla FC;Argentina;1991-10-28;Defensa;19;0;0;0;0
+JUGADOR;Tanguy;Nianzou;Sevilla FC;Francia;2002-06-07;Defensa;14;0;0;0;0
+JUGADOR;Ivan;Rakitic;Sevilla FC;Croacia;1988-03-10;Centrocampista;10;0;0;0;0
+JUGADOR;Joan;Jordán;Sevilla FC;España;1994-07-06;Centrocampista;8;0;0;0;0
+JUGADOR;Óliver;Torres;Sevilla FC;España;1994-11-10;Centrocampista;21;0;0;0;0
+JUGADOR;Youssef;En-Nesyri;Sevilla FC;Marruecos;1997-06-01;Delantero;15;0;0;0;0
+JUGADOR;Lucas;Ocampos;Sevilla FC;Argentina;1994-07-11;Delantero;5;0;0;0;0
+JUGADOR;Suso;;Sevilla FC;España;1993-11-19;Delantero;7;0;0;0;0
+
+JUGADOR;Giorgi;Mamardashvili;Valencia CF;Georgia;2000-09-29;Portero;25;0;0;0;0
+JUGADOR;Thierry;Correia;Valencia CF;Portugal;1999-03-09;Defensa;12;0;0;0;0
+JUGADOR;Cenk;Özkacar;Valencia CF;Turquía;2000-10-06;Defensa;15;0;0;0;0
+JUGADOR;Cristhian;Mosquera;Valencia CF;España;2004-06-27;Defensa;3;0;0;0;0
+JUGADOR;José Luis;Gayà;Valencia CF;España;1995-05-25;Defensa;14;0;0;0;0
+JUGADOR;Pepelu;;Valencia CF;España;1998-08-11;Centrocampista;18;0;0;0;0
+JUGADOR;Hugo;Guillamón;Valencia CF;España;2000-01-31;Centrocampista;6;0;0;0;0
+JUGADOR;Javi;Guerra;Valencia CF;España;2003-05-13;Centrocampista;8;0;0;0;0
+JUGADOR;Hugo;Duro;Valencia CF;España;1999-11-10;Delantero;9;0;0;0;0
+JUGADOR;Sergi;Canós;Valencia CF;España;1997-02-02;Delantero;7;0;0;0;0
+JUGADOR;Diego;López;Valencia CF;España;2002-05-13;Delantero;16;0;0;0;0
+
+JUGADOR;Giorgi;Mamardashvili;Valencia CF;Georgia;2000-09-29;Portero;25;0;0;0;0
+JUGADOR;Thierry;Correia;Valencia CF;Portugal;1999-03-09;Defensa;12;0;0;0;0
+JUGADOR;Cenk;Özkacar;Valencia CF;Turquía;2000-10-06;Defensa;15;0;0;0;0
+JUGADOR;Cristhian;Mosquera;Valencia CF;España;2004-06-27;Defensa;3;0;0;0;0
+JUGADOR;José Luis;Gayà;Valencia CF;España;1995-05-25;Defensa;14;0;0;0;0
+JUGADOR;Pepelu;;Valencia CF;España;1998-08-11;Centrocampista;18;0;0;0;0
+JUGADOR;Hugo;Guillamón;Valencia CF;España;2000-01-31;Centrocampista;6;0;0;0;0
+JUGADOR;Javi;Guerra;Valencia CF;España;2003-05-13;Centrocampista;8;0;0;0;0
+JUGADOR;Hugo;Duro;Valencia CF;España;1999-11-10;Delantero;9;0;0;0;0
+JUGADOR;Sergi;Canós;Valencia CF;España;1997-02-02;Delantero;7;0;0;0;0
+JUGADOR;Diego;López;Valencia CF;España;2002-05-13;Delantero;16;0;0;0;0
+
+JUGADOR;Conan;Ledesma;Cádiz CF;Argentina;1993-02-13;Portero;1;0;0;0;0
+JUGADOR;Iza;Carcelén;Cádiz CF;España;1993-04-23;Defensa;20;0;0;0;0
+JUGADOR;Luis;Hernández;Cádiz CF;España;1989-04-14;Defensa;23;0;0;0;0
+JUGADOR;Fali;;Cádiz CF;España;1993-08-12;Defensa;3;0;0;0;0
+JUGADOR;Javi;Hernández;Cádiz CF;España;1998-05-02;Defensa;15;0;0;0;0
+JUGADOR;Rubén;Alcaraz;Cádiz CF;España;1991-05-01;Centrocampista;4;0;0;0;0
+JUGADOR;Álex;Fernández;Cádiz CF;España;1992-10-15;Centrocampista;8;0;0;0;0
+JUGADOR;Gonzalo;Escalante;Cádiz CF;Argentina;1993-03-27;Centrocampista;17;0;0;0;0
+JUGADOR;Chris;Ramos;Cádiz CF;España;1997-01-18;Delantero;16;0;0;0;0
+JUGADOR;Roger;Martí;Cádiz CF;España;1991-01-03;Delantero;9;0;0;0;0
+JUGADOR;Darwin;Machís;Cádiz CF;Venezuela;1993-02-07;Delantero;11;0;0;0;0
+
+JUGADOR;David;Soria;Getafe CF;España;1993-04-04;Portero;13;0;0;0;0
+JUGADOR;Djené;Dakonam;Getafe CF;Togo;1991-12-31;Defensa;2;0;0;0;0
+JUGADOR;Domingos;Duarte;Getafe CF;Portugal;1995-03-10;Defensa;6;0;0;0;0
+JUGADOR;Gastón;Álvarez;Getafe CF;Uruguay;2000-03-24;Defensa;4;0;0;0;0
+JUGADOR;Diego;Rico;Getafe CF;España;1993-02-23;Defensa;16;0;0;0;0
+JUGADOR;Mauro;Arambarri;Getafe CF;Uruguay;1995-09-30;Centrocampista;8;0;0;0;0
+JUGADOR;Nemanja;Maksimović;Getafe CF;Serbia;1995-01-26;Centrocampista;20;0;0;0;0
+JUGADOR;Luis;Milla;Getafe CF;España;1994-10-07;Centrocampista;5;0;0;0;0
+JUGADOR;Borja;Mayoral;Getafe CF;España;1997-04-05;Delantero;19;0;0;0;0
+JUGADOR;Mason;Greenwood;Getafe CF;Inglaterra;2001-10-01;Delantero;12;0;0;0;0
+JUGADOR;Jaime;Mata;Getafe CF;España;1988-10-24;Delantero;7;0;0;0;0
+
+JUGADOR;Paulo;Gazzaniga;Girona FC;Argentina;1992-01-02;Portero;13;0;0;0;0
+JUGADOR;Arnau;Martínez;Girona FC;España;2003-04-25;Defensa;4;0;0;0;0
+JUGADOR;David;López;Girona FC;España;1989-10-09;Defensa;5;0;0;0;0
+JUGADOR;Daley;Blind;Girona FC;Países Bajos;1990-03-09;Defensa;17;0;0;0;0
+JUGADOR;Miguel;Gutiérrez;Girona FC;España;2001-07-27;Defensa;3;0;0;0;0
+JUGADOR;Aleix;García;Girona FC;España;1997-06-28;Centrocampista;14;0;0;0;0
+JUGADOR;Yangel;Herrera;Girona FC;Venezuela;1998-01-07;Centrocampista;21;0;0;0;0
+JUGADOR;Iván;Martín;Girona FC;España;1999-02-14;Centrocampista;23;0;0;0;0
+JUGADOR;Viktor;Tsygankov;Girona FC;Ucrania;1997-11-15;Delantero;8;0;0;0;0
+JUGADOR;Artem;Dovbyk;Girona FC;Ucrania;1997-06-21;Delantero;9;0;0;0;0
+JUGADOR;Sávio;;Girona FC;Brasil;2004-04-10;Delantero;16;0;0;0;0
+
+JUGADOR;Paulo;Gazzaniga;Girona FC;Argentina;1992-01-02;Portero;13;0;0;0;0
+JUGADOR;Arnau;Martínez;Girona FC;España;2003-04-25;Defensa;4;0;0;0;0
+JUGADOR;David;López;Girona FC;España;1989-10-09;Defensa;5;0;0;0;0
+JUGADOR;Daley;Blind;Girona FC;Países Bajos;1990-03-09;Defensa;17;0;0;0;0
+JUGADOR;Miguel;Gutiérrez;Girona FC;España;2001-07-27;Defensa;3;0;0;0;0
+JUGADOR;Aleix;García;Girona FC;España;1997-06-28;Centrocampista;14;0;0;0;0
+JUGADOR;Yangel;Herrera;Girona FC;Venezuela;1998-01-07;Centrocampista;21;0;0;0;0
+JUGADOR;Iván;Martín;Girona FC;España;1999-02-14;Centrocampista;23;0;0;0;0
+JUGADOR;Viktor;Tsygankov;Girona FC;Ucrania;1997-11-15;Delantero;8;0;0;0;0
+JUGADOR;Artem;Dovbyk;Girona FC;Ucrania;1997-06-21;Delantero;9;0;0;0;0
+JUGADOR;Sávio;;Girona FC;Brasil;2004-04-10;Delantero;16;0;0;0;0
+
+JUGADOR;André;Ferreira;Granada CF;Portugal;1996-05-29;Portero;1;0;0;0;0
+JUGADOR;Ricard;Sánchez;Granada CF;España;2000-02-22;Defensa;12;0;0;0;0
+JUGADOR;Ignasi;Miquel;Granada CF;España;1992-09-28;Defensa;14;0;0;0;0
+JUGADOR;Miguel;Rubio;Granada CF;España;1998-03-11;Defensa;4;0;0;0;0
+JUGADOR;Carlos;Neva;Granada CF;España;1996-06-12;Defensa;15;0;0;0;0
+JUGADOR;Sergio;Ruiz;Granada CF;España;1995-12-26;Centrocampista;20;0;0;0;0
+JUGADOR;Gonzalo;Villar;Granada CF;España;1998-03-23;Centrocampista;24;0;0;0;0
+JUGADOR;Bryan;Zaragoza;Granada CF;España;2001-09-09;Centrocampista;26;0;0;0;0
+JUGADOR;Myrto;Uzuni;Granada CF;Albania;1995-05-31;Delantero;11;0;0;0;0
+JUGADOR;Lucas;Boye;Granada CF;Argentina;1996-02-28;Delantero;7;0;0;0;0
+JUGADOR;José;Callejón;Granada CF;España;1987-02-11;Delantero;9;0;0;0;0
+
+JUGADOR;Sergio;Herrera;CA Osasuna;España;1993-06-05;Portero;1;0;0;0;0
+JUGADOR;Jesús;Areso;CA Osasuna;España;1999-07-02;Defensa;2;0;0;0;0
+JUGADOR;David;García;CA Osasuna;España;1994-02-14;Defensa;5;0;0;0;0
+JUGADOR;Alejandro;Catena;CA Osasuna;España;1994-10-28;Defensa;24;0;0;0;0
+JUGADOR;Juan;Cruz;CA Osasuna;España;2000-07-25;Defensa;3;0;0;0;0
+JUGADOR;Lucas;Torró;CA Osasuna;España;1994-07-19;Centrocampista;6;0;0;0;0
+JUGADOR;Moi;Gómez;CA Osasuna;España;1994-06-23;Centrocampista;16;0;0;0;0
+JUGADOR;Aimar;Oroz;CA Osasuna;España;2001-11-27;Centrocampista;10;0;0;0;0
+JUGADOR;Chimy;Ávila;CA Osasuna;Argentina;1994-02-06;Delantero;9;0;0;0;0
+JUGADOR;Ante;Budimir;CA Osasuna;Croacia;1991-07-22;Delantero;17;0;0;0;0
+JUGADOR;Rubén;García;CA Osasuna;España;1993-07-14;Delantero;14;0;0;0;0
+
+JUGADOR;Antonio;Sivera;Deportivo Alavés;España;1996-08-11;Portero;1;0;0;0;0
+JUGADOR;Andoni;Gorosabel;Deportivo Alavés;España;1996-08-04;Defensa;2;0;0;0;0
+JUGADOR;Abdelkabir;Abqar;Deportivo Alavés;Marruecos;2000-03-10;Defensa;5;0;0;0;0
+JUGADOR;Aleksandar;Sedlar;Deportivo Alavés;Serbia;1991-12-13;Defensa;16;0;0;0;0
+JUGADOR;Javi;López;Deportivo Alavés;España;2002-03-25;Defensa;27;0;0;0;0
+JUGADOR;Antonio;Blanco;Deportivo Alavés;España;2000-07-23;Centrocampista;8;0;0;0;0
+JUGADOR;Jon;Guridi;Deportivo Alavés;España;1995-02-28;Centrocampista;18;0;0;0;0
+JUGADOR;Carlos;Benavídez;Deportivo Alavés;Uruguay;1998-04-30;Centrocampista;6;0;0;0;0
+JUGADOR;Luis;Ríoja;Deportivo Alavés;España;1993-10-16;Delantero;11;0;0;0;0
+JUGADOR;Kike;García;Deportivo Alavés;España;1989-11-25;Delantero;15;0;0;0;0
+JUGADOR;Samuel;Omorodion;Deportivo Alavés;España;2004-05-05;Delantero;32;0;0;0;0
+
+JUGADOR;Stole;Dimitrievski;Rayo Vallecano;Macedonia;1993-12-25;Portero;1;0;0;0;0
+JUGADOR;Iván;Balliu;Rayo Vallecano;Albania;1992-01-01;Defensa;20;0;0;0;0
+JUGADOR;Aridane;Hernández;Rayo Vallecano;España;1989-03-23;Defensa;5;0;0;0;0
+JUGADOR;Florian;Lejeune;Rayo Vallecano;Francia;1991-05-20;Defensa;24;0;0;0;0
+JUGADOR;Alfonso;Espino;Rayo Vallecano;Uruguay;1992-01-05;Defensa;12;0;0;0;0
+JUGADOR;Óscar;Valentín;Rayo Vallecano;España;1994-08-20;Centrocampista;23;0;0;0;0
+JUGADOR;Pathé;Ciss;Rayo Vallecano;Senegal;1994-03-16;Centrocampista;21;0;0;0;0
+JUGADOR;Isi;Palazón;Rayo Vallecano;España;1994-12-27;Centrocampista;7;0;0;0;0
+JUGADOR;Álvaro;García;Rayo Vallecano;España;1992-10-27;Delantero;18;0;0;0;0
+JUGADOR;Raúl;de Tomás;Rayo Vallecano;España;1994-10-17;Delantero;22;0;0;0;0
+JUGADOR;Sergio;Camello;Rayo Vallecano;España;2001-02-10;Delantero;34;0;0;0;0
+
+JUGADOR;Luca;Zidane;SD Eibar;Francia;1998-05-13;Portero;1;0;0;0;0
+JUGADOR;Álvaro;Tejero;SD Eibar;España;1996-07-20;Defensa;15;0;0;0;0
+JUGADOR;Juan;Bautista;SD Eibar;Argentina;1992-09-21;Defensa;23;0;0;0;0
+JUGADOR;Anaitz;Arbilla;SD Eibar;España;1987-05-15;Defensa;4;0;0;0;0
+JUGADOR;Cristian;Gutiérrez;SD Eibar;España;2000-04-16;Defensa;3;0;0;0;0
+JUGADOR;Matheus;Pereira;SD Eibar;Brasil;1996-05-24;Centrocampista;8;0;0;0;0
+JUGADOR;Peru;Nolaskoain;SD Eibar;España;1998-10-25;Centrocampista;6;0;0;0;0
+JUGADOR;Ager;Aketxe;SD Eibar;España;1993-12-30;Centrocampista;10;0;0;0;0
+JUGADOR;Stoichkov;;SD Eibar;España;1993-11-19;Delantero;19;0;0;0;0
+JUGADOR;Quique;;SD Eibar;España;1990-05-16;Delantero;7;0;0;0;0
+JUGADOR;Jon;Bautista;SD Eibar;España;1995-07-03;Delantero;22;0;0;0;0
+
+JUGADOR;Jordi;Masip;Real Valladolid;España;1989-01-03;Portero;1;0;0;0;0
+JUGADOR;Luis;Pérez;Real Valladolid;España;1995-02-04;Defensa;2;0;0;0;0
+JUGADOR;Javi;Sánchez;Real Valladolid;España;1997-03-14;Defensa;5;0;0;0;0
+JUGADOR;David;Torres;Real Valladolid;España;2000-09-29;Defensa;24;0;0;0;0
+JUGADOR;Lucas;Rosa;Real Valladolid;Brasil;2000-04-03;Defensa;39;0;0;0;0
+JUGADOR;Monchu;;Real Valladolid;España;1999-09-13;Centrocampista;8;0;0;0;0
+JUGADOR;Iván;Sánchez;Real Valladolid;España;1992-09-23;Centrocampista;10;0;0;0;0
+JUGADOR;César;de la Hoz;Real Valladolid;España;1992-03-30;Centrocampista;6;0;0;0;0
+JUGADOR;Mamadou;Sylla;Real Valladolid;Senegal;1994-03-20;Delantero;7;0;0;0;0
+JUGADOR;Shon;Weissman;Real Valladolid;Israel;1996-02-14;Delantero;9;0;0;0;0
+JUGADOR;Sergio;León;Real Valladolid;España;1989-01-06;Delantero;11;0;0;0;0
+
+JUGADOR;Álvaro;Valles;UD Las Palmas;España;1997-07-25;Portero;1;0;0;0;0
+JUGADOR;Álex;Suárez;UD Las Palmas;España;1993-03-18;Defensa;4;0;0;0;0
+JUGADOR;Saúl;Coco;UD Las Palmas;Guinea Ecuatorial;1999-02-09;Defensa;23;0;0;0;0
+JUGADOR;Mika;Mármol;UD Las Palmas;España;2001-07-01;Defensa;15;0;0;0;0
+JUGADOR;Sergi;Cardona;UD Las Palmas;España;1999-07-08;Defensa;3;0;0;0;0
+JUGADOR;Kirian;Rodríguez;UD Las Palmas;España;1996-03-05;Centrocampista;20;0;0;0;0
+JUGADOR;Enzo;Loiodice;UD Las Palmas;Francia;2000-11-27;Centrocampista;12;0;0;0;0
+JUGADOR;Alberto;Moleiro;UD Las Palmas;España;2003-09-30;Centrocampista;10;0;0;0;0
+JUGADOR;Munir;El Haddadi;UD Las Palmas;Marruecos;1995-09-01;Delantero;11;0;0;0;0
+JUGADOR;Marc;Cardona;UD Las Palmas;España;1995-07-08;Delantero;19;0;0;0;0
+JUGADOR;Sandro;Ramírez;UD Las Palmas;España;1995-07-09;Delantero;9;0;0;0;0
