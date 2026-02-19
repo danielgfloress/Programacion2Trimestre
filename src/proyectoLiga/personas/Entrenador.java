@@ -1,5 +1,7 @@
 package proyectoLiga.personas;
 
+import proyectoLiga.liga.Equipo;
+
 import java.util.Date;
 import java.util.Objects;
 
@@ -8,8 +10,8 @@ public class Entrenador extends AbstractPersona {
     private int experienciaAnios;
     private String estilo;
 
-    public Entrenador(String nombre, String apellido, String nacionalidad, Date fechaNacimiento, int experienciaAnios, String estilo) {
-        super(nombre, apellido, nacionalidad, fechaNacimiento);
+    public Entrenador(String nombre, String apellido, Equipo equipo, String nacionalidad, Date fechaNacimiento, int experienciaAnios, String estilo) {
+        super(nombre, apellido, equipo, nacionalidad, fechaNacimiento);
         this.experienciaAnios = experienciaAnios;
         this.estilo = estilo;
     }
