@@ -4,12 +4,22 @@ import java.util.Objects;
 
 public class Liga {
 
+    private String nombre;
     private String pais;
     private String tipo;
 
-    public Liga(String pais, String tipo) {
+    public Liga(String nombre, String pais, String tipo) {
+        this.nombre = nombre;
         this.pais = pais;
         this.tipo = tipo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getPais() {

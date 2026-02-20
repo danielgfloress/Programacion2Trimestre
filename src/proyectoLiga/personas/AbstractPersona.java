@@ -5,59 +5,19 @@ import proyectoLiga.liga.Equipo;
 import java.util.Date;
 import java.util.Objects;
 
-public class AbstractPersona {
+public abstract class AbstractPersona {
 
-    private String nombre;
-    private String apellido;
-    private Equipo equipo;
-    private String nacionalidad;
-    private java.util.Date fechaNacimiento;
+    protected String nombre;
+    protected String apellido;
+    protected Equipo equipo;
+    protected String nacionalidad;
+    protected java.util.Date fechaNacimiento;
 
-    public AbstractPersona(String nombre, String apellido, Equipo equipo, String nacionalidad, Date fechaNacimiento) {
+    protected AbstractPersona(String nombre, String apellido, Equipo equipo, String nacionalidad, Date fechaNacimiento) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.equipo = equipo;
         this.nacionalidad = nacionalidad;
-        this.fechaNacimiento = fechaNacimiento;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public Equipo getEquipo() {
-        return equipo;
-    }
-
-    public void setEquipo(Equipo equipo) {
-        this.equipo = equipo;
-    }
-
-    public String getNacionalidad() {
-        return nacionalidad;
-    }
-
-    public void setNacionalidad(String nacionalidad) {
-        this.nacionalidad = nacionalidad;
-    }
-
-    public Date getFechaNacimiento() {
-        return fechaNacimiento;
-    }
-
-    public void setFechaNacimiento(Date fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
 
