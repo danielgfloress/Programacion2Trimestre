@@ -1,0 +1,20 @@
+ESTADIO;Santiago Bernabéu;Madrid;85000;Real Madrid
+ESTADIO;Spotify Camp Nou;Barcelona;99000;FC Barcelona
+ESTADIO;Metropolitano;Madrid;68000;Atlético de Madrid
+ESTADIO;Reale Arena;San Sebastián;40000;Real Sociedad
+ESTADIO;San Mamés;Bilbao;53000;Athletic Club
+ESTADIO;Benito Villamarín;Sevilla;60000;Real Betis
+ESTADIO;Ramón Sánchez-Pizjuán;Sevilla;43000;Sevilla FC
+ESTADIO;Mestalla;Valencia;49000;Valencia CF
+ESTADIO;La Cerámica;Villarreal;23500;Villarreal CF
+ESTADIO;Nuevo Mirandilla;Cádiz;20000;Cádiz CF
+ESTADIO;Coliseum Alfonso Pérez;Getafe;17000;Getafe CF
+ESTADIO;Montilivi;Girona;14500;Girona FC
+ESTADIO;Abanca Balaídos;Vigo;29000;Celta de Vigo
+ESTADIO;Los Cármenes;Granada;19500;Granada CF
+ESTADIO;El Sadar;Pamplona;23500;CA Osasuna
+ESTADIO;Mendizorroza;Vitoria;19840;Deportivo Alavés
+ESTADIO;Vallecas;Madrid;14700;Rayo Vallecano
+ESTADIO;Ipurua;Eibar;8100;SD Eibar
+ESTADIO;José Zorrilla;Valladolid;26500;Real Valladolid
+ESTADIO;Gran Canaria;Las Palmas;32500;UD Las Palmas

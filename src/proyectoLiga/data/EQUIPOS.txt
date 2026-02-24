@@ -1,0 +1,20 @@
+EQUIPO;Real Madrid;Santiago Bernabéu
+EQUIPO;FC Barcelona;Spotify Camp Nou
+EQUIPO;Atlético de Madrid;Metropolitano
+EQUIPO;Real Sociedad;Reale Arena
+EQUIPO;Athletic Club;San Mamés
+EQUIPO;Real Betis;Benito Villamarín
+EQUIPO;Sevilla FC;Ramón Sánchez-Pizjuán
+EQUIPO;Valencia CF;Mestalla
+EQUIPO;Villarreal CF;La Cerámica
+EQUIPO;Cádiz CF;Nuevo Mirandilla
+EQUIPO;Getafe CF;Coliseum Alfonso Pérez
+EQUIPO;Girona FC;Montilivi
+EQUIPO;Celta de Vigo;Abanca Balaídos
+EQUIPO;Granada CF;Los Cármenes
+EQUIPO;CA Osasuna;El Sadar
+EQUIPO;Deportivo Alavés;Mendizorroza
+EQUIPO;Rayo Vallecano;Vallecas
+EQUIPO;SD Eibar;Ipurua
+EQUIPO;Real Valladolid;José Zorrilla
+EQUIPO;UD Las Palmas;Gran Canaria

@@ -2,7 +2,7 @@ package proyectoLiga.personas;
 
 import proyectoLiga.liga.Equipo;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class Jugador extends AbstractPersona {
@@ -14,7 +14,7 @@ public class Jugador extends AbstractPersona {
     private int tarjetasAmarillas;
     private int tarjetasRojas;
 
-    public Jugador(String nombre, String apellido, Equipo equipo, String nacionalidad, Date fechaNacimiento, String posicion, int dorsal, int goles, int asistencias, int tarjetasAmarillas, int tarjetasRojas) {
+    public Jugador(String nombre, String apellido, Equipo equipo, String nacionalidad, LocalDate fechaNacimiento, String posicion, int dorsal, int goles, int asistencias, int tarjetasAmarillas, int tarjetasRojas) {
         super(nombre, apellido, equipo, nacionalidad, fechaNacimiento);
         this.posicion = posicion;
         this.dorsal = dorsal;

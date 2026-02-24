@@ -1,0 +1,20 @@
+ENTRENADOR;Carlo;Ancelotti;Real Madrid;Italia;1959-06-10;25;Posesión
+ENTRENADOR;Xavi;Hernández;FC Barcelona;España;1980-01-25;8;Tiki-Taka
+ENTRENADOR;Diego;Simeone;Atlético de Madrid;Argentina;1970-04-28;15;Defensivo
+ENTRENADOR;Imanol;Alguacil;Real Sociedad;España;1971-07-04;10;Presión alta
+ENTRENADOR;Ernesto;Valverde;Athletic Club;España;1964-02-09;20;Equilibrado
+ENTRENADOR;Manuel;Pellegrini;Real Betis;Chile;1953-09-16;30;Ofensivo
+ENTRENADOR;Quique;Flores;Sevilla FC;España;1965-02-05;18;Defensa ordenada
+ENTRENADOR;Rubén;Baraja;Valencia CF;España;1975-07-11;6;Transiciones
+ENTRENADOR;Marcelino;García;Villarreal CF;España;1965-08-14;22;Vertical
+ENTRENADOR;Sergio;González;Cádiz CF;España;1976-03-10;8;Defensivo
+ENTRENADOR;José;Bordalás;Getafe CF;España;1964-03-05;15;Intensidad
+ENTRENADOR;Míchel;Sánchez;Girona FC;España;1975-02-30;7;Ofensivo
+ENTRENADOR;Rafa;Benítez;Celta de Vigo;España;1960-04-16;25;Orden táctico
+ENTRENADOR;Alexander;Medina;Granada CF;Uruguay;1978-08-08;5;Presión
+ENTRENADOR;Jagoba;Arrasate;CA Osasuna;España;1978-04-22;10;Equilibrado
+ENTRENADOR;Luis;García;Deportivo Alavés;España;1972-06-01;12;Ofensivo
+ENTRENADOR;Francisco;Rodríguez;Rayo Vallecano;España;1978-09-19;9;Vertical
+ENTRENADOR;Gaizka;Garitano;SD Eibar;España;1975-07-09;14;Defensivo
+ENTRENADOR;Paulo;Pezzolano;Real Valladolid;Uruguay;1983-04-25;6;Presión alta
+ENTRENADOR;García;Pimienta;UD Las Palmas;España;1974-08-18;10;Posesión

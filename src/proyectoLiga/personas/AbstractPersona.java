@@ -2,7 +2,7 @@ package proyectoLiga.personas;
 
 import proyectoLiga.liga.Equipo;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Objects;
 
 public abstract class AbstractPersona {
@@ -11,9 +11,9 @@ public abstract class AbstractPersona {
     protected String apellido;
     protected Equipo equipo;
     protected String nacionalidad;
-    protected java.util.Date fechaNacimiento;
+    protected LocalDate fechaNacimiento;
 
-    protected AbstractPersona(String nombre, String apellido, Equipo equipo, String nacionalidad, Date fechaNacimiento) {
+    protected AbstractPersona(String nombre, String apellido, Equipo equipo, String nacionalidad, LocalDate fechaNacimiento) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.equipo = equipo;
