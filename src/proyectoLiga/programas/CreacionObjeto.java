@@ -1,4 +1,4 @@
 package proyectoLiga.programas;
 
-public class CreacionObjetos {
+public class CreacionObjeto {
 }
