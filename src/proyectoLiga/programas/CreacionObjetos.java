@@ -15,7 +15,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.ArrayList;
 
-public class CreacionObjetos {
+public final class CreacionObjetos {
 
     public static List<Estadio> cargarEstadios() {
         List<Estadio> lista = new ArrayList<>();

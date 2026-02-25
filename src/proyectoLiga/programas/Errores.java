@@ -2,7 +2,7 @@ package proyectoLiga.programas;
 
 import java.util.Scanner;
 
-public class Errores {
+public final class Errores {
 
     Scanner sc = new Scanner(System.in);
 

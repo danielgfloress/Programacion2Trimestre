@@ -44,7 +44,7 @@ public class Menu {
     }
 
 
-    public Equipo elegirEquipo(int a, List<Equipo> equipos, Equipo equipoSeleccionado){
+    public static Equipo elegirEquipo(int a, List<Equipo> equipos, Equipo equipoSeleccionado){
 
 
         for (int i=0;i<equipos.size();i++){
