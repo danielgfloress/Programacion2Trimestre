@@ -20,6 +20,7 @@ public class Equipo {
     private int golesFavor;
     private int golesContra;
 
+
     public Equipo(String nombre, Estadio estadio, List<Jugador> plantilla, int puntos, int partidosJugados, int victorias, int empates, int derrotas, int golesFavor, int golesContra) {
         this.nombre = nombre;
         this.estadio = estadio;
