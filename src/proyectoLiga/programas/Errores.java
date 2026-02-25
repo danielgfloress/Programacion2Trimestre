@@ -6,13 +6,13 @@ public class Errores {
 
     Scanner sc = new Scanner(System.in);
 
-    public void numeroEntero(){
+    public int numeroEntero(Scanner sc){
 
         while (!sc.hasNextInt()) {
-            System.out.println("Error: introduce un número entero.");
+            System.out.println("Introduce el número correspondiente");
             sc.next();
         }
 
-    }
+    return sc.nextInt();}
 
 }

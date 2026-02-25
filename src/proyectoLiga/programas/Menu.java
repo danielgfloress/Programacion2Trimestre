@@ -10,6 +10,7 @@ public class Menu {
 
     List<Estadio> estadios = CreacionObjetos.cargarEstadios();
     List<Equipo> equipos = CreacionObjetos.cargarEquipos(estadios);
+    Errores errores = new Errores();
     Scanner sc = new Scanner(System.in);
 
     public void Liga(){
@@ -28,12 +29,15 @@ public class Menu {
 
             }
 
-            opciones = sc.nextInt();
+            opciones = errores.numeroEntero(sc);
 
+            if (opciones <21 && opciones > 0){
+                equipoSeleccionado = elegirEquipo(opciones - 1, equipos, equipo);
+                System.out.println("Has elegido al " + equipoSeleccionado.getNombre() + " para ser su entrenador esta temporada, prepárate para darlo todo este año.");
+            }else {
+                System.out.println("Elige el número de un equipo válido");
+            }
 
-            equipoSeleccionado = elegirEquipo(opciones - 1, equipos, equipo);
-
-            System.out.println("Has elegido a " + equipoSeleccionado.getNombre());
         }while(opciones<1 || opciones>20);
 
 
