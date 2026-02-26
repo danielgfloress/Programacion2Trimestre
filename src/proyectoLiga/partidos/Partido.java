@@ -17,6 +17,11 @@ public class Partido {
     private List<TarjetaAmarilla> tarjetasAmarillas;
     private List<TarjetaRoja> tarjetasRojas;
 
+    public Partido(Equipo equipoLocal, Equipo equipoVisitante) {
+        this.equipoLocal = equipoLocal;
+        this.equipoVisitante = equipoVisitante;
+    }
+
     public Partido(Equipo equipoLocal, Equipo equipoVisitante, int golesLocal, int golesVisitante, Jornada jornada, List<Gol> goles, List<TarjetaAmarilla> tarjetasAmarillas, List<TarjetaRoja> tarjetasRojas) {
         this.equipoLocal = equipoLocal;
         this.equipoVisitante = equipoVisitante;
