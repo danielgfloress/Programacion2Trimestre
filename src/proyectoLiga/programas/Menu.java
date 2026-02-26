@@ -21,25 +21,56 @@ public class Menu {
 
         do {
 
-            System.out.println("Elige un equipo: ");
-            for (int i = 0; i < equipos.size(); i++) {
-
-
-                System.out.println((i + 1) + ". " + equipos.get(i).getNombre());
-
-            }
-
+            System.out.println("¿Qué competición quieres jugar?");
+            System.out.println("1. Liga");
+            System.out.println("2. Champions");
+            System.out.println("3. Copa del Rey");
+            System.out.println("4. Mundial");
             opciones = errores.numeroEntero(sc);
 
-            if (opciones <21 && opciones > 0){
-                equipoSeleccionado = elegirEquipo(opciones - 1, equipos, equipo);
-                System.out.println("Has elegido al " + equipoSeleccionado.getNombre() + " para ser su entrenador esta temporada, prepárate para darlo todo este año.");
-            }else {
-                System.out.println("Elige el número de un equipo válido");
+            switch (opciones) {
+                case 1:
+                    do {
+
+                        System.out.println("Elige un equipo: ");
+                        for (int i = 0; i < equipos.size(); i++) {
+
+
+                            System.out.println((i + 1) + ". " + equipos.get(i).getNombre());
+
+                        }
+
+                        opciones = errores.numeroEntero(sc);
+
+                        if (opciones <21 && opciones > 0){
+                            equipoSeleccionado = elegirEquipo(opciones - 1, equipos, equipo);
+                            System.out.println("Has elegido al " + equipoSeleccionado.getNombre() + " para ser su entrenador esta temporada, prepárate para darlo todo este año.");
+                        }else {
+                            System.out.println("Elige el número de un equipo válido");
+                        }
+
+                    }while(opciones<1 || opciones>20);
+                    break;
+
+                case 2:
+
+                    break;
+
+                case 3:
+
+                    break;
+
+                case 4:
+
+                    break;
+
+                default:
+                    System.out.println("VENGA ANDA ELIGE UN MODO DE JUEGO");
+                    break;
             }
 
-        }while(opciones<1 || opciones>20);
 
+        }while (opciones<5 || opciones > 0);
 
     }
 
