@@ -242,7 +242,7 @@ public class Partido {
 
             System.out.println(equipoSeleccionado.getNombre() + " " + partido.getGolesLocal() + " - " + partido.getEquipoVisitante().getNombre() + " " + partido.getGolesVisitante());
             puntos += partido.puntosPartido(partido,equipoSeleccionado);
-            System.out.println("Llevas "+ puntos + " puntos");
+            System.out.println("Has ganado "+ puntos + " puntos");
 
         }else if (partido.getEquipoVisitante().equals(equipoSeleccionado)){
 
@@ -271,7 +271,7 @@ public class Partido {
                     partido.setGolesVisitante(golesFavor);
                     partido.getEquipoVisitante().setGolesFavor(golesFavor);
                     partido.getEquipoLocal().setGolesContra(golesFavor);
-                    System.out.println(AZUL + "Minuto "+i+" Gol del "+equipoSeleccionado.getNombre()+", gol de "+ jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
+                    System.out.println(AZUL + "Minuto "+i+" Gol del "+equipoSeleccionado.getNombre()+", gol de "+ jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
 
                 } else if (oportunidades.nextInt(701)>7 && oportunidades.nextInt(701)<12) {
 
@@ -290,13 +290,13 @@ public class Partido {
                     }else if (jugadorClaveLocal.getTarjetasAmarillas()==1) {
 
                         jugadorClaveLocal.setTarjetasAmarillas(1);
-                        System.out.println(AMARILLO + "Minuto " + i + " amarilla para el " + equipoSeleccionado.getNombre() + ", al jugador " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
+                        System.out.println(AMARILLO + "Minuto " + i + " amarilla para el " + equipoSeleccionado.getNombre() + ", al jugador " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
 
                     }else if (jugadorClaveLocal.getTarjetasAmarillas()==1) {
 
                         jugadorClaveLocal.setTarjetasAmarillas(2);
                         jugadorClaveLocal.setTarjetasRojas(1);
-                        System.out.println(ROJO + "Minuto " +i+ " Expulsión a " + jugadorClaveLocal.getNombre() + " por doble amarilla por protestar" + RESET);
+                        System.out.println(ROJO + "Minuto " +i+ " Expulsión a " + jugadorClaveVisitante.getNombre() + " por doble amarilla por protestar" + RESET);
 
                     } else if (jugadorClaveLocal.getTarjetasRojas()==1) {
 
@@ -317,13 +317,13 @@ public class Partido {
                     }else if (jugadorClaveVisitante.getTarjetasAmarillas()==0) {
 
                         jugadorClaveVisitante.setTarjetasAmarillas(1);
-                        System.out.println(AMARILLO + "Minuto " + i + " amarilla para el " + partido.getEquipoLocal().getNombre() + ", al jugador " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
+                        System.out.println(AMARILLO + "Minuto " + i + " amarilla para el " + partido.getEquipoLocal().getNombre() + ", al jugador " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
 
                     }else if (jugadorClaveVisitante.getTarjetasAmarillas()==1) {
 
                         jugadorClaveVisitante.setTarjetasAmarillas(2);
                         jugadorClaveVisitante.setTarjetasRojas(1);
-                        System.out.println(ROJO + "Minuto " +i+ " Expulsión a " + jugadorClaveVisitante.getNombre() + " por doble amarilla por protestar" + RESET);
+                        System.out.println(ROJO + "Minuto " +i+ " Expulsión a " + jugadorClaveLocal.getNombre() + " por doble amarilla por protestar" + RESET);
 
                     } else if (jugadorClaveVisitante.getTarjetasRojas()==1) {
 
@@ -340,7 +340,7 @@ public class Partido {
                     if (jugadorClaveLocal.getTarjetasRojas()==0) {
 
                         jugadorClaveLocal.setTarjetasRojas(1);
-                        System.out.println(ROJO + "Minuto " + i + " ROJA DIRECTA PARA EL " + equipoSeleccionado.getNombre() + " para el jugador " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
+                        System.out.println(ROJO + "Minuto " + i + " ROJA DIRECTA PARA EL " + equipoSeleccionado.getNombre() + " para el jugador " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
 
                     }else{
 
@@ -353,7 +353,7 @@ public class Partido {
                     if (jugadorClaveVisitante.getTarjetasRojas()==0) {
 
                         jugadorClaveVisitante.setTarjetasRojas(1);
-                        System.out.println(ROJO + "Minuto " + i + " ROJA DIRECTA PARA EL " + partido.getEquipoLocal().getNombre() + " para el jugador " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
+                        System.out.println(ROJO + "Minuto " + i + " ROJA DIRECTA PARA EL " + partido.getEquipoLocal().getNombre() + " para el jugador " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
 
                     }else{
 
@@ -373,10 +373,45 @@ public class Partido {
 
             System.out.println (partido.getEquipoLocal().getNombre() + " " + partido.getGolesLocal()+ " - " + equipoSeleccionado.getNombre() + " " + partido.getGolesVisitante());
             puntos += partido.puntosPartido(partido,equipoSeleccionado);
-            System.out.println("Llevas "+ puntos + " puntos");
+            System.out.println("Has ganado "+ puntos + " puntos");
 
         }
 
+
+    }
+
+    public void partidoRapido(Partido partido, Equipo equipoSeleccionado){
+
+        Random golesFavor = new Random();
+        Random golesContra = new Random();
+
+        if (equipoSeleccionado.equals(partido.getEquipoLocal())){
+
+            int golesAFavor = golesFavor.nextInt(5);
+            int golesEnContra = golesContra.nextInt(4);
+            partido.getEquipoLocal().setGolesFavor(golesAFavor);
+            partido.getEquipoLocal().setGolesContra(golesEnContra);
+            partido.getEquipoVisitante().setGolesFavor(golesEnContra);
+            partido.getEquipoVisitante().setGolesContra(golesAFavor);
+            partido.setGolesLocal(golesAFavor);
+            partido.setGolesVisitante(golesEnContra);
+
+            System.out.println("\n\n" + equipoSeleccionado.getNombre() + " " + golesAFavor + " - " + golesEnContra + " " + partido.getEquipoVisitante().getNombre());
+
+        }else{
+
+            int golesAFavor = golesFavor.nextInt(4);
+            int golesEnContra = golesContra.nextInt(4);
+            partido.getEquipoLocal().setGolesFavor(golesAFavor);
+            partido.getEquipoLocal().setGolesContra(golesEnContra);
+            partido.getEquipoVisitante().setGolesFavor(golesEnContra);
+            partido.getEquipoVisitante().setGolesContra(golesAFavor);
+            partido.setGolesLocal(golesEnContra);
+            partido.setGolesVisitante(golesAFavor);
+
+            System.out.println("\n\n" + partido.getEquipoLocal().getNombre() + " " + golesEnContra + " - " + golesAFavor + " " + equipoSeleccionado.getNombre());
+
+        }
 
     }
 
@@ -401,29 +436,6 @@ public class Partido {
             return 0;
         }
     }
-
-        public void partidoRapido(Partido partido, Equipo equipoSeleccionado){
-
-            Random golesFavor = new Random();
-            Random golesContra = new Random();
-
-            if (equipoSeleccionado.equals(partido.getEquipoLocal())){
-
-                int golesAFavor = golesFavor.nextInt(5);
-                int golesEnContra = golesContra.nextInt(4);
-
-                System.out.println("\n\n" + equipoSeleccionado.getNombre() + " " + golesAFavor + " - " + golesEnContra + " " + partido.getEquipoVisitante().getNombre());
-
-            }else{
-
-                int golesAFavor = golesFavor.nextInt(4);
-                int golesEnContra = golesContra.nextInt(4);
-
-                System.out.println("\n\n" + partido.getEquipoLocal().getNombre() + " " + golesEnContra + " - " + golesAFavor + " " + equipoSeleccionado.getNombre());
-
-            }
-
-        }
 
 
     @Override

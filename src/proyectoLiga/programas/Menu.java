@@ -71,6 +71,7 @@ public class Menu {
                         }
 
                         int puntosSeleccionado = 0;
+                        int contadorPuntos = 0;
 
 
                             for (int i = 0; i<38; i++){
@@ -90,19 +91,23 @@ public class Menu {
 
                                         case 1:
 
-                                            System.out.println("\n\n" + partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre());
+                                            System.out.println("\n\n" + partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\nEstadio: "+partidoJornada.getEquipoLocal().getEstadio().getNombre());
 
                                             break;
 
                                         case 2:
 
                                             Partido.simularPartido(partidoJornada,jugadoresLiga,equipoSeleccionado, puntosSeleccionado);
+                                            contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
+                                            System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
                                             break;
 
                                         case 3:
 
                                             partido.partidoRapido(partidoJornada, equipoSeleccionado);
+                                            contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
+                                            System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
                                             break;
 
@@ -119,7 +124,6 @@ public class Menu {
 
 
                                     }
-
 
 
                             }while(opciones != 2 && opciones != 3);
@@ -151,13 +155,14 @@ public class Menu {
                         }
 
                         int puntosSeleccionado = 0;
+                        int contadorPuntos = 0;
 
 
                         for (int i = 0; i<38; i++){
 
                             Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposPremier, equipoSeleccionado,partidosPremier);
                             partidosPremier.add(partidoJornada);
-                            puntosSeleccionado += partido.puntosSeleccionado(partidoJornada,equipoSeleccionado,puntosSeleccionado);
+                            puntosSeleccionado += partido.puntosPartido(partidoJornada,equipoSeleccionado);
 
                             do {
 
@@ -179,6 +184,8 @@ public class Menu {
                                     case 2:
 
                                         Partido.simularPartido(partidoJornada,jugadoresPremier,equipoSeleccionado, puntosSeleccionado);
+                                        contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
+                                        System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
 
                                         break;
@@ -186,8 +193,8 @@ public class Menu {
                                     case 3:
 
                                         partido.partidoRapido(partidoJornada, equipoSeleccionado);
-                                        puntosSeleccionado += partido.puntosSeleccionado(partidoJornada,equipoSeleccionado,puntosSeleccionado);
-                                        System.out.println("Llevas "+ puntosSeleccionado + " puntos");
+                                        contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
+                                        System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
                                         break;
 
