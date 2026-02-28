@@ -1,5 +1,6 @@
 package proyectoLiga.personas;
 
+import proyectoLiga.enumerador.Posicion;
 import proyectoLiga.liga.Equipo;
 
 import java.time.LocalDate;
@@ -7,14 +8,14 @@ import java.util.Objects;
 
 public class Jugador extends AbstractPersona {
 
-    private String posicion;
+    private Posicion posicion;
     private int dorsal;
     private int goles;
     private int asistencias;
     private int tarjetasAmarillas;
     private int tarjetasRojas;
 
-    public Jugador(String nombre, String apellido, Equipo equipo, String nacionalidad, LocalDate fechaNacimiento, String posicion, int dorsal, int goles, int asistencias, int tarjetasAmarillas, int tarjetasRojas) {
+    public Jugador(String nombre, String apellido, Equipo equipo, String nacionalidad, LocalDate fechaNacimiento, Posicion posicion, int dorsal, int goles, int asistencias, int tarjetasAmarillas, int tarjetasRojas) {
         super(nombre, apellido, equipo, nacionalidad, fechaNacimiento);
         this.posicion = posicion;
         this.dorsal = dorsal;
@@ -24,11 +25,11 @@ public class Jugador extends AbstractPersona {
         this.tarjetasRojas = tarjetasRojas;
     }
 
-    public String getPosicion() {
+    public Posicion getPosicion() {
         return posicion;
     }
 
-    public void setPosicion(String posicion) {
+    public void setPosicion(Posicion posicion) {
         this.posicion = posicion;
     }
 
