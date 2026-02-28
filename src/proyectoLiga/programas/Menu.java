@@ -77,7 +77,6 @@ public class Menu {
 
                                 Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposLiga, equipoSeleccionado,partidosLiga);
                                     partidosLiga.add(partidoJornada);
-                                puntosSeleccionado += partido.puntosSeleccionado(partidoJornada,equipoSeleccionado,puntosSeleccionado);
 
                                 do {
 
@@ -93,21 +92,17 @@ public class Menu {
 
                                             System.out.println("\n\n" + partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre());
 
-
                                             break;
 
                                         case 2:
 
                                             Partido.simularPartido(partidoJornada,jugadoresLiga,equipoSeleccionado, puntosSeleccionado);
 
-
                                             break;
 
                                         case 3:
 
                                             partido.partidoRapido(partidoJornada, equipoSeleccionado);
-                                            puntosSeleccionado += partido.puntosSeleccionado(partidoJornada,equipoSeleccionado,puntosSeleccionado);
-                                            System.out.println("Llevas "+ puntosSeleccionado + " puntos");
 
                                             break;
 
@@ -119,17 +114,20 @@ public class Menu {
 
                                         default:
                                             System.out.println("Juega un partido para pasar de Jornada");
+                                            break;
 
 
 
                                     }
+
+
 
                             }while(opciones != 2 && opciones != 3);
 
                             }
 
                             contadorJornadas++;
-                    }while(contadorJornadas != 38);
+                    }while(contadorJornadas != 37);
                     break;
 
                 case 2:
@@ -233,7 +231,7 @@ public class Menu {
             }
 
 
-        }while (opciones<5 || opciones > 0);
+        }while (opciones != 5);
 
     }
 
