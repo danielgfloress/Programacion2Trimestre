@@ -1,0 +1,20 @@
+ENTRENADOR;Oliver;Hughes;Arsenal;Inglaterra;1979-02-14;14;Presión alta
+ENTRENADOR;Marcus;Keane;Aston Villa;Inglaterra;1976-09-03;16;Transiciones
+ENTRENADOR;Daniel;Rowe;AFC Bournemouth;Inglaterra;1980-11-09;12;Vertical
+ENTRENADOR;Ruben;Almeida;Brentford;Portugal;1975-03-30;15;Bloque medio
+ENTRENADOR;Graham;Watts;Brighton;Inglaterra;1977-07-28;18;Posesión
+ENTRENADOR;Nigel;Coleman;Chelsea;Inglaterra;1974-05-22;20;Equilibrado
+ENTRENADOR;Patrick;Doyle;Crystal Palace;Irlanda;1978-01-17;13;Defensivo
+ENTRENADOR;Steven;Grant;Everton;Inglaterra;1973-12-05;21;Orden táctico
+ENTRENADOR;Marco;Benedetti;Fulham;Italia;1974-08-19;17;Bloque bajo
+ENTRENADOR;Andrew;Kerr;Liverpool;Inglaterra;1972-06-11;22;Gegenpress
+ENTRENADOR;Julian;Foster;Manchester City;Inglaterra;1971-01-18;23;Posesión
+ENTRENADOR;Erik;Van Dalen;Manchester United;Países Bajos;1970-10-02;19;Construcción
+ENTRENADOR;Liam;Turner;Newcastle United;Inglaterra;1976-06-06;18;Intensidad
+ENTRENADOR;Ben;Hawkins;Nottingham Forest;Inglaterra;1977-09-14;15;Transiciones
+ENTRENADOR;Chris;Miller;Sheffield United;Inglaterra;1978-02-01;14;Presión
+ENTRENADOR;Gareth;Stone;Tottenham Hotspur;Inglaterra;1976-01-25;16;Ataque rápido
+ENTRENADOR;David;Brooks;West Ham United;Inglaterra;1978-04-08;13;Balón parado
+ENTRENADOR;Luca;Fabbri;Wolverhampton Wanderers;Italia;1978-02-09;14;Bloque medio
+ENTRENADOR;Tiago;Neves;Leicester City;Portugal;1976-06-06;18;Ofensivo
+ENTRENADOR;Michael;Thompson;Southampton;Inglaterra;1975-04-10;16;Presión alta

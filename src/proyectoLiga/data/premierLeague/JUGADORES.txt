@@ -1,0 +1,239 @@
+JUGADOR;Aaron;Mills;Arsenal;Inglaterra;1996-03-12;PORTERO;1;0;0;0;0
+JUGADOR;Ben;Carter;Arsenal;Inglaterra;1997-09-08;DEFENSA;2;0;0;0;0
+JUGADOR;William;Scott;Arsenal;Escocia;1995-01-21;DEFENSA;4;0;0;0;0
+JUGADOR;Gabriel;Souza;Arsenal;Brasil;1998-05-17;DEFENSA;6;0;0;0;0
+JUGADOR;Kieran;Doyle;Arsenal;Irlanda;1999-11-02;DEFENSA;3;0;0;0;0
+JUGADOR;Thomas;Reed;Arsenal;Inglaterra;1994-08-19;CENTRO_CAMPISTA;5;0;0;0;0
+JUGADOR;Julian;Kerr;Arsenal;Inglaterra;2000-02-10;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Moussa;Kone;Arsenal;Senegal;1999-06-23;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Leo;Hart;Arsenal;Inglaterra;2001-04-15;DELANTERO;11;0;0;0;0
+JUGADOR;Hugo;Silva;Arsenal;Portugal;1998-12-01;DELANTERO;7;0;0;0;0
+JUGADOR;Dario;Marin;Arsenal;Croacia;1997-07-07;DELANTERO;9;0;0;0;0
+
+JUGADOR;Elliot;Stone;Aston Villa;Inglaterra;1997-02-17;PORTERO;1;0;0;0;0
+JUGADOR;Matty;Reynolds;Aston Villa;Inglaterra;1998-12-08;DEFENSA;2;0;0;0;0
+JUGADOR;Axel;Dubois;Aston Villa;Francia;1997-09-14;DEFENSA;4;0;0;0;0
+JUGADOR;Diego;Romero;Aston Villa;España;1998-07-19;DEFENSA;5;0;0;0;0
+JUGADOR;Nuno;Carvalho;Aston Villa;Portugal;1999-09-19;DEFENSA;3;0;0;0;0
+JUGADOR;Jordan;Price;Aston Villa;Inglaterra;1995-12-27;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Arda;Yilmaz;Aston Villa;Turquía;2000-10-22;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Mateo;Vega;Aston Villa;España;2001-03-30;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Bruno;Alves;Aston Villa;Brasil;1999-07-25;DELANTERO;11;0;0;0;0
+JUGADOR;Karim;Haddad;Aston Villa;Marruecos;1998-04-03;DELANTERO;7;0;0;0;0
+JUGADOR;Noah;Fischer;Aston Villa;Alemania;2001-01-05;DELANTERO;9;0;0;0;0
+
+JUGADOR;James;Collins;AFC Bournemouth;Inglaterra;1995-05-20;PORTERO;1;0;0;0;0
+JUGADOR;Trent;Hale;AFC Bournemouth;Inglaterra;1999-10-12;DEFENSA;2;0;0;0;0
+JUGADOR;Ibrahima;Diallo;AFC Bournemouth;Francia;1998-08-07;DEFENSA;4;0;0;0;0
+JUGADOR;Virgil;van Leeuwen;AFC Bournemouth;Países Bajos;1994-07-09;DEFENSA;5;0;0;0;0
+JUGADOR;Andy;Robertson;AFC Bournemouth;Escocia;1994-03-11;DEFENSA;3;0;0;0;0
+JUGADOR;Alexis;Mendez;AFC Bournemouth;Argentina;1999-01-16;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Ryan;O'Neill;AFC Bournemouth;Irlanda;2000-09-02;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Rui;Pereira;AFC Bournemouth;Portugal;1998-03-18;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Luis;Santos;AFC Bournemouth;Colombia;1997-06-30;DELANTERO;7;0;0;0;0
+JUGADOR;Mohamed;El Said;AFC Bournemouth;Egipto;1994-10-09;DELANTERO;11;0;0;0;0
+JUGADOR;Darwin;Ferreira;AFC Bournemouth;Uruguay;1999-02-19;DELANTERO;9;0;0;0;0
+
+JUGADOR;Connor;James;Brentford;Inglaterra;1997-02-17;PORTERO;1;0;0;0;0
+JUGADOR;Reece;Baker;Brentford;Inglaterra;1999-12-08;DEFENSA;2;0;0;0;0
+JUGADOR;Thiago;Silva Jr;Brentford;Brasil;1998-03-03;DEFENSA;4;0;0;0;0
+JUGADOR;Ben;Chilton;Brentford;Inglaterra;1997-10-21;DEFENSA;5;0;0;0;0
+JUGADOR;Ousmane;Diop;Brentford;Senegal;2000-01-22;DEFENSA;3;0;0;0;0
+JUGADOR;Enzo;Romero;Brentford;Argentina;2001-01-17;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Moisés;Caicedo Jr;Brentford;Ecuador;2001-11-02;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Cole;Palmer Jr;Brentford;Inglaterra;2002-05-06;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Raheem;Sterling Jr;Brentford;Inglaterra;1998-12-08;DELANTERO;7;0;0;0;0
+JUGADOR;Nicolas;Jackson Jr;Brentford;Senegal;2001-06-20;DELANTERO;11;0;0;0;0
+JUGADOR;Mykhailo;Mudryk Jr;Brentford;Ucrania;2001-01-05;DELANTERO;9;0;0;0;0
+
+JUGADOR;Dylan;Ward;Brighton;Inglaterra;1998-01-04;PORTERO;1;0;0;0;0
+JUGADOR;Theo;Bennett;Brighton;Inglaterra;1999-06-11;DEFENSA;2;0;0;0;0
+JUGADOR;Calvin;Bassey Jr;Brighton;Nigeria;1999-12-31;DEFENSA;4;0;0;0;0
+JUGADOR;Borna;Sosa Jr;Brighton;Croacia;1998-01-21;DEFENSA;5;0;0;0;0
+JUGADOR;Jorrel;Hato Jr;Brighton;Países Bajos;2002-03-07;DEFENSA;3;0;0;0;0
+JUGADOR;Kenneth;Taylor Jr;Brighton;Países Bajos;2002-05-16;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Jordan;Hendrix;Brighton;Países Bajos;1999-09-09;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Mohammed;Kudus Jr;Brighton;Ghana;2000-08-02;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Steven;Bergwijn Jr;Brighton;Países Bajos;1997-10-08;DELANTERO;7;0;0;0;0
+JUGADOR;Brian;Brobbey Jr;Brighton;Países Bajos;2001-02-01;DELANTERO;11;0;0;0;0
+JUGADOR;Carlos;Forbs Jr;Brighton;Portugal;2004-03-19;DELANTERO;9;0;0;0;0
+
+JUGADOR;Jack;Turner;Chelsea;Inglaterra;1997-02-17;PORTERO;1;0;0;0;0
+JUGADOR;Miles;Carter;Chelsea;Estados Unidos;1998-05-28;DEFENSA;2;0;0;0;0
+JUGADOR;Chris;Walker;Chelsea;Estados Unidos;1996-02-18;DEFENSA;4;0;0;0;0
+JUGADOR;Antonee;Davis;Chelsea;Estados Unidos;1997-05-27;DEFENSA;5;0;0;0;0
+JUGADOR;Tyler;Reed;Chelsea;Estados Unidos;1997-05-14;DEFENSA;3;0;0;0;0
+JUGADOR;Weston;Miller;Chelsea;Estados Unidos;1996-06-22;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Gio;Torres;Chelsea;Estados Unidos;1995-06-28;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Christian;Adams;Chelsea;Estados Unidos;2000-05-28;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Timothy;Brooks;Chelsea;Estados Unidos;1996-08-10;DELANTERO;7;0;0;0;0
+JUGADOR;Ricardo;Rivera;Chelsea;Estados Unidos;2000-07-21;DELANTERO;11;0;0;0;0
+JUGADOR;Jordan;Hale;Chelsea;Estados Unidos;2000-01-31;DELANTERO;9;0;0;0;0
+
+JUGADOR;Mason;Hill;Crystal Palace;Inglaterra;1997-01-29;PORTERO;1;0;0;0;0
+JUGADOR;Kyle;Brooks;Crystal Palace;Inglaterra;1998-05-28;DEFENSA;2;0;0;0;0
+JUGADOR;Ruben;Dias Jr;Crystal Palace;Portugal;1997-05-14;DEFENSA;4;0;0;0;0
+JUGADOR;Nathan;Ake Jr;Crystal Palace;Países Bajos;1996-02-18;DEFENSA;5;0;0;0;0
+JUGADOR;Joao;Cancelo Jr;Crystal Palace;Portugal;1997-05-27;DEFENSA;3;0;0;0;0
+JUGADOR;Rodri;Hernandez Jr;Crystal Palace;España;1996-06-22;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Kevin;De Meyer;Crystal Palace;Bélgica;1995-06-28;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Phil;Foden Jr;Crystal Palace;Inglaterra;2000-05-28;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Bernardo;Silva Jr;Crystal Palace;Portugal;1996-08-10;DELANTERO;7;0;0;0;0
+JUGADOR;Erling;Haaland Jr;Crystal Palace;Noruega;2000-07-21;DELANTERO;11;0;0;0;0
+JUGADOR;Julian;Alvarez Jr;Crystal Palace;Argentina;2000-01-31;DELANTERO;9;0;0;0;0
+
+JUGADOR;Oliver;Price;Everton;Inglaterra;1996-06-12;PORTERO;1;0;0;0;0
+JUGADOR;Dani;Santos;Everton;España;1998-01-11;DEFENSA;2;0;0;0;0
+JUGADOR;Eder;Militao Jr;Everton;Brasil;1998-01-18;DEFENSA;4;0;0;0;0
+JUGADOR;Ferland;Mendy Jr;Everton;Francia;1997-06-08;DEFENSA;5;0;0;0;0
+JUGADOR;David;Alba Jr;Everton;Austria;1996-06-24;DEFENSA;3;0;0;0;0
+JUGADOR;Toni;Kroos Jr;Everton;Alemania;1995-01-04;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Luka;Modric Jr;Everton;Croacia;1997-09-09;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Federico;Valverde Jr;Everton;Uruguay;1998-07-22;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Vinicius;Junior Jr;Everton;Brasil;2000-07-12;DELANTERO;7;0;0;0;0
+JUGADOR;Rodrygo;Goes Jr;Everton;Brasil;2001-01-09;DELANTERO;11;0;0;0;0
+JUGADOR;Jude;Bellingham Jr;Everton;Inglaterra;2003-06-29;DELANTERO;9;0;0;0;0
+
+JUGADOR;Harrison;Cole;Fulham;Inglaterra;1998-03-02;PORTERO;1;0;0;0;0
+JUGADOR;Achraf;Hakimi Jr;Fulham;Marruecos;1998-11-04;DEFENSA;2;0;0;0;0
+JUGADOR;Lucas;Hernandez Jr;Fulham;Francia;1996-02-14;DEFENSA;4;0;0;0;0
+JUGADOR;Nuno;Mendes Jr;Fulham;Portugal;2002-06-19;DEFENSA;5;0;0;0;0
+JUGADOR;Marquinhos;Costa Jr;Fulham;Brasil;1997-05-14;DEFENSA;3;0;0;0;0
+JUGADOR;Vitinha;Silva Jr;Fulham;Portugal;2000-02-13;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Fabian;Ruiz Jr;Fulham;España;1996-04-03;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Warren;Zaire Jr;Fulham;Francia;2002-03-16;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Ousmane;Dembele Jr;Fulham;Francia;1997-05-15;DELANTERO;7;0;0;0;0
+JUGADOR;Goncalo;Ramos Jr;Fulham;Portugal;2001-06-20;DELANTERO;11;0;0;0;0
+JUGADOR;Kylian;Mbappe Jr;Fulham;Francia;1998-12-20;DELANTERO;9;0;0;0;0
+
+JUGADOR;Alisson;Becker;Liverpool;Brasil;1992-10-02;PORTERO;1;0;0;0;0
+JUGADOR;Trent;Hale;Liverpool;Inglaterra;1999-10-12;DEFENSA;2;0;0;0;0
+JUGADOR;Ibrahima;Diallo;Liverpool;Francia;1998-08-07;DEFENSA;4;0;0;0;0
+JUGADOR;Virgil;van Leeuwen;Liverpool;Países Bajos;1994-07-09;DEFENSA;5;0;0;0;0
+JUGADOR;Andy;Robertson;Liverpool;Escocia;1994-03-11;DEFENSA;3;0;0;0;0
+JUGADOR;Jordan;Price;Liverpool;Inglaterra;1995-12-27;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Alexis;Mendez;Liverpool;Argentina;1999-01-16;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Ryan;O'Neill;Liverpool;Irlanda;2000-09-02;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Luis;Santos;Liverpool;Colombia;1997-06-30;DELANTERO;7;0;0;0;0
+JUGADOR;Mohamed;El Said;Liverpool;Egipto;1994-10-09;DELANTERO;11;0;0;0;0
+JUGADOR;Darwin;Ferreira;Liverpool;Uruguay;1999-02-19;DELANTERO;9;0;0;0;0
+
+JUGADOR;Ethan;Clark;Manchester City;Inglaterra;1996-01-29;PORTERO;1;0;0;0;0
+JUGADOR;Kyle;Walker;Manchester City;Inglaterra;1998-05-28;DEFENSA;2;0;0;0;0
+JUGADOR;Ruben;Dias;Manchester City;Portugal;1997-05-14;DEFENSA;4;0;0;0;0
+JUGADOR;Nathan;Ake;Manchester City;Países Bajos;1996-02-18;DEFENSA;5;0;0;0;0
+JUGADOR;Joao;Cancelo;Manchester City;Portugal;1997-05-27;DEFENSA;3;0;0;0;0
+JUGADOR;Rodri;Hernandez;Manchester City;España;1996-06-22;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Kevin;De Meyer;Manchester City;Bélgica;1995-06-28;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Phil;Foden;Manchester City;Inglaterra;2000-05-28;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Bernardo;Silva;Manchester City;Portugal;1996-08-10;DELANTERO;7;0;0;0;0
+JUGADOR;Erling;Haaland;Manchester City;Noruega;2000-07-21;DELANTERO;11;0;0;0;0
+JUGADOR;Julian;Alvarez;Manchester City;Argentina;2000-01-31;DELANTERO;9;0;0;0;0
+
+JUGADOR;David;Hughes;Manchester United;Inglaterra;1998-06-12;PORTERO;1;0;0;0;0
+JUGADOR;Luke;Shawson;Manchester United;Inglaterra;1997-06-08;DEFENSA;2;0;0;0;0
+JUGADOR;Raphael;Varin;Manchester United;Francia;1996-04-03;DEFENSA;4;0;0;0;0
+JUGADOR;Victor;Lindell;Manchester United;Suecia;1997-07-22;DEFENSA;5;0;0;0;0
+JUGADOR;Diogo;Dalot Jr;Manchester United;Portugal;1999-03-18;DEFENSA;3;0;0;0;0
+JUGADOR;Bruno;Fernandes Jr;Manchester United;Portugal;1998-04-03;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Casemiro;Silva Jr;Manchester United;Brasil;1996-02-23;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Mason;Greenwood Jr;Manchester United;Inglaterra;2001-10-01;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Marcus;Rashford Jr;Manchester United;Inglaterra;1997-10-31;DELANTERO;7;0;0;0;0
+JUGADOR;Rasmus;Hojlund Jr;Manchester United;Dinamarca;2003-02-04;DELANTERO;11;0;0;0;0
+JUGADOR;Antony;Santos Jr;Manchester United;Brasil;2000-02-24;DELANTERO;9;0;0;0;0
+
+JUGADOR;Nick;Foster;Newcastle United;Inglaterra;1997-04-04;PORTERO;1;0;0;0;0
+JUGADOR;Kieran;Watts;Newcastle United;Inglaterra;1998-08-10;DEFENSA;2;0;0;0;0
+JUGADOR;Sven;Neumann;Newcastle United;Alemania;1997-12-12;DEFENSA;4;0;0;0;0
+JUGADOR;Dan;Burnett;Newcastle United;Inglaterra;1996-05-20;DEFENSA;5;0;0;0;0
+JUGADOR;Fabian;Scharf;Newcastle United;Suiza;1997-06-11;DEFENSA;3;0;0;0;0
+JUGADOR;Bruno;Gimenez;Newcastle United;Brasil;1997-01-16;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Sean;Longstaff Jr;Newcastle United;Inglaterra;1997-10-08;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Sandro;Tonelli;Newcastle United;Italia;2000-05-08;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Anthony;Gordon Jr;Newcastle United;Inglaterra;2001-02-24;DELANTERO;7;0;0;0;0
+JUGADOR;Alexander;Isak Jr;Newcastle United;Suecia;1999-09-21;DELANTERO;11;0;0;0;0
+JUGADOR;Callum;Wilson Jr;Newcastle United;Inglaterra;1998-02-27;DELANTERO;9;0;0;0;0
+
+JUGADOR;Sam;Henderson;Nottingham Forest;Inglaterra;1998-01-02;PORTERO;1;0;0;0;0
+JUGADOR;Neco;Williams Jr;Nottingham Forest;Gales;2001-04-13;DEFENSA;2;0;0;0;0
+JUGADOR;Murillo;Santos Jr;Nottingham Forest;Brasil;2002-07-04;DEFENSA;4;0;0;0;0
+JUGADOR;Willy;Boly Jr;Nottingham Forest;Costa de Marfil;1996-02-03;DEFENSA;5;0;0;0;0
+JUGADOR;Ola;Aina Jr;Nottingham Forest;Nigeria;1996-10-08;DEFENSA;3;0;0;0;0
+JUGADOR;Ryan;Yates Jr;Nottingham Forest;Inglaterra;1998-11-21;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Morgan;Gibbs Jr;Nottingham Forest;Inglaterra;2000-01-25;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Danilo;Silva Jr;Nottingham Forest;Brasil;2001-04-29;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Taiwo;Awoniyi Jr;Nottingham Forest;Nigeria;1997-08-12;DELANTERO;7;0;0;0;0
+JUGADOR;Chris;Wood Jr;Nottingham Forest;Nueva Zelanda;1997-12-07;DELANTERO;11;0;0;0;0
+JUGADOR;Anthony;Elanga Jr;Nottingham Forest;Suecia;2002-04-27;DELANTERO;9;0;0;0;0
+
+JUGADOR;Wes;Firth;Sheffield United;Inglaterra;1997-09-10;PORTERO;1;0;0;0;0
+JUGADOR;Jayden;Bogle Jr;Sheffield United;Inglaterra;2000-07-27;DEFENSA;2;0;0;0;0
+JUGADOR;Anel;Ahmed Jr;Sheffield United;Bosnia;1999-03-26;DEFENSA;4;0;0;0;0
+JUGADOR;Jack;Robinson Jr;Sheffield United;Inglaterra;1997-09-01;DEFENSA;5;0;0;0;0
+JUGADOR;George;Baldock Jr;Sheffield United;Grecia;1997-03-09;DEFENSA;3;0;0;0;0
+JUGADOR;Oliver;Norwood Jr;Sheffield United;Irlanda del Norte;1997-04-12;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Gustavo;Hamer Jr;Sheffield United;Países Bajos;1997-06-08;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;James;McAtee Jr;Sheffield United;Inglaterra;2002-10-18;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Oli;McBurnie Jr;Sheffield United;Escocia;1997-06-04;DELANTERO;7;0;0;0;0
+JUGADOR;Ben;Brereton Jr;Sheffield United;Chile;1999-04-18;DELANTERO;11;0;0;0;0
+JUGADOR;Cameron;Archer Jr;Sheffield United;Inglaterra;2001-12-09;DELANTERO;9;0;0;0;0
+
+JUGADOR;Guglielmo;Rossi;Tottenham Hotspur;Italia;1997-04-01;PORTERO;1;0;0;0;0
+JUGADOR;Pedro;Llorente;Tottenham Hotspur;España;1998-02-06;DEFENSA;2;0;0;0;0
+JUGADOR;Eric;Ward;Tottenham Hotspur;Inglaterra;1996-09-19;DEFENSA;4;0;0;0;0
+JUGADOR;Milan;Jovic;Tottenham Hotspur;Serbia;1999-05-14;DEFENSA;5;0;0;0;0
+JUGADOR;Dejan;Petrovic;Tottenham Hotspur;Croacia;2000-12-22;DEFENSA;3;0;0;0;0
+JUGADOR;Oliver;Stone;Tottenham Hotspur;Inglaterra;1997-01-08;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Yves;Kouassi;Tottenham Hotspur;Costa de Marfil;1998-06-11;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Mateo;Vega;Tottenham Hotspur;España;2001-03-30;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Heung;Kim;Tottenham Hotspur;Corea del Sur;1996-07-07;DELANTERO;7;0;0;0;0
+JUGADOR;Lucas;Moura Jr;Tottenham Hotspur;Brasil;1998-09-15;DELANTERO;11;0;0;0;0
+JUGADOR;Harry;Dawson;Tottenham Hotspur;Inglaterra;1995-04-12;DELANTERO;9;0;0;0;0
+
+JUGADOR;Alphonse;Areola Jr;West Ham United;Francia;1997-02-27;PORTERO;1;0;0;0;0
+JUGADOR;Vladimir;Coufal Jr;West Ham United;República Checa;1996-08-22;DEFENSA;2;0;0;0;0
+JUGADOR;Kurt;Zouma Jr;West Ham United;Francia;1997-10-27;DEFENSA;4;0;0;0;0
+JUGADOR;Nayef;Aguerd Jr;West Ham United;Marruecos;1997-03-30;DEFENSA;5;0;0;0;0
+JUGADOR;Emerson;Palmieri Jr;West Ham United;Italia;1997-08-03;DEFENSA;3;0;0;0;0
+JUGADOR;Lucas;Paqueta Jr;West Ham United;Brasil;1997-08-27;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;James;WardProwse Jr;West Ham United;Inglaterra;1997-11-01;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Tomas;Soucek Jr;West Ham United;República Checa;1997-02-27;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Jarrod;Bowen Jr;West Ham United;Inglaterra;1997-12-20;DELANTERO;7;0;0;0;0
+JUGADOR;Mohammed;Kudus Jr;West Ham United;Ghana;2000-08-02;DELANTERO;11;0;0;0;0
+JUGADOR;Michail;Antonio Jr;West Ham United;Jamaica;1997-03-28;DELANTERO;9;0;0;0;0
+
+JUGADOR;Jose;Sa Jr;Wolverhampton Wanderers;Portugal;1997-01-17;PORTERO;1;0;0;0;0
+JUGADOR;Nelson;Semedo Jr;Wolverhampton Wanderers;Portugal;1997-11-16;DEFENSA;2;0;0;0;0
+JUGADOR;Max;Kilman Jr;Wolverhampton Wanderers;Inglaterra;1997-05-23;DEFENSA;4;0;0;0;0
+JUGADOR;Craig;Dawson Jr;Wolverhampton Wanderers;Inglaterra;1997-09-06;DEFENSA;5;0;0;0;0
+JUGADOR;Rayan;AitNouri Jr;Wolverhampton Wanderers;Argelia;2001-06-06;DEFENSA;3;0;0;0;0
+JUGADOR;Joao;Gomes Jr;Wolverhampton Wanderers;Brasil;2001-02-12;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Mario;Lemina Jr;Wolverhampton Wanderers;Gabón;1997-09-01;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Pablo;Sarabia Jr;Wolverhampton Wanderers;España;1997-05-11;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Pedro;Neto Jr;Wolverhampton Wanderers;Portugal;2000-03-09;DELANTERO;7;0;0;0;0
+JUGADOR;Matheus;Cunha Jr;Wolverhampton Wanderers;Brasil;1999-05-27;DELANTERO;11;0;0;0;0
+JUGADOR;Hwang;Heechan Jr;Wolverhampton Wanderers;Corea del Sur;1997-01-26;DELANTERO;9;0;0;0;0
+
+JUGADOR;Mads;Hermansen Jr;Leicester City;Dinamarca;2000-07-11;PORTERO;1;0;0;0;0
+JUGADOR;Ricardo;Pereira Jr;Leicester City;Portugal;1998-10-06;DEFENSA;2;0;0;0;0
+JUGADOR;Wout;Faes Jr;Leicester City;Bélgica;1998-04-03;DEFENSA;4;0;0;0;0
+JUGADOR;Jannik;Vestergaard Jr;Leicester City;Dinamarca;1997-08-03;DEFENSA;5;0;0;0;0
+JUGADOR;James;Justin Jr;Leicester City;Inglaterra;1998-02-23;DEFENSA;3;0;0;0;0
+JUGADOR;Wilfred;Ndidi Jr;Leicester City;Nigeria;1996-12-16;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Kiernan;Dewsbury Jr;Leicester City;Inglaterra;1998-09-06;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;James;Maddison Jr;Leicester City;Inglaterra;1997-11-22;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Harvey;Barnes Jr;Leicester City;Inglaterra;1997-12-09;DELANTERO;7;0;0;0;0
+JUGADOR;Jamie;Vardy Jr;Leicester City;Inglaterra;1997-01-11;DELANTERO;11;0;0;0;0
+JUGADOR;Patson;Daka Jr;Leicester City;Zambia;1998-10-09;DELANTERO;9;0;0;0;0
+
+JUGADOR;Gavin;Bazunu Jr;Southampton;Irlanda;2002-02-20;PORTERO;1;0;0;0;0
+JUGADOR;Kyle;WalkerPeters Jr;Southampton;Inglaterra;1997-04-13;DEFENSA;2;0;0;0;0
+JUGADOR;Jan;Bednarek Jr;Southampton;Polonia;1996-04-12;DEFENSA;4;0;0;0;0
+JUGADOR;Jack;Stephens Jr;Southampton;Inglaterra;1997-01-27;DEFENSA;5;0;0;0;0
+JUGADOR;Romain;Perraud Jr;Southampton;Francia;1997-09-22;DEFENSA;3;0;0;0;0
+JUGADOR;James;WardProwse Jr;Southampton;Inglaterra;1997-11-01;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Romeo;Lavia Jr;Southampton;Bélgica;2004-01-06;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Carlos;Alcaraz Jr;Southampton;Argentina;2002-11-30;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Che;Adams Jr;Southampton;Escocia;1997-07-12;DELANTERO;7;0;0;0;0
+JUGADOR;Adam;Armstrong Jr;Southampton;Inglaterra;1997-02-10;DELANTERO;11;0;0;0;0
+JUGADOR;Samuel;Edozie Jr;Southampton;Inglaterra;2003-01-28;DELANTERO;9;0;0;0;0

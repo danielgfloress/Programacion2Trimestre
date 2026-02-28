@@ -1,0 +1,20 @@
+EQUIPO;Arsenal;Emirates Stadium
+EQUIPO;Aston Villa;Villa Park
+EQUIPO;AFC Bournemouth;Vitality Stadium
+EQUIPO;Brentford;Gtech Community Stadium
+EQUIPO;Brighton;Amex Stadium
+EQUIPO;Chelsea;Stamford Bridge
+EQUIPO;Crystal Palace;Selhurst Park
+EQUIPO;Everton;Goodison Park
+EQUIPO;Fulham;Craven Cottage
+EQUIPO;Liverpool;Anfield
+EQUIPO;Manchester City;Etihad Stadium
+EQUIPO;Manchester United;Old Trafford
+EQUIPO;Newcastle United;St James' Park
+EQUIPO;Nottingham Forest;The City Ground
+EQUIPO;Sheffield United;Bramall Lane
+EQUIPO;Tottenham Hotspur;Tottenham Hotspur Stadium
+EQUIPO;West Ham United;London Stadium
+EQUIPO;Wolverhampton Wanderers;Molineux Stadium
+EQUIPO;Leicester City;King Power Stadium
+EQUIPO;Southampton;St Mary's Stadium

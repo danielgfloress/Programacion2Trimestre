@@ -1,0 +1,20 @@
+ESTADIO;Emirates Stadium;London;60704;Arsenal
+ESTADIO;Villa Park;Birmingham;42657;Aston Villa
+ESTADIO;Vitality Stadium;Bournemouth;11307;AFC Bournemouth
+ESTADIO;Gtech Community Stadium;London;17250;Brentford
+ESTADIO;Amex Stadium;Brighton;31800;Brighton
+ESTADIO;Stamford Bridge;London;40343;Chelsea
+ESTADIO;Selhurst Park;London;25486;Crystal Palace
+ESTADIO;Goodison Park;Liverpool;39572;Everton
+ESTADIO;Craven Cottage;London;25700;Fulham
+ESTADIO;Anfield;Liverpool;61276;Liverpool
+ESTADIO;Etihad Stadium;Manchester;53400;Manchester City
+ESTADIO;Old Trafford;Manchester;74140;Manchester United
+ESTADIO;St James' Park;Newcastle;52305;Newcastle United
+ESTADIO;The City Ground;Nottingham;30445;Nottingham Forest
+ESTADIO;Bramall Lane;Sheffield;32050;Sheffield United
+ESTADIO;Tottenham Hotspur Stadium;London;62850;Tottenham Hotspur
+ESTADIO;London Stadium;London;62500;West Ham United
+ESTADIO;Molineux Stadium;Wolverhampton;32050;Wolverhampton Wanderers
+ESTADIO;King Power Stadium;Leicester;32261;Leicester City
+ESTADIO;St Mary's Stadium;Southampton;32384;Southampton
