@@ -113,6 +113,8 @@ public class Partido {
 
         List<Jugador> jugadoresLocal = new ArrayList<>(jugadores);
         List<Jugador> jugadoresVisitante = new ArrayList<>(jugadores);
+        jugadoresLocal = partido.getEquipoLocal().getPlantilla();
+        jugadoresVisitante = partido.getEquipoVisitante().getPlantilla();
         Random oportunidades = new Random();
         Random jugadorRandom = new Random();
         Random rojas = new Random();
@@ -125,15 +127,15 @@ public class Partido {
             partido.setGolesLocal(0);
             partido.setGolesVisitante(0);
 
+            for (int i =0; i<jugadores.size();i++){
+
+                jugadores.get(i).setTarjetasRojas(0);
+                jugadores.get(i).setTarjetasAmarillas(0);
+
+            }
+
             for (int i= 1; i <=90 ; i++){
 
-                if (jugadoresLocal.isEmpty() || jugadoresVisitante.isEmpty()) {
-                    throw new IllegalStateException("Lista jugadores vacía: local=" + jugadoresLocal.size()
-                            + " visitante=" + jugadoresVisitante.size());
-                }
-
-                jugadoresLocal = partido.getEquipoLocal().getPlantilla();
-                jugadoresVisitante = partido.getEquipoVisitante().getPlantilla();
                 Jugador jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
                 Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
 
@@ -239,8 +241,7 @@ public class Partido {
             }
 
             System.out.println(equipoSeleccionado.getNombre() + " " + partido.getGolesLocal() + " - " + partido.getEquipoVisitante().getNombre() + " " + partido.getGolesVisitante());
-            puntos = 0;
-            puntos += partido.puntosSeleccionado(partido,equipoSeleccionado,puntos);
+            puntos += partido.puntosPartido(partido,equipoSeleccionado);
             System.out.println("Llevas "+ puntos + " puntos");
 
         }else if (partido.getEquipoVisitante().equals(equipoSeleccionado)){
@@ -250,15 +251,16 @@ public class Partido {
             partido.setGolesLocal(0);
             partido.setGolesVisitante(0);
 
+            for (int i =0; i<jugadores.size();i++){
+
+                jugadores.get(i).setTarjetasRojas(0);
+                jugadores.get(i).setTarjetasAmarillas(0);
+
+            }
+
+
             for (int i= 1; i <=90 ; i++){
 
-                if (jugadoresLocal.isEmpty() || jugadoresVisitante.isEmpty()) {
-                    throw new IllegalStateException("Lista jugadores vacía: local=" + jugadoresLocal.size()
-                            + " visitante=" + jugadoresVisitante.size());
-                }
-
-                jugadoresLocal = partido.getEquipoVisitante().getPlantilla();
-                jugadoresVisitante = partido.getEquipoLocal().getPlantilla();
                 Jugador jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
                 Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
 
@@ -277,7 +279,7 @@ public class Partido {
                     partido.setGolesLocal(golesContra);
                     partido.getEquipoLocal().setGolesFavor(golesContra);
                     partido.getEquipoVisitante().setGolesContra(golesContra);
-                    System.out.println(ROJO + "Minuto "+i+" Gol del "+partido.getEquipoLocal().getNombre()+", gol de "+ jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
+                    System.out.println(ROJO + "Minuto "+i+" Gol del "+partido.getEquipoLocal().getNombre()+", gol de "+ jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
 
                 } else if (oportunidades.nextInt(701)>=14 && oportunidades.nextInt(701)<17) {
 
@@ -365,61 +367,40 @@ public class Partido {
 
                 }
 
-                System.out.println (partido.getEquipoLocal().getNombre() + " " + partido.getGolesLocal()+ " - " + equipoSeleccionado.getNombre() + " " + partido.getGolesVisitante());
-                puntos = 0;
-                puntos += partido.puntosSeleccionado(partido,equipoSeleccionado,puntos);
-                System.out.println("Llevas "+ puntos + " puntos");
+
 
             }
 
-
+            System.out.println (partido.getEquipoLocal().getNombre() + " " + partido.getGolesLocal()+ " - " + equipoSeleccionado.getNombre() + " " + partido.getGolesVisitante());
+            puntos += partido.puntosPartido(partido,equipoSeleccionado);
+            System.out.println("Llevas "+ puntos + " puntos");
 
         }
 
 
     }
 
-    public int puntosSeleccionado(Partido partido,Equipo equipoSeleccionado , int puntosSeleccionado){
+    public int puntosPartido(Partido partido, Equipo equipoSeleccionado) {
+
+        int golesEquipo;
+        int golesRival;
 
         if (equipoSeleccionado.equals(partido.getEquipoLocal())) {
-
-            if (partido.getGolesLocal() > partido.getGolesVisitante()) {
-
-                puntosSeleccionado += 3;
-
-                return puntosSeleccionado;
-            } else if (partido.getGolesLocal() == partido.getGolesVisitante()) {
-
-                puntosSeleccionado += 1;
-
-                return puntosSeleccionado;
-            } else {
-
-                return puntosSeleccionado;
-
-            }
-        }else{
-
-            if (partido.getGolesLocal() < partido.getGolesVisitante()) {
-
-                puntosSeleccionado += 3;
-
-                return puntosSeleccionado;
-            } else if (partido.getGolesLocal() == partido.getGolesVisitante()) {
-
-                puntosSeleccionado += 1;
-
-                return puntosSeleccionado;
-            } else {
-
-                return puntosSeleccionado;
-
-            }
-
+            golesEquipo = partido.getGolesLocal();
+            golesRival = partido.getGolesVisitante();
+        } else {
+            golesEquipo = partido.getGolesVisitante();
+            golesRival = partido.getGolesLocal();
         }
 
-
+        if (golesEquipo > golesRival) {
+            return 3;
+        } else if (golesEquipo == golesRival) {
+            return 1;
+        } else {
+            return 0;
         }
+    }
 
         public void partidoRapido(Partido partido, Equipo equipoSeleccionado){
 
