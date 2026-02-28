@@ -4,6 +4,7 @@ import proyectoLiga.estadios.Estadio;
 import proyectoLiga.liga.Equipo;
 import proyectoLiga.liga.Jornada;
 import proyectoLiga.partidos.Partido;
+import proyectoLiga.personas.Jugador;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +15,10 @@ public class Menu {
     List<Estadio> estadios = CreacionObjetos.cargarEstadios();
     List<Equipo> equiposLiga = CreacionObjetos.cargarEquipos(estadios);
     List<Partido> partidosLiga = new ArrayList<>();
+    List<Jugador> jugadoresLiga = CreacionObjetos.cargarJugadores(equiposLiga);
     Errores errores = new Errores();
     Jornada jornada = new Jornada();
+    Partido partido =  new Partido();
     Scanner sc = new Scanner(System.in);
 
     public void Liga(){
@@ -57,27 +60,40 @@ public class Menu {
 
                             for (int i = 0; i<38; i++){
 
+                                    Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposLiga, equipoSeleccionado,partidosLiga);
+                                    partidosLiga.add(partidoJornada);
+
                                 do {
 
-                                    System.out.println("1. Ver siguiente partido");
+                                    System.out.println("\n\n1. Ver Siguiente Partido");
                                     System.out.println("2. Simular Partido");
+                                    System.out.println("3. Simular Partido Rápido");
+                                    System.out.println("4. Ver Clasificación");
                                     opciones = errores.numeroEntero(sc);
 
                                     switch (opciones){
 
                                         case 1:
 
-                                            Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposLiga, equipoSeleccionado,partidosLiga);
-                                            partidosLiga.add(partidoJornada);
                                             System.out.println(partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre());
 
 
                                             break;
 
+                                        case 2:
+
+                                            Partido.simularPartido(partidoJornada,jugadoresLiga,equipoSeleccionado );
+
+                                            break;
+
+                                        default:
+                                            System.out.println("Juega un partido para pasar de Jornada");
+
+
 
                                     }
 
-                            }while(opciones != 2 && opciones!=3);
+                            }while(opciones != 2 && opciones != 3);
 
                             }
 
