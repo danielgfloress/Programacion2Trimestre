@@ -1,0 +1,20 @@
+EQUIPO;Inter;Arena Nerazzurra
+EQUIPO;Milan;Stadio Rossonero
+EQUIPO;Juventus;Allianz Torino
+EQUIPO;Napoli;Diego Armando Arena
+EQUIPO;Roma;Olimpico Giallorosso
+EQUIPO;Lazio;Olimpico Biancoceleste
+EQUIPO;Atalanta;Gewiss Bergamo
+EQUIPO;Fiorentina;Artemio Viola
+EQUIPO;Bologna;DallAra Bologna
+EQUIPO;Torino;Olimpico Granata
+EQUIPO;Genoa;Ferraris Rossoblu
+EQUIPO;Udinese;Bluenergy Udine
+EQUIPO;Sassuolo;Mapei Reggio
+EQUIPO;Lecce;Via del Mare Lecce
+EQUIPO;Hellas Verona;Bentegodi Verona
+EQUIPO;Cagliari;Unipol Domus Cagliari
+EQUIPO;Empoli;Castellani Empoli
+EQUIPO;Monza;U-Power Monza
+EQUIPO;Parma;Tardini Parma
+EQUIPO;Venezia;Penzo Venezia

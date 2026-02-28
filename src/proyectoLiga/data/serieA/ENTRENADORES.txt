@@ -1,0 +1,20 @@
+ENTRENADOR;Marco;Bellandi;Inter;Italia;1976-04-18;18;Equilibrado
+ENTRENADOR;Stefano;Rinaldesi;Milan;Italia;1973-09-02;20;Posesión
+ENTRENADOR;Paolo;Guidetti;Juventus;Italia;1972-12-11;22;Vertical
+ENTRENADOR;Salvatore;Ferraro;Napoli;Italia;1979-06-06;16;Presión alta
+ENTRENADOR;Claudio;Mazzanti;Roma;Italia;1971-01-24;24;Defensivo
+ENTRENADOR;Maurizio;Lorenzini;Lazio;Italia;1974-05-15;19;Contraataque
+ENTRENADOR;Gianluca;Serafini;Atalanta;Italia;1970-08-08;26;Presión
+ENTRENADOR;Enrico;Baldini;Fiorentina;Italia;1977-11-09;17;Posesión
+ENTRENADOR;Roberto;Cavalli;Bologna;Italia;1975-02-05;18;Equilibrado
+ENTRENADOR;Davide;Marchesi;Torino;Italia;1978-03-13;16;Directo
+ENTRENADOR;Andrea;Borgonovo;Genoa;Italia;1976-07-01;17;Defensivo
+ENTRENADOR;Giuseppe;Cavazzoni;Udinese;Italia;1974-10-20;20;Equilibrado
+ENTRENADOR;Francesco;Taddei;Sassuolo;Italia;1980-01-07;14;Ofensivo
+ENTRENADOR;Antonio;DeRosa;Lecce;Italia;1977-05-22;16;Defensivo
+ENTRENADOR;Sergio;Pastore;Hellas Verona;Italia;1973-03-03;21;Equilibrado
+ENTRENADOR;Massimo;Sanna;Cagliari;Italia;1978-09-14;15;Contraataque
+ENTRENADOR;Lorenzo;Bacci;Empoli;Italia;1981-02-19;13;Posesión
+ENTRENADOR;Alessandro;Pelletti;Monza;Italia;1979-12-02;15;Equilibrado
+ENTRENADOR;Nicola;Barbieri;Parma;Italia;1976-06-26;18;Vertical
+ENTRENADOR;Edoardo;Bruni;Venezia;Italia;1980-08-28;14;Defensivo

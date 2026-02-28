@@ -22,6 +22,11 @@ public class Menu {
     List<Partido> partidosPremier = new ArrayList<>();
     List<Jugador> jugadoresPremier = CreacionObjetos.cargarJugadoresPremier(equiposPremier);
 
+    List<Estadio> estadiosSerieA = CreacionObjetos.cargarEstadiosSerieA();
+    List<Equipo> equiposSerieA = CreacionObjetos.cargarEquiposSerieA(estadiosSerieA);
+    List<Partido> partidosSerieA = new ArrayList<>();
+    List<Jugador> jugadoresSerieA = CreacionObjetos.cargarJugadoresSerieA(equiposSerieA);
+
     Errores errores = new Errores();
     Jornada jornada = new Jornada();
     Partido partido =  new Partido();
@@ -223,6 +228,87 @@ public class Menu {
                 case 3:
 
                     contadorJornadas = 0;
+
+                    do {
+
+                        System.out.println("Elige un equipo: ");
+                        for (int i = 0; i < equiposSerieA.size(); i++) {
+
+                            System.out.println((i + 1) + ". " + equiposSerieA.get(i).getNombre());
+
+                        }
+
+                        opciones = errores.numeroEntero(sc);
+
+                        if (opciones <21 && opciones > 0){
+                            equipoSeleccionado = elegirEquipo(opciones - 1, equiposSerieA, equipo);
+                            System.out.println("\n\n\nHas elegido al " + equipoSeleccionado.getNombre() + " para ser su entrenador esta temporada, prepárate para darlo todo este año.\n\n");
+                        }else {
+                            System.out.println("Elige el número de un equipo válido");
+                        }
+
+                        int puntosSeleccionado = 0;
+                        int contadorPuntos = 0;
+
+
+                        for (int i = 0; i<38; i++){
+
+                            Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposSerieA, equipoSeleccionado,partidosSerieA);
+                            partidosSerieA.add(partidoJornada);
+
+                            do {
+
+                                System.out.println("\n\n1. Ver Siguiente Partido");
+                                System.out.println("2. Simular Partido");
+                                System.out.println("3. Simular Partido Rápido");
+                                System.out.println("4. Ver Clasificación");
+                                opciones = errores.numeroEntero(sc);
+
+                                switch (opciones){
+
+                                    case 1:
+
+                                        System.out.println("\n\n" + partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\n\nEstadio " + partidoJornada.getEquipoLocal().getEstadio().getNombre());
+
+
+                                        break;
+
+                                    case 2:
+
+                                        Partido.simularPartido(partidoJornada,jugadoresSerieA,equipoSeleccionado);
+                                        contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
+                                        System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
+
+
+                                        break;
+
+                                    case 3:
+
+                                        partido.partidoRapido(partidoJornada, equipoSeleccionado);
+                                        contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
+                                        System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
+
+                                        break;
+
+                                    case 4:
+
+
+
+                                        break;
+
+                                    default:
+                                        System.out.println("Juega un partido para pasar de Jornada");
+
+
+
+                                }
+
+                            }while(opciones != 2 && opciones != 3);
+
+                        }
+
+                        contadorJornadas++;
+                    }while(contadorJornadas != 38);
 
                     break;
 
