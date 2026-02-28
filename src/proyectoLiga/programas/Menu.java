@@ -20,6 +20,8 @@ public class Menu {
     Jornada jornada = new Jornada();
     Partido partido =  new Partido();
     Scanner sc = new Scanner(System.in);
+    int contadorJornadas = 0;
+    int puntosSeleccionado = 0;
 
     public void Liga(){
 
@@ -86,6 +88,16 @@ public class Menu {
 
                                             break;
 
+                                        case 3:
+
+                                            break;
+
+                                        case 4:
+
+                                            partido.puntosSeleccionado(partidoJornada, equipoSeleccionado, puntosSeleccionado);
+
+                                            break;
+
                                         default:
                                             System.out.println("Juega un partido para pasar de Jornada");
 
@@ -97,7 +109,8 @@ public class Menu {
 
                             }
 
-                    }while(opciones<1 || opciones>20);
+                            contadorJornadas++;
+                    }while(contadorJornadas != 38);
                     break;
 
                 case 2:

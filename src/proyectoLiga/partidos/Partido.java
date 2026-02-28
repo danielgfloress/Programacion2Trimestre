@@ -351,6 +351,26 @@ public class Partido {
 
     }
 
+    public int puntosSeleccionado(Partido partido,Equipo equipoSeleccionado , int puntosSeleccionado){
+
+        if (equipoSeleccionado.getGolesFavor()>equipoSeleccionado.getGolesContra()){
+
+            puntosSeleccionado += 3;
+
+            return puntosSeleccionado;}else if (equipoSeleccionado.getGolesFavor()==equipoSeleccionado.getGolesContra()){
+
+            puntosSeleccionado += 1;
+
+        return puntosSeleccionado;}else {
+
+            return puntosSeleccionado;
+
+        }
+
+        }
+
+
+
     @Override
     public String toString() {
         return "equipoLocal=" + equipoLocal +
