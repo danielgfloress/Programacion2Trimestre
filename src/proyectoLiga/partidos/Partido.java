@@ -109,7 +109,7 @@ public class Partido {
         this.tarjetasRojas = tarjetasRojas;
     }
 
-    public static void simularPartido(Partido partido, List<Jugador> jugadores, Equipo equipoSeleccionado){
+    public static void simularPartido(Partido partido, List<Jugador> jugadores, Equipo equipoSeleccionado,int puntos){
 
         List<Jugador> jugadoresLocal = new ArrayList<>(jugadores);
         List<Jugador> jugadoresVisitante = new ArrayList<>(jugadores);
@@ -122,8 +122,15 @@ public class Partido {
 
             int golesFavor = 0;
             int golesContra = 0;
+            partido.setGolesLocal(0);
+            partido.setGolesVisitante(0);
 
             for (int i= 1; i <=90 ; i++){
+
+                if (jugadoresLocal.isEmpty() || jugadoresVisitante.isEmpty()) {
+                    throw new IllegalStateException("Lista jugadores vacía: local=" + jugadoresLocal.size()
+                            + " visitante=" + jugadoresVisitante.size());
+                }
 
                 jugadoresLocal = partido.getEquipoLocal().getPlantilla();
                 jugadoresVisitante = partido.getEquipoVisitante().getPlantilla();
@@ -134,13 +141,17 @@ public class Partido {
                 if (oportunidades.nextInt(701)<=10){
 
                     golesFavor++;
-                    equipoSeleccionado.setGolesFavor(golesFavor);
+                    partido.setGolesLocal(golesFavor);
+                    partido.getEquipoLocal().setGolesFavor(golesFavor);
+                    partido.getEquipoVisitante().setGolesContra(golesFavor);
                     System.out.println(AZUL + "Minuto "+i+" Gol del "+equipoSeleccionado.getNombre()+", gol de "+ jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
 
                 } else if (oportunidades.nextInt(701)>10 && oportunidades.nextInt(701)<16) {
 
                     golesContra++;
-                    equipoSeleccionado.setGolesContra(golesContra);
+                    partido.setGolesVisitante(golesContra);
+                    partido.getEquipoVisitante().setGolesFavor(golesContra);
+                    partido.getEquipoLocal().setGolesContra(golesContra);
                     System.out.println(ROJO + "Minuto "+i+" Gol del "+partido.getEquipoVisitante().getNombre()+", gol de "+ jugadorClaveVisitante.getNombre()+ " "+  jugadorClaveVisitante.getApellido() + RESET);
 
                 } else if (oportunidades.nextInt(701)>=16 && oportunidades.nextInt(701)<20) {
@@ -227,14 +238,24 @@ public class Partido {
 
             }
 
-            System.out.println(equipoSeleccionado.getNombre().toUpperCase() + " " + equipoSeleccionado.getGolesFavor() + " - " + partido.getEquipoVisitante().getNombre().toUpperCase() + " " + equipoSeleccionado.getGolesContra());
+            System.out.println(equipoSeleccionado.getNombre() + " " + partido.getGolesLocal() + " - " + partido.getEquipoVisitante().getNombre() + " " + partido.getGolesVisitante());
+            puntos = 0;
+            puntos += partido.puntosSeleccionado(partido,equipoSeleccionado,puntos);
+            System.out.println("Llevas "+ puntos + " puntos");
 
         }else if (partido.getEquipoVisitante().equals(equipoSeleccionado)){
 
             int golesFavor = 0;
             int golesContra = 0;
+            partido.setGolesLocal(0);
+            partido.setGolesVisitante(0);
 
             for (int i= 1; i <=90 ; i++){
+
+                if (jugadoresLocal.isEmpty() || jugadoresVisitante.isEmpty()) {
+                    throw new IllegalStateException("Lista jugadores vacía: local=" + jugadoresLocal.size()
+                            + " visitante=" + jugadoresVisitante.size());
+                }
 
                 jugadoresLocal = partido.getEquipoVisitante().getPlantilla();
                 jugadoresVisitante = partido.getEquipoLocal().getPlantilla();
@@ -245,13 +266,17 @@ public class Partido {
                 if (oportunidades.nextInt(701)<=7){
 
                     golesFavor++;
-                    equipoSeleccionado.setGolesFavor(golesFavor);
+                    partido.setGolesVisitante(golesFavor);
+                    partido.getEquipoVisitante().setGolesFavor(golesFavor);
+                    partido.getEquipoLocal().setGolesContra(golesFavor);
                     System.out.println(AZUL + "Minuto "+i+" Gol del "+equipoSeleccionado.getNombre()+", gol de "+ jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
 
                 } else if (oportunidades.nextInt(701)>7 && oportunidades.nextInt(701)<12) {
 
                     golesContra++;
-                    equipoSeleccionado.setGolesContra(golesContra);
+                    partido.setGolesLocal(golesContra);
+                    partido.getEquipoLocal().setGolesFavor(golesContra);
+                    partido.getEquipoVisitante().setGolesContra(golesContra);
                     System.out.println(ROJO + "Minuto "+i+" Gol del "+partido.getEquipoLocal().getNombre()+", gol de "+ jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
 
                 } else if (oportunidades.nextInt(701)>=14 && oportunidades.nextInt(701)<17) {
@@ -340,7 +365,10 @@ public class Partido {
 
                 }
 
-                System.out.println (partido.getEquipoLocal().getNombre().toUpperCase() + " " + golesContra+ " - " + equipoSeleccionado.getNombre().toUpperCase() + " " + equipoSeleccionado.getGolesFavor() );
+                System.out.println (partido.getEquipoLocal().getNombre() + " " + partido.getGolesLocal()+ " - " + equipoSeleccionado.getNombre() + " " + partido.getGolesVisitante());
+                puntos = 0;
+                puntos += partido.puntosSeleccionado(partido,equipoSeleccionado,puntos);
+                System.out.println("Llevas "+ puntos + " puntos");
 
             }
 
@@ -353,22 +381,68 @@ public class Partido {
 
     public int puntosSeleccionado(Partido partido,Equipo equipoSeleccionado , int puntosSeleccionado){
 
-        if (equipoSeleccionado.getGolesFavor()>equipoSeleccionado.getGolesContra()){
+        if (equipoSeleccionado.equals(partido.getEquipoLocal())) {
 
-            puntosSeleccionado += 3;
+            if (partido.getGolesLocal() > partido.getGolesVisitante()) {
 
-            return puntosSeleccionado;}else if (equipoSeleccionado.getGolesFavor()==equipoSeleccionado.getGolesContra()){
+                puntosSeleccionado += 3;
 
-            puntosSeleccionado += 1;
+                return puntosSeleccionado;
+            } else if (partido.getGolesLocal() == partido.getGolesVisitante()) {
 
-        return puntosSeleccionado;}else {
+                puntosSeleccionado += 1;
 
-            return puntosSeleccionado;
+                return puntosSeleccionado;
+            } else {
+
+                return puntosSeleccionado;
+
+            }
+        }else{
+
+            if (partido.getGolesLocal() < partido.getGolesVisitante()) {
+
+                puntosSeleccionado += 3;
+
+                return puntosSeleccionado;
+            } else if (partido.getGolesLocal() == partido.getGolesVisitante()) {
+
+                puntosSeleccionado += 1;
+
+                return puntosSeleccionado;
+            } else {
+
+                return puntosSeleccionado;
+
+            }
 
         }
 
+
         }
 
+        public void partidoRapido(Partido partido, Equipo equipoSeleccionado){
+
+            Random golesFavor = new Random();
+            Random golesContra = new Random();
+
+            if (equipoSeleccionado.equals(partido.getEquipoLocal())){
+
+                int golesAFavor = golesFavor.nextInt(5);
+                int golesEnContra = golesContra.nextInt(4);
+
+                System.out.println("\n\n" + equipoSeleccionado.getNombre() + " " + golesAFavor + " - " + golesEnContra + " " + partido.getEquipoVisitante().getNombre());
+
+            }else{
+
+                int golesAFavor = golesFavor.nextInt(4);
+                int golesEnContra = golesContra.nextInt(4);
+
+                System.out.println("\n\n" + partido.getEquipoLocal().getNombre() + " " + golesEnContra + " - " + golesAFavor + " " + equipoSeleccionado.getNombre());
+
+            }
+
+        }
 
 
     @Override

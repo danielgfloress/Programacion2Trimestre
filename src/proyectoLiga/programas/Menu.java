@@ -21,13 +21,17 @@ public class Menu {
     Partido partido =  new Partido();
     Scanner sc = new Scanner(System.in);
     int contadorJornadas = 0;
-    int puntosSeleccionado = 0;
+
 
     public void Liga(){
 
         int opciones;
         Equipo equipo = null;
         Equipo equipoSeleccionado = null;
+        if (jugadoresLiga == null || jugadoresLiga.isEmpty()) {
+            throw new IllegalStateException("ERROR: jugadoresLiga está vacía. Revisa CreacionObjetos.cargarJugadores()");
+        }
+
 
         do {
 
@@ -60,10 +64,14 @@ public class Menu {
                             System.out.println("Elige el número de un equipo válido");
                         }
 
+                        int puntosSeleccionado = 0;
+
+
                             for (int i = 0; i<38; i++){
 
-                                    Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposLiga, equipoSeleccionado,partidosLiga);
+                                Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposLiga, equipoSeleccionado,partidosLiga);
                                     partidosLiga.add(partidoJornada);
+                                puntosSeleccionado += partido.puntosSeleccionado(partidoJornada,equipoSeleccionado,puntosSeleccionado);
 
                                 do {
 
@@ -77,24 +85,29 @@ public class Menu {
 
                                         case 1:
 
-                                            System.out.println(partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre());
+                                            System.out.println("\n\n" + partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre());
 
 
                                             break;
 
                                         case 2:
 
-                                            Partido.simularPartido(partidoJornada,jugadoresLiga,equipoSeleccionado );
+                                            Partido.simularPartido(partidoJornada,jugadoresLiga,equipoSeleccionado, puntosSeleccionado);
+
 
                                             break;
 
                                         case 3:
 
+                                            partido.partidoRapido(partidoJornada, equipoSeleccionado);
+                                            puntosSeleccionado += partido.puntosSeleccionado(partidoJornada,equipoSeleccionado,puntosSeleccionado);
+                                            System.out.println("Llevas "+ puntosSeleccionado + " puntos");
+
                                             break;
 
                                         case 4:
 
-                                            partido.puntosSeleccionado(partidoJornada, equipoSeleccionado, puntosSeleccionado);
+
 
                                             break;
 
