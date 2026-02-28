@@ -34,10 +34,6 @@ public class Menu {
         int opciones;
         Equipo equipo = null;
         Equipo equipoSeleccionado = null;
-        if (jugadoresLiga == null || jugadoresLiga.isEmpty() || jugadoresPremier == null || jugadoresPremier.isEmpty()) {
-            throw new IllegalStateException("ERROR: jugadoresLiga está vacía. Revisa CreacionObjetos.cargarJugadores()");
-        }
-
 
         do {
 
@@ -51,6 +47,9 @@ public class Menu {
 
             switch (opciones) {
                 case 1:
+
+                    contadorJornadas = 0;
+
                     do {
 
                         System.out.println("Elige un equipo: ");
@@ -97,7 +96,7 @@ public class Menu {
 
                                         case 2:
 
-                                            Partido.simularPartido(partidoJornada,jugadoresLiga,equipoSeleccionado, puntosSeleccionado);
+                                            Partido.simularPartido(partidoJornada,jugadoresLiga,equipoSeleccionado);
                                             contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
                                             System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
@@ -131,10 +130,12 @@ public class Menu {
                             }
 
                             contadorJornadas++;
-                    }while(contadorJornadas != 37);
+                    }while(contadorJornadas != 38);
                     break;
 
                 case 2:
+
+                    contadorJornadas = 0;
 
                     do {
 
@@ -162,7 +163,6 @@ public class Menu {
 
                             Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposPremier, equipoSeleccionado,partidosPremier);
                             partidosPremier.add(partidoJornada);
-                            puntosSeleccionado += partido.puntosPartido(partidoJornada,equipoSeleccionado);
 
                             do {
 
@@ -176,14 +176,14 @@ public class Menu {
 
                                     case 1:
 
-                                        System.out.println("\n\n" + partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre());
+                                        System.out.println("\n\n" + partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\n\nEstadio " + partidoJornada.getEquipoLocal().getEstadio().getNombre());
 
 
                                         break;
 
                                     case 2:
 
-                                        Partido.simularPartido(partidoJornada,jugadoresPremier,equipoSeleccionado, puntosSeleccionado);
+                                        Partido.simularPartido(partidoJornada,jugadoresPremier,equipoSeleccionado);
                                         contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
                                         System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
@@ -222,9 +222,13 @@ public class Menu {
 
                 case 3:
 
+                    contadorJornadas = 0;
+
                     break;
 
                 case 4:
+
+                    contadorJornadas = 0;
 
                     break;
 
