@@ -29,6 +29,35 @@ public class Clasificacion {
         this.jornadaActual = jornadaActual;
     }
 
+    public static void mostrarClasificacionSoloPuntos(List<Equipo> equipos) {
+
+        for (int i = 0; i < equipos.size() - 1; i++) {
+            for (int j = 0; j < equipos.size() - 1 - i; j++) {
+
+                if (equipos.get(j).getPuntos() < equipos.get(j + 1).getPuntos()) {
+
+                    // Intercambiar posiciones
+                    Equipo temp = equipos.get(j);
+                    equipos.set(j, equipos.get(j + 1));
+                    equipos.set(j + 1, temp);
+                }
+            }
+        }
+
+        System.out.println("\n=== CLASIFICACIÓN ===");
+        System.out.printf("%-3s %-20s %-5s%n", "Pos", "Equipo", "Pts");
+
+        int pos = 1;
+
+        for (Equipo e : equipos) {
+            System.out.printf("%-3d %-20s %-5d%n",
+                    pos,
+                    e.getNombre(),
+                    e.getPuntos());
+            pos++;
+        }
+    }
+
     @Override
     public String toString() {
         return "equiposOrdenados=" + equiposOrdenados +

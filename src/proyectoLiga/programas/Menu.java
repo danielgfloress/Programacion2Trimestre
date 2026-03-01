@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static proyectoLiga.liga.Clasificacion.mostrarClasificacionSoloPuntos;
+
 public class Menu {
 
     List<Estadio> estadios = CreacionObjetos.cargarEstadiosEspanola();
@@ -102,22 +104,22 @@ public class Menu {
                                         case 2:
 
                                             Partido.simularPartido(partidoJornada,jugadoresLiga,equipoSeleccionado);
-                                            contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
-                                            System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
                                             break;
 
                                         case 3:
 
+                                            List<Partido> jornada = new ArrayList<>();
+                                            jornada.add(partidoJornada);
+                                            Partido.simularJornada(jornada, equipoSeleccionado);
+
                                             partido.partidoRapido(partidoJornada, equipoSeleccionado);
-                                            contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
-                                            System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
                                             break;
 
                                         case 4:
 
-
+                                            mostrarClasificacionSoloPuntos(equiposLiga);
 
                                             break;
 
@@ -189,8 +191,6 @@ public class Menu {
                                     case 2:
 
                                         Partido.simularPartido(partidoJornada,jugadoresPremier,equipoSeleccionado);
-                                        contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
-                                        System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
 
                                         break;
@@ -198,8 +198,6 @@ public class Menu {
                                     case 3:
 
                                         partido.partidoRapido(partidoJornada, equipoSeleccionado);
-                                        contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
-                                        System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
                                         break;
 
@@ -276,8 +274,6 @@ public class Menu {
                                     case 2:
 
                                         Partido.simularPartido(partidoJornada,jugadoresSerieA,equipoSeleccionado);
-                                        contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
-                                        System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
 
                                         break;
@@ -285,8 +281,6 @@ public class Menu {
                                     case 3:
 
                                         partido.partidoRapido(partidoJornada, equipoSeleccionado);
-                                        contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
-                                        System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
                                         break;
 
