@@ -30,6 +30,11 @@ public class Menu {
     List<Partido> partidosSerieA = new ArrayList<>();
     List<Jugador> jugadoresSerieA = CreacionObjetos.cargarJugadoresSerieA(equiposSerieA);
 
+    List<Estadio> estadiosBundesliga = CreacionObjetos.cargarEstadiosBundesliga();
+    List<Equipo> equiposBundesliga = CreacionObjetos.cargarEquiposBundesliga(estadiosBundesliga);
+    List<Partido> partidosBundesliga = new ArrayList<>();
+    List<Jugador> jugadoresBundesliga = CreacionObjetos.cargarJugadoresBundesliga(equiposBundesliga);
+
     Errores errores = new Errores();
     Jornada jornada = new Jornada();
     Partido partido =  new Partido();
@@ -50,8 +55,9 @@ public class Menu {
             System.out.println("1. Liga Española");
             System.out.println("2. Premier League");
             System.out.println("3. Serie A");
-            System.out.println("4. Mundial");
-            System.out.println("5. Salir");
+            System.out.println("4. Bundesliga");
+            System.out.println("5. Ligue 1");
+            System.out.println("6. Salir");
             opciones = errores.numeroEntero(sc);
 
             switch (opciones) {
@@ -301,11 +307,96 @@ public class Menu {
 
                 case 4:
 
-                    contadorJornadas = 0;
+                    System.out.println("Elige un equipo: ");
+                    for (int i = 0; i < equiposBundesliga.size(); i++) {
+
+
+                        System.out.println((i + 1) + ". " + equiposBundesliga.get(i).getNombre());
+
+                    }
+
+                    opciones = errores.numeroEntero(sc);
+
+                    if (opciones <21 && opciones > 0){
+                        equipoSeleccionado = elegirEquipo(opciones - 1, equiposBundesliga, equipo);
+                        System.out.println("\n\n\nHas elegido al " + equipoSeleccionado.getNombre() + " para ser su entrenador esta temporada, prepárate para darlo todo este año.\n\n");
+                    }else {
+                        System.out.println("Elige el número de un equipo válido");
+                    }
+
+                    for (int i = 0; i<38; i++){
+
+                        Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposBundesliga, equipoSeleccionado,partidosBundesliga, (i));
+                        if (partidoJornada == null) {
+
+                            i--;
+                            continue;
+
+                        }
+
+                        partidosBundesliga.add(partidoJornada);
+
+                        do {
+
+                            System.out.println("\n\n1. Ver Siguiente Partido");
+                            System.out.println("2. Simular Partido");
+                            System.out.println("3. Simular Partido Rápido");
+                            System.out.println("4. Ver Clasificación");
+                            opciones = errores.numeroEntero(sc);
+
+                            switch (opciones){
+
+                                case 1:
+
+                                    System.out.println("\n\nJORNADA " + (i+1));
+                                    System.out.println(partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\nEstadio: "+partidoJornada.getEquipoLocal().getEstadio().getNombre());
+
+                                    break;
+
+                                case 2:
+
+                                    Partido.simularPartido(partidoJornada,jugadoresBundesliga,equipoSeleccionado);
+                                    clasificacion.puntosResto(equiposBundesliga, partidoJornada);
+                                    Partido.puntosPartido(partidoJornada,partidoJornada.getEquipoLocal(),partidoJornada.getEquipoVisitante());
+                                    System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
+
+                                    break;
+
+                                case 3:
+
+                                    partido.partidoRapido(partidoJornada, equipoSeleccionado);
+                                    clasificacion.puntosResto(equiposBundesliga, partidoJornada);
+
+
+                                    break;
+
+                                case 4:
+
+                                    mostrarClasificacionSoloPuntos(equiposBundesliga);
+
+                                    break;
+
+                                default:
+                                    System.out.println("Juega un partido para pasar de Jornada");
+                                    break;
+
+
+
+                            }
+
+                        }while(opciones != 2 && opciones != 3);
+
+                    }
+
+                    mostrarClasificacionSoloPuntos(equiposBundesliga);
 
                     break;
 
                 case 5:
+
+                    break;
+
+                case 6:
                     System.out.println("¿PORQUÉ NO TE ATREVES A JUGAR NINGÚN MODO?");
                     break;
 

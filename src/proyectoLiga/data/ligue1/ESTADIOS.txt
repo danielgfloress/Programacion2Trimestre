@@ -1,0 +1,20 @@
+ESTADIO;Parc des Princes;París;47929;Paris Saint-Germain
+ESTADIO;Orange Vélodrome;Marsella;67394;Olympique de Marseille
+ESTADIO;Stade Louis II;Mónaco;18523;AS Monaco
+ESTADIO;Groupama Stadium;Lyon;59186;Olympique Lyonnais
+ESTADIO;Decathlon Arena Stade Pierre-Mauroy;Lille;50083;LOSC Lille
+ESTADIO;Roazhon Park;Rennes;29778;Stade Rennais
+ESTADIO;Allianz Riviera;Niza;35624;OGC Nice
+ESTADIO;Stade Bollaert-Delelis;Lens;38223;RC Lens
+ESTADIO;Stade Francis-Le Blé;Brest;15100;Stade Brestois 29
+ESTADIO;Stadium de Toulouse;Toulouse;33150;Toulouse FC
+ESTADIO;Stade de la Meinau;Estrasburgo;26109;RC Strasbourg
+ESTADIO;Stade de la Mosson;Montpellier;32939;Montpellier HSC
+ESTADIO;Stade de la Beaujoire;Nantes;35322;FC Nantes
+ESTADIO;Stade Océane;Le Havre;25178;Le Havre AC
+ESTADIO;Stade Auguste-Delaune;Reims;21684;Stade de Reims
+ESTADIO;Stade de l'Abbé-Deschamps;Auxerre;18136;AJ Auxerre
+ESTADIO;Stade du Moustoir;Lorient;18970;FC Lorient
+ESTADIO;Stade Gabriel-Montpied;Clermont-Ferrand;13576;Clermont Foot
+ESTADIO;Stade Geoffroy-Guichard;Saint-Étienne;41965;AS Saint-Étienne
+ESTADIO;Stade Raymond-Kopa;Angers;17235;Angers SCO

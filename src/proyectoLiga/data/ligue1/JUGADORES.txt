@@ -1,0 +1,239 @@
+JUGADOR;Gianluigi;Donnarumma;Paris Saint-Germain;Italia;1999-02-25;PORTERO;99;0;0;0;0
+JUGADOR;Achraf;Hakimi;Paris Saint-Germain;Marruecos;1998-11-04;DEFENSA;2;0;0;0;0
+JUGADOR;Marquinhos;Silva;Paris Saint-Germain;Brasil;1994-05-14;DEFENSA;5;0;0;0;0
+JUGADOR;Lucas;Hernández;Paris Saint-Germain;Francia;1996-02-14;DEFENSA;21;0;0;0;0
+JUGADOR;Nuno;Mendes;Paris Saint-Germain;Portugal;2002-06-19;DEFENSA;25;0;0;0;0
+JUGADOR;Vitinha;Ferreira;Paris Saint-Germain;Portugal;2000-02-13;CENTRO_CAMPISTA;17;0;0;0;0
+JUGADOR;Warren;Zaïre-Emery;Paris Saint-Germain;Francia;2006-03-08;CENTRO_CAMPISTA;33;0;0;0;0
+JUGADOR;Lee;Kang-in;Paris Saint-Germain;Corea del Sur;2001-02-19;CENTRO_CAMPISTA;19;0;0;0;0
+JUGADOR;Ousmane;Dembélé;Paris Saint-Germain;Francia;1997-05-15;DELANTERO;10;0;0;0;0
+JUGADOR;Randal;Kolo Muani;Paris Saint-Germain;Francia;1998-12-05;DELANTERO;23;0;0;0;0
+JUGADOR;Bradley;Barcola;Paris Saint-Germain;Francia;2002-09-02;DELANTERO;29;0;0;0;0
+
+JUGADOR;Pau;López;Olympique de Marseille;España;1994-12-13;PORTERO;16;0;0;0;0
+JUGADOR;Jonathan;Clauss;Olympique de Marseille;Francia;1992-09-25;DEFENSA;7;0;0;0;0
+JUGADOR;Chancel;Mbemba;Olympique de Marseille;R.D. Congo;1994-08-08;DEFENSA;99;0;0;0;0
+JUGADOR;Samuel;Gigot;Olympique de Marseille;Francia;1993-10-12;DEFENSA;4;0;0;0;0
+JUGADOR;Renan;Lodi;Olympique de Marseille;Brasil;1998-04-08;DEFENSA;12;0;0;0;0
+JUGADOR;Geoffrey;Kondogbia;Olympique de Marseille;Rep. Centroafricana;1993-02-15;CENTRO_CAMPISTA;19;0;0;0;0
+JUGADOR;Valentin;Rongier;Olympique de Marseille;Francia;1994-12-07;CENTRO_CAMPISTA;21;0;0;0;0
+JUGADOR;Amine;Harit;Olympique de Marseille;Marruecos;1997-06-18;CENTRO_CAMPISTA;11;0;0;0;0
+JUGADOR;Pierre-Emerick;Aubameyang;Olympique de Marseille;Gabón;1989-06-18;DELANTERO;10;0;0;0;0
+JUGADOR;Iliman;Ndiaye;Olympique de Marseille;Senegal;2000-03-06;DELANTERO;29;0;0;0;0
+JUGADOR;Ismaïla;Sarr;Olympique de Marseille;Senegal;1998-02-25;DELANTERO;23;0;0;0;0
+
+JUGADOR;Philipp;Köhn;AS Monaco;Suiza;1998-04-02;PORTERO;16;0;0;0;0
+JUGADOR;Vanderson;de Oliveira;AS Monaco;Brasil;2001-06-21;DEFENSA;2;0;0;0;0
+JUGADOR;Guillermo;Maripán;AS Monaco;Chile;1994-05-06;DEFENSA;3;0;0;0;0
+JUGADOR;Wilfried;Singo;AS Monaco;Costa de Marfil;2000-12-25;DEFENSA;99;0;0;0;0
+JUGADOR;Caio;Henrique;AS Monaco;Brasil;1997-07-31;DEFENSA;12;0;0;0;0
+JUGADOR;Youssouf;Fofana;AS Monaco;Francia;1999-01-10;CENTRO_CAMPISTA;19;0;0;0;0
+JUGADOR;Denis;Zakaria;AS Monaco;Suiza;1996-11-20;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Aleksandr;Golovin;AS Monaco;Rusia;1996-05-30;CENTRO_CAMPISTA;17;0;0;0;0
+JUGADOR;Takumi;Minamino;AS Monaco;Japón;1995-01-16;DELANTERO;18;0;0;0;0
+JUGADOR;Wissam;Ben Yedder;AS Monaco;Francia;1990-08-12;DELANTERO;10;0;0;0;0
+JUGADOR;Folarin;Balogun;AS Monaco;Estados Unidos;2001-07-03;DELANTERO;9;0;0;0;0
+
+JUGADOR;Anthony;Lopes;Olympique Lyonnais;Portugal;1990-10-01;PORTERO;1;0;0;0;0
+JUGADOR;Clinton;Mata;Olympique Lyonnais;Angola;1992-11-07;DEFENSA;22;0;0;0;0
+JUGADOR;Dejan;Lovren;Olympique Lyonnais;Croacia;1989-07-05;DEFENSA;5;0;0;0;0
+JUGADOR;Nicolás;Tagliafico;Olympique Lyonnais;Argentina;1992-08-31;DEFENSA;3;0;0;0;0
+JUGADOR;Maxence;Caqueret;Olympique Lyonnais;Francia;2000-02-15;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Corentin;Tolisso;Olympique Lyonnais;Francia;1994-08-03;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Rayan;Cherki;Olympique Lyonnais;Francia;2003-08-17;CENTRO_CAMPISTA;18;0;0;0;0
+JUGADOR;Ernest;Nuamah;Olympique Lyonnais;Ghana;2003-11-01;DELANTERO;37;0;0;0;0
+JUGADOR;Alexandre;Lacazette;Olympique Lyonnais;Francia;1991-05-28;DELANTERO;10;0;0;0;0
+JUGADOR;Mama;Baldé;Olympique Lyonnais;Guinea-Bisáu;1995-11-06;DELANTERO;7;0;0;0;0
+JUGADOR;Gift;Orban;Olympique Lyonnais;Nigeria;2002-07-17;DELANTERO;9;0;0;0;0
+
+JUGADOR;Lucas;Chevalier;LOSC Lille;Francia;2001-11-06;PORTERO;30;0;0;0;0
+JUGADOR;Tiago;Santos;LOSC Lille;Portugal;2002-07-15;DEFENSA;22;0;0;0;0
+JUGADOR;Alexsandro;Ribeiro;LOSC Lille;Brasil;1999-08-09;DEFENSA;4;0;0;0;0
+JUGADOR;Bafodé;Diakité;LOSC Lille;Francia;2001-01-06;DEFENSA;18;0;0;0;0
+JUGADOR;Gabriel;Gudmundsson;LOSC Lille;Suecia;1999-04-29;DEFENSA;5;0;0;0;0
+JUGADOR;Benjamin;André;LOSC Lille;Francia;1990-08-03;CENTRO_CAMPISTA;21;0;0;0;0
+JUGADOR;Angel;Gomes;LOSC Lille;Inglaterra;2000-08-31;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Rémy;Cabella;LOSC Lille;Francia;1990-03-08;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Jonathan;David;LOSC Lille;Canadá;2000-01-14;DELANTERO;9;0;0;0;0
+JUGADOR;Edon;Zhegrova;LOSC Lille;Kosovo;1999-03-31;DELANTERO;23;0;0;0;0
+JUGADOR;Ivan;Cavaleiro;LOSC Lille;Portugal;1993-10-18;DELANTERO;17;0;0;0;0
+
+JUGADOR;Steve;Mandanda;Stade Rennais;Francia;1985-03-28;PORTERO;30;0;0;0;0
+JUGADOR;Hamari;Traoré;Stade Rennais;Malí;1992-01-27;DEFENSA;27;0;0;0;0
+JUGADOR;Arthur;Theate;Stade Rennais;Bélgica;2000-05-25;DEFENSA;5;0;0;0;0
+JUGADOR;Adrien;Truffert;Stade Rennais;Francia;2001-11-20;DEFENSA;3;0;0;0;0
+JUGADOR;Benjamin;Bourigeaud;Stade Rennais;Francia;1994-01-14;CENTRO_CAMPISTA;14;0;0;0;0
+JUGADOR;Enzo;Le Fée;Stade Rennais;Francia;2000-02-03;CENTRO_CAMPISTA;28;0;0;0;0
+JUGADOR;Nemanja;Matić;Stade Rennais;Serbia;1988-08-01;CENTRO_CAMPISTA;21;0;0;0;0
+JUGADOR;Martin;Terrier;Stade Rennais;Francia;1997-03-04;DELANTERO;7;0;0;0;0
+JUGADOR;Arnaud;Kalimuendo;Stade Rennais;Francia;2002-01-20;DELANTERO;9;0;0;0;0
+JUGADOR;Amine;Gouiri;Stade Rennais;Argelia;2000-02-16;DELANTERO;19;0;0;0;0
+JUGADOR;Désiré;Doué;Stade Rennais;Francia;2005-06-03;DELANTERO;33;0;0;0;0
+
+JUGADOR;Marcin;Bulka;OGC Nice;Polonia;1999-10-04;PORTERO;1;0;0;0;0
+JUGADOR;Youcef;Atal;OGC Nice;Argelia;1996-05-17;DEFENSA;20;0;0;0;0
+JUGADOR;Jean-Clair;Todibo;OGC Nice;Francia;1999-12-30;DEFENSA;6;0;0;0;0
+JUGADOR;Dante;Bonfim;OGC Nice;Brasil;1983-10-18;DEFENSA;4;0;0;0;0
+JUGADOR;Melvin;Bard;OGC Nice;Francia;2000-11-06;DEFENSA;26;0;0;0;0
+JUGADOR;Khéphren;Thuram;OGC Nice;Francia;2001-03-26;CENTRO_CAMPISTA;19;0;0;0;0
+JUGADOR;Morgan;Sansón;OGC Nice;Francia;1994-08-18;CENTRO_CAMPISTA;11;0;0;0;0
+JUGADOR;Hicham;Boudaoui;OGC Nice;Argelia;1999-09-23;CENTRO_CAMPISTA;28;0;0;0;0
+JUGADOR;Gaëtan;Laborde;OGC Nice;Francia;1994-05-03;DELANTERO;24;0;0;0;0
+JUGADOR;Terem;Moffi;OGC Nice;Nigeria;1999-05-25;DELANTERO;9;0;0;0;0
+JUGADOR;Jérémie;Boga;OGC Nice;Costa de Marfil;1997-01-03;DELANTERO;7;0;0;0;0
+
+JUGADOR;Brice;Samba;RC Lens;Francia;1994-04-25;PORTERO;30;0;0;0;0
+JUGADOR;Jonathan;Gradit;RC Lens;Francia;1992-11-24;DEFENSA;24;0;0;0;0
+JUGADOR;Kevin;Danso;RC Lens;Austria;1998-09-19;DEFENSA;4;0;0;0;0
+JUGADOR;Facundo;Medina;RC Lens;Argentina;1999-05-28;DEFENSA;14;0;0;0;0
+JUGADOR;Przemyslaw;Frankowski;RC Lens;Polonia;1995-04-12;DEFENSA;29;0;0;0;0
+JUGADOR;Seko;Fofana;RC Lens;Costa de Marfil;1995-05-07;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Nampalys;Mendy;RC Lens;Senegal;1992-06-23;CENTRO_CAMPISTA;26;0;0;0;0
+JUGADOR;Adrien;Thomasson;RC Lens;Francia;1993-12-10;CENTRO_CAMPISTA;28;0;0;0;0
+JUGADOR;Florian;Sotoca;RC Lens;Francia;1990-10-25;DELANTERO;7;0;0;0;0
+JUGADOR;Elye;Wahi;RC Lens;Francia;2003-01-02;DELANTERO;9;0;0;0;0
+JUGADOR;Angelo;Fulgini;RC Lens;Francia;1996-08-20;DELANTERO;11;0;0;0;0
+
+JUGADOR;Marco;Bizot;Stade Brestois 29;Países Bajos;1991-03-10;PORTERO;40;0;0;0;0
+JUGADOR;Kenny;Lala;Stade Brestois 29;Francia;1991-10-03;DEFENSA;7;0;0;0;0
+JUGADOR;Brendan;Chardonnet;Stade Brestois 29;Francia;1994-12-22;DEFENSA;5;0;0;0;0
+JUGADOR;Lilian;Brassier;Stade Brestois 29;Francia;1999-11-02;DEFENSA;3;0;0;0;0
+JUGADOR;Bradley;Locko;Stade Brestois 29;Francia;2002-05-06;DEFENSA;2;0;0;0;0
+JUGADOR;Pierre;Lees-Melou;Stade Brestois 29;Francia;1993-05-25;CENTRO_CAMPISTA;20;0;0;0;0
+JUGADOR;Mahdi;Camara;Stade Brestois 29;Francia;1998-06-30;CENTRO_CAMPISTA;45;0;0;0;0
+JUGADOR;Romain;Del Castillo;Stade Brestois 29;Francia;1996-03-29;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Steve;Mounié;Stade Brestois 29;Benín;1994-09-29;DELANTERO;15;0;0;0;0
+JUGADOR;Jérémy;Le Douaron;Stade Brestois 29;Francia;1998-04-21;DELANTERO;9;0;0;0;0
+JUGADOR;Martin;Satriano;Stade Brestois 29;Uruguay;2001-02-11;DELANTERO;7;0;0;0;0
+
+JUGADOR;Guillaume;Restes;Toulouse FC;Francia;2005-03-11;PORTERO;50;0;0;0;0
+JUGADOR;Mikkel;Desler;Toulouse FC;Dinamarca;1995-02-19;DEFENSA;3;0;0;0;0
+JUGADOR;Rasmus;Nicolaisen;Toulouse FC;Dinamarca;1997-03-16;DEFENSA;2;0;0;0;0
+JUGADOR;Logan;Costa;Toulouse FC;Cabo Verde;2001-04-01;DEFENSA;4;0;0;0;0
+JUGADOR;Vincent;Sierro;Toulouse FC;Suiza;1995-10-08;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Cristian;Cásseres;Toulouse FC;Venezuela;2000-01-20;CENTRO_CAMPISTA;23;0;0;0;0
+JUGADOR;Stijn;Spierings;Toulouse FC;Países Bajos;1996-03-12;CENTRO_CAMPISTA;17;0;0;0;0
+JUGADOR;Zakaria;Aboukhlal;Toulouse FC;Marruecos;2000-02-18;DELANTERO;7;0;0;0;0
+JUGADOR;Thijs;Dallinga;Toulouse FC;Países Bajos;2000-08-03;DELANTERO;9;0;0;0;0
+JUGADOR;Aron;Dønnum;Toulouse FC;Noruega;1998-04-20;DELANTERO;15;0;0;0;0
+JUGADOR;Frank;Magri;Toulouse FC;Camerún;1999-09-04;DELANTERO;19;0;0;0;0
+
+JUGADOR;Matz;Sels;RC Strasbourg;Bélgica;1992-02-26;PORTERO;1;0;0;0;0
+JUGADOR;Frédéric;Guilbert;RC Strasbourg;Francia;1994-12-24;DEFENSA;2;0;0;0;0
+JUGADOR;Lucas;Perrin;RC Strasbourg;Francia;1998-11-19;DEFENSA;5;0;0;0;0
+JUGADOR;Gerzino;Nyamsi;RC Strasbourg;Francia;1997-01-22;DEFENSA;22;0;0;0;0
+JUGADOR;Ismaël;Doukouré;RC Strasbourg;Francia;2003-06-25;DEFENSA;29;0;0;0;0
+JUGADOR;Ibrahima;Sissoko;RC Strasbourg;Malí;1997-10-27;CENTRO_CAMPISTA;27;0;0;0;0
+JUGADOR;Dimitri;Liénard;RC Strasbourg;Francia;1988-02-13;CENTRO_CAMPISTA;11;0;0;0;0
+JUGADOR;Habib;Diallo;RC Strasbourg;Senegal;1995-06-15;DELANTERO;20;0;0;0;0
+JUGADOR;Kevin;Gameiro;RC Strasbourg;Francia;1987-05-09;DELANTERO;9;0;0;0;0
+JUGADOR;Dilane;Bakua;RC Strasbourg;Francia;2003-08-30;DELANTERO;18;0;0;0;0
+JUGADOR;Jean-Ricner;Bellegarde;RC Strasbourg;Francia;1998-06-27;CENTRO_CAMPISTA;17;0;0;0;0
+
+JUGADOR;Benjamin;Lecomte;Montpellier HSC;Francia;1991-04-26;PORTERO;40;0;0;0;0
+JUGADOR;Falaye;Sacko;Montpellier HSC;Malí;1995-05-01;DEFENSA;77;0;0;0;0
+JUGADOR;Christopher;Jullien;Montpellier HSC;Francia;1993-03-22;DEFENSA;6;0;0;0;0
+JUGADOR;Maxime;Estève;Montpellier HSC;Francia;2002-05-26;DEFENSA;14;0;0;0;0
+JUGADOR;Jordan;Ferri;Montpellier HSC;Francia;1992-03-12;CENTRO_CAMPISTA;12;0;0;0;0
+JUGADOR;Teji;Savanier;Montpellier HSC;Francia;1991-12-22;CENTRO_CAMPISTA;11;0;0;0;0
+JUGADOR;Joris;Chotard;Montpellier HSC;Francia;2001-09-24;CENTRO_CAMPISTA;13;0;0;0;0
+JUGADOR;Akor;Adams;Montpellier HSC;Nigeria;2000-01-29;DELANTERO;9;0;0;0;0
+JUGADOR;Mousa;Al-Tamari;Montpellier HSC;Jordania;1997-06-10;DELANTERO;22;0;0;0;0
+JUGADOR;Arnaud;Nordin;Montpellier HSC;Francia;1998-06-17;DELANTERO;7;0;0;0;0
+JUGADOR;Wahbi;Khazri;Montpellier HSC;Túnez;1991-02-08;DELANTERO;10;0;0;0;0
+
+JUGADOR;Alban;Lafont;FC Nantes;Francia;1999-01-23;PORTERO;1;0;0;0;0
+JUGADOR;Sébastien;Corchia;FC Nantes;Francia;1990-11-01;DEFENSA;24;0;0;0;0
+JUGADOR;Jean-Charles;Castelletto;FC Nantes;Camerún;1995-01-26;DEFENSA;21;0;0;0;0
+JUGADOR;Nicolas;Pallois;FC Nantes;Francia;1987-09-19;DEFENSA;4;0;0;0;0
+JUGADOR;Pedro;Chirivella;FC Nantes;España;1997-05-23;CENTRO_CAMPISTA;5;0;0;0;0
+JUGADOR;Samuel;Moutoussamy;FC Nantes;R.D. Congo;1996-08-12;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Moses;Simon;FC Nantes;Nigeria;1995-07-12;DELANTERO;27;0;0;0;0
+JUGADOR;Mostafa;Mohamed;FC Nantes;Egipto;1997-11-28;DELANTERO;31;0;0;0;0
+JUGADOR;Matthis;Abline;FC Nantes;Francia;2003-03-28;DELANTERO;39;0;0;0;0
+JUGADOR;Florent;Mollet;FC Nantes;Francia;1991-11-19;CENTRO_CAMPISTA;25;0;0;0;0
+JUGADOR;Douglas;Augusto;FC Nantes;Brasil;1997-01-13;CENTRO_CAMPISTA;6;0;0;0;0
+
+JUGADOR;Arthur;Desmas;Le Havre AC;Francia;1994-04-07;PORTERO;30;0;0;0;0
+JUGADOR;Loïc;Nego;Le Havre AC;Hungría;1991-01-15;DEFENSA;7;0;0;0;0
+JUGADOR;Arouna;Sangante;Le Havre AC;Francia;2002-04-12;DEFENSA;93;0;0;0;0
+JUGADOR;Gautier;Lloris;Le Havre AC;Francia;1995-07-18;DEFENSA;4;0;0;0;0
+JUGADOR;Oualid;El Hajjam;Le Havre AC;Marruecos;1991-02-19;DEFENSA;17;0;0;0;0
+JUGADOR;Abdoulaye;Touré;Le Havre AC;Guinea;1994-03-03;CENTRO_CAMPISTA;94;0;0;0;0
+JUGADOR;Daler;Kuzyaev;Le Havre AC;Rusia;1993-01-15;CENTRO_CAMPISTA;14;0;0;0;0
+JUGADOR;Yassine;Kecht;Le Havre AC;Francia;2002-10-15;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Josué;Casimir;Le Havre AC;Francia;2001-09-24;DELANTERO;10;0;0;0;0
+JUGADOR;Nabil;Alioui;Le Havre AC;Francia;1999-07-18;DELANTERO;21;0;0;0;0
+JUGADOR;Emmanuel;Sabbi;Le Havre AC;Estados Unidos;1997-12-24;DELANTERO;11;0;0;0;0
+
+JUGADOR;Yehvann;Diouf;Stade de Reims;Senegal;1999-11-16;PORTERO;94;0;0;0;0
+JUGADOR;Thomas;Foket;Stade de Reims;Bélgica;1994-09-25;DEFENSA;32;0;0;0;0
+JUGADOR;Yunis;Abdelhamid;Stade de Reims;Marruecos;1987-09-28;DEFENSA;5;0;0;0;0
+JUGADOR;Emmanuel;Agbadou;Stade de Reims;Costa de Marfil;1997-06-17;DEFENSA;24;0;0;0;0
+JUGADOR;Thibault;De Smet;Stade de Reims;Bélgica;1998-06-05;DEFENSA;25;0;0;0;0
+JUGADOR;Azor;Matusiwa;Stade de Reims;Países Bajos;1998-04-28;CENTRO_CAMPISTA;15;0;0;0;0
+JUGADOR;Marshall;Munetsi;Stade de Reims;Zimbabue;1996-06-22;CENTRO_CAMPISTA;7;0;0;0;0
+JUGADOR;Teddy;Teuma;Stade de Reims;Malta;1993-09-30;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Junya;Ito;Stade de Reims;Japón;1993-03-09;DELANTERO;39;0;0;0;0
+JUGADOR;Oumar;Diakité;Stade de Reims;Costa de Marfil;2003-12-20;DELANTERO;22;0;0;0;0
+JUGADOR;Amir;Richardson;Stade de Reims;Francia;2002-01-24;CENTRO_CAMPISTA;8;0;0;0;0
+
+JUGADOR;Donovan;Léon;AJ Auxerre;Francia;1992-11-03;PORTERO;16;0;0;0;0
+JUGADOR;Gideon;Mensah;AJ Auxerre;Ghana;1998-07-18;DEFENSA;14;0;0;0;0
+JUGADOR;Julian;Jeanvier;AJ Auxerre;Guinea;1992-03-31;DEFENSA;27;0;0;0;0
+JUGADOR;Rayan;Raveloson;AJ Auxerre;Madagascar;1997-01-16;CENTRO_CAMPISTA;97;0;0;0;0
+JUGADOR;Hamza;Sakhi;AJ Auxerre;Marruecos;1996-06-07;CENTRO_CAMPISTA;22;0;0;0;0
+JUGADOR;Birama;Touré;AJ Auxerre;Malí;1992-03-10;CENTRO_CAMPISTA;12;0;0;0;0
+JUGADOR;Gauthier;Hein;AJ Auxerre;Francia;1996-08-07;DELANTERO;7;0;0;0;0
+JUGADOR;Gaëtan;Perrin;AJ Auxerre;Francia;1996-06-07;DELANTERO;10;0;0;0;0
+JUGADOR;Ado;Onaiwu;AJ Auxerre;Japón;1995-11-08;DELANTERO;9;0;0;0;0
+JUGADOR;Lassine;Sinayoko;AJ Auxerre;Malí;1999-12-08;DELANTERO;17;0;0;0;0
+JUGADOR;Isaak;Touré;AJ Auxerre;Francia;2003-03-28;DEFENSA;95;0;0;0;0
+
+JUGADOR;Yvon;Mvogo;FC Lorient;Suiza;1994-06-06;PORTERO;38;0;0;0;0
+JUGADOR;Gedeon;Kalulu;FC Lorient;Francia;1997-08-29;DEFENSA;24;0;0;0;0
+JUGADOR;Montassar;Talbi;FC Lorient;Túnez;1998-05-26;DEFENSA;3;0;0;0;0
+JUGADOR;Julien;Laporte;FC Lorient;Francia;1993-11-04;DEFENSA;15;0;0;0;0
+JUGADOR;Darlin;Yongwa;FC Lorient;Camerún;2000-09-22;DEFENSA;12;0;0;0;0
+JUGADOR;Laurent;Abergel;FC Lorient;Francia;1993-02-01;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Romain;Faivre;FC Lorient;Francia;1998-07-14;CENTRO_CAMPISTA;14;0;0;0;0
+JUGADOR;Julien;Ponceau;FC Lorient;Francia;2000-11-28;CENTRO_CAMPISTA;21;0;0;0;0
+JUGADOR;Bamba;Dieng;FC Lorient;Senegal;2000-03-23;DELANTERO;11;0;0;0;0
+JUGADOR;Mohamed;Bamba;FC Lorient;Costa de Marfil;2001-02-10;DELANTERO;9;0;0;0;0
+JUGADOR;Isaak;Touré;FC Lorient;Francia;2003-03-28;DEFENSA;95;0;0;0;0
+
+JUGADOR;Mory;Diaw;Clermont Foot;Senegal;1993-06-22;PORTERO;99;0;0;0;0
+JUGADOR;Alidu;Seidu;Clermont Foot;Ghana;2000-06-03;DEFENSA;36;0;0;0;0
+JUGADOR;Maximiliano;Caufriez;Clermont Foot;Bélgica;1997-02-16;DEFENSA;5;0;0;0;0
+JUGADOR;Florent;Ogier;Clermont Foot;Francia;1989-05-11;DEFENSA;21;0;0;0;0
+JUGADOR;Neto;Borges;Clermont Foot;Brasil;1996-08-03;DEFENSA;3;0;0;0;0
+JUGADOR;Johan;Gastien;Clermont Foot;Francia;1988-10-25;CENTRO_CAMPISTA;25;0;0;0;0
+JUGADOR;Muhammed;Cham;Clermont Foot;Austria;2000-09-26;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Habib;Keïta;Clermont Foot;Malí;2002-03-17;CENTRO_CAMPISTA;18;0;0;0;0
+JUGADOR;Grejohn;Kyei;Clermont Foot;Francia;1995-08-12;DELANTERO;95;0;0;0;0
+JUGADOR;Shamar;Nicholson;Clermont Foot;Jamaica;1997-03-16;DELANTERO;9;0;0;0;0
+JUGADOR;Jim;Allevinah;Clermont Foot;Gabón;1995-02-27;DELANTERO;11;0;0;0;0
+
+JUGADOR;Gautier;Larsonneur;AS Saint-Étienne;Francia;1997-02-23;PORTERO;30;0;0;0;0
+JUGADOR;Dennis;Appiah;AS Saint-Étienne;Francia;1992-06-09;DEFENSA;8;0;0;0;0
+JUGADOR;Anthony;Briançon;AS Saint-Étienne;Francia;1994-11-29;DEFENSA;23;0;0;0;0
+JUGADOR;Mickaël;Nadé;AS Saint-Étienne;Francia;1999-03-04;DEFENSA;5;0;0;0;0
+JUGADOR;Yvann;Maçon;AS Saint-Étienne;Francia;1998-10-01;DEFENSA;27;0;0;0;0
+JUGADOR;Thomas;Monconduit;AS Saint-Étienne;Francia;1991-02-10;CENTRO_CAMPISTA;7;0;0;0;0
+JUGADOR;Benjamin;Bouchouari;AS Saint-Étienne;Marruecos;2001-10-13;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Aimen;Moueffek;AS Saint-Étienne;Francia;2001-04-09;CENTRO_CAMPISTA;29;0;0;0;0
+JUGADOR;Ibrahima;Wadji;AS Saint-Étienne;Senegal;1995-05-05;DELANTERO;25;0;0;0;0
+JUGADOR;Irvin;Cardona;AS Saint-Étienne;Francia;1997-08-08;DELANTERO;11;0;0;0;0
+JUGADOR;Jean-Philippe;Krasso;AS Saint-Étienne;Costa de Marfil;1997-07-17;DELANTERO;17;0;0;0;0
+
+JUGADOR;Yahia;Fofana;Angers SCO;Costa de Marfil;2000-08-21;PORTERO;30;0;0;0;0
+JUGADOR;Abdoulaye;Bamba;Angers SCO;Costa de Marfil;1990-04-25;DEFENSA;25;0;0;0;0
+JUGADOR;Cédric;Hountondji;Angers SCO;Benín;1994-01-19;DEFENSA;22;0;0;0;0
+JUGADOR;Ousmane;Camara;Angers SCO;Francia;2003-09-12;DEFENSA;2;0;0;0;0
+JUGADOR;Pierrick;Capelle;Angers SCO;Francia;1987-04-15;CENTRO_CAMPISTA;15;0;0;0;0
+JUGADOR;Himad;Abdelli;Angers SCO;Argelia;1999-11-17;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Nabil;Bentaleb;Angers SCO;Argelia;1994-11-24;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Loïs;Diony;Angers SCO;Francia;1992-12-20;DELANTERO;9;0;0;0;0
+JUGADOR;Abdallah;Sima;Angers SCO;Senegal;2001-06-17;DELANTERO;19;0;0;0;0
+JUGADOR;Adrien;Hunou;Angers SCO;Francia;1994-01-19;DELANTERO;7;0;0;0;0
+JUGADOR;Farid;El Melali;Angers SCO;Argelia;1997-05-13;DELANTERO;28;0;0;0;0
