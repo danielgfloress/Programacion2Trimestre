@@ -1,0 +1,20 @@
+EQUIPO;Paris Saint-Germain;Parc des Princes;88
+EQUIPO;Olympique de Marseille;Orange Vélodrome;84
+EQUIPO;AS Monaco;Stade Louis II;83
+EQUIPO;Olympique Lyonnais;Groupama Stadium;82
+EQUIPO;LOSC Lille;Decathlon Arena Stade Pierre-Mauroy;81
+EQUIPO;Stade Rennais;Roazhon Park;80
+EQUIPO;OGC Nice;Allianz Riviera;80
+EQUIPO;RC Lens;Stade Bollaert-Delelis;82
+EQUIPO;Stade Brestois 29;Stade Francis-Le Blé;77
+EQUIPO;Toulouse FC;Stadium de Toulouse;76
+EQUIPO;RC Strasbourg;Stade de la Meinau;75
+EQUIPO;Montpellier HSC;Stade de la Mosson;74
+EQUIPO;FC Nantes;Stade de la Beaujoire;75
+EQUIPO;Le Havre AC;Stade Océane;73
+EQUIPO;Stade de Reims;Stade Auguste-Delaune;76
+EQUIPO;AJ Auxerre;Stade de l'Abbé-Deschamps;72
+EQUIPO;FC Lorient;Stade du Moustoir;73
+EQUIPO;Clermont Foot;Stade Gabriel-Montpied;71
+EQUIPO;AS Saint-Étienne;Stade Geoffroy-Guichard;78
+EQUIPO;Angers SCO;Stade Raymond-Kopa;72

@@ -1,0 +1,20 @@
+EQUIPO;Bayern München;Allianz Arena;89
+EQUIPO;Borussia Dortmund;Signal Iduna Park;86
+EQUIPO;Bayer Leverkusen;BayArena;88
+EQUIPO;RB Leipzig;Red Bull Arena;84
+EQUIPO;VfB Stuttgart;MHPArena;83
+EQUIPO;Eintracht Frankfurt;Deutsche Bank Park;82
+EQUIPO;Borussia Mönchengladbach;Borussia-Park;80
+EQUIPO;SC Freiburg;Europa-Park Stadion;81
+EQUIPO;VfL Wolfsburg;Volkswagen Arena;79
+EQUIPO;TSG Hoffenheim;PreZero Arena;78
+EQUIPO;Werder Bremen;Weserstadion;77
+EQUIPO;FC Augsburg;WWK Arena;75
+EQUIPO;1. FC Köln;RheinEnergieStadion;78
+EQUIPO;1. FC Heidenheim;Voith-Arena;74
+EQUIPO;FSV Mainz 05;MEWA Arena;76
+EQUIPO;SV Darmstadt 98;Merck-Stadion am Böllenfalltor;73
+EQUIPO;FC St. Pauli;Millerntor-Stadion;75
+EQUIPO;Holstein Kiel;Holstein-Stadion;72
+EQUIPO;VfL Bochum;Vonovia Ruhrstadion;74
+EQUIPO;Hannover 96;Heinz von Heiden Arena;73

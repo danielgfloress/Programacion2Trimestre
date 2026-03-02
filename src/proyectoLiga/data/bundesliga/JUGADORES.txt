@@ -1,0 +1,239 @@
+JUGADOR;Manuel;Neuer;Bayern München;Alemania;1986-03-27;PORTERO;1;0;0;0;0
+JUGADOR;Dayot;Upamecano;Bayern München;Francia;1998-10-27;DEFENSA;2;0;0;0;0
+JUGADOR;Min-jae;Kim;Bayern München;Corea del Sur;1996-11-15;DEFENSA;3;0;0;0;0
+JUGADOR;Alphonso;Davies;Bayern München;Canadá;2000-11-02;DEFENSA;19;0;0;0;0
+JUGADOR;Joshua;Kimmich;Bayern München;Alemania;1995-02-08;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Leon;Goretzka;Bayern München;Alemania;1995-02-06;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Jamal;Musiala;Bayern München;Alemania;2003-02-26;CENTRO_CAMPISTA;42;0;0;0;0
+JUGADOR;Thomas;Müller;Bayern München;Alemania;1989-09-13;DELANTERO;25;0;0;0;0
+JUGADOR;Leroy;Sané;Bayern München;Alemania;1996-01-11;DELANTERO;10;0;0;0;0
+JUGADOR;Kingsley;Coman;Bayern München;Francia;1996-06-13;DELANTERO;11;0;0;0;0
+JUGADOR;Harry;Kane;Bayern München;Inglaterra;1993-07-28;DELANTERO;9;0;0;0;0
+
+JUGADOR;Gregor;Kobel;Borussia Dortmund;Suiza;1997-12-06;PORTERO;1;0;0;0;0
+JUGADOR;Julian;Ryerson;Borussia Dortmund;Noruega;1997-11-17;DEFENSA;26;0;0;0;0
+JUGADOR;Mats;Hummels;Borussia Dortmund;Alemania;1988-12-16;DEFENSA;15;0;0;0;0
+JUGADOR;Nico;Schlotterbeck;Borussia Dortmund;Alemania;1999-12-01;DEFENSA;4;0;0;0;0
+JUGADOR;Emre;Can;Borussia Dortmund;Alemania;1994-01-12;CENTRO_CAMPISTA;23;0;0;0;0
+JUGADOR;Marcel;Sabitzer;Borussia Dortmund;Austria;1994-03-17;CENTRO_CAMPISTA;20;0;0;0;0
+JUGADOR;Julian;Brandt;Borussia Dortmund;Alemania;1996-05-02;CENTRO_CAMPISTA;19;0;0;0;0
+JUGADOR;Karim;Adeyemi;Borussia Dortmund;Alemania;2002-01-18;DELANTERO;27;0;0;0;0
+JUGADOR;Donyell;Malen;Borussia Dortmund;Países Bajos;1999-01-19;DELANTERO;21;0;0;0;0
+JUGADOR;Niclas;Füllkrug;Borussia Dortmund;Alemania;1993-02-09;DELANTERO;14;0;0;0;0
+JUGADOR;Jamie;Bynoe-Gittens;Borussia Dortmund;Inglaterra;2004-08-08;DELANTERO;43;0;0;0;0
+
+JUGADOR;Lukáš;Hrádecký;Bayer Leverkusen;Finlandia;1989-11-24;PORTERO;1;0;0;0;0
+JUGADOR;Jeremie;Frimpong;Bayer Leverkusen;Países Bajos;2000-12-10;DEFENSA;30;0;0;0;0
+JUGADOR;Jonathan;Tah;Bayer Leverkusen;Alemania;1996-02-11;DEFENSA;4;0;0;0;0
+JUGADOR;Edmond;Tapsoba;Bayer Leverkusen;Burkina Faso;1999-02-02;DEFENSA;12;0;0;0;0
+JUGADOR;Álex;Grimaldo;Bayer Leverkusen;España;1995-09-20;DEFENSA;20;0;0;0;0
+JUGADOR;Granit;Xhaka;Bayer Leverkusen;Suiza;1992-09-27;CENTRO_CAMPISTA;34;0;0;0;0
+JUGADOR;Exequiel;Palacios;Bayer Leverkusen;Argentina;1998-10-05;CENTRO_CAMPISTA;25;0;0;0;0
+JUGADOR;Florian;Wirtz;Bayer Leverkusen;Alemania;2003-05-03;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Jonas;Hofmann;Bayer Leverkusen;Alemania;1992-07-14;DELANTERO;7;0;0;0;0
+JUGADOR;Victor;Boniface;Bayer Leverkusen;Nigeria;2000-12-23;DELANTERO;22;0;0;0;0
+JUGADOR;Patrik;Schick;Bayer Leverkusen;República Checa;1996-01-24;DELANTERO;14;0;0;0;0
+
+JUGADOR;Péter;Gulácsi;RB Leipzig;Hungría;1990-05-06;PORTERO;1;0;0;0;0
+JUGADOR;Benjamin;Henrichs;RB Leipzig;Alemania;1997-02-23;DEFENSA;39;0;0;0;0
+JUGADOR;Willi;Orbán;RB Leipzig;Hungría;1992-11-03;DEFENSA;4;0;0;0;0
+JUGADOR;David;Raum;RB Leipzig;Alemania;1998-04-22;DEFENSA;22;0;0;0;0
+JUGADOR;Xaver;Schlager;RB Leipzig;Austria;1997-09-28;CENTRO_CAMPISTA;24;0;0;0;0
+JUGADOR;Kevin;Kampl;RB Leipzig;Eslovenia;1990-10-09;CENTRO_CAMPISTA;44;0;0;0;0
+JUGADOR;Dani;Olmo;RB Leipzig;España;1998-05-07;CENTRO_CAMPISTA;7;0;0;0;0
+JUGADOR;Loïs;Openda;RB Leipzig;Bélgica;2000-02-16;DELANTERO;17;0;0;0;0
+JUGADOR;Benjamin;Šeško;RB Leipzig;Eslovenia;2003-05-31;DELANTERO;30;0;0;0;0
+JUGADOR;Yussuf;Poulsen;RB Leipzig;Dinamarca;1994-06-15;DELANTERO;9;0;0;0;0
+JUGADOR;Christoph;Baumgartner;RB Leipzig;Austria;1999-08-01;DELANTERO;14;0;0;0;0
+
+JUGADOR;Alexander;Nübel;VfB Stuttgart;Alemania;1996-09-30;PORTERO;33;0;0;0;0
+JUGADOR;Waldemar;Anton;VfB Stuttgart;Alemania;1996-07-20;DEFENSA;2;0;0;0;0
+JUGADOR;Hiroki;Ito;VfB Stuttgart;Japón;1999-05-12;DEFENSA;21;0;0;0;0
+JUGADOR;Maximilian;Mittelstädt;VfB Stuttgart;Alemania;1997-03-18;DEFENSA;7;0;0;0;0
+JUGADOR;Atakan;Karazor;VfB Stuttgart;Alemania;1996-10-13;CENTRO_CAMPISTA;16;0;0;0;0
+JUGADOR;Angelo;Stiller;VfB Stuttgart;Alemania;2001-04-04;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Chris;Führich;VfB Stuttgart;Alemania;1998-01-09;CENTRO_CAMPISTA;27;0;0;0;0
+JUGADOR;Deniz;Undav;VfB Stuttgart;Alemania;1996-07-19;DELANTERO;26;0;0;0;0
+JUGADOR;Serhou;Guirassy;VfB Stuttgart;Guinea;1996-03-12;DELANTERO;9;0;0;0;0
+JUGADOR;Jamie;Leweling;VfB Stuttgart;Alemania;2001-02-26;DELANTERO;18;0;0;0;0
+JUGADOR;Silas;Katombé;VfB Stuttgart;R.D. Congo;1998-10-06;DELANTERO;14;0;0;0;0
+
+JUGADOR;Kevin;Trapp;Eintracht Frankfurt;Alemania;1990-07-08;PORTERO;1;0;0;0;0
+JUGADOR;Robin;Koch;Eintracht Frankfurt;Alemania;1996-07-17;DEFENSA;4;0;0;0;0
+JUGADOR;Tuta;Ferreira;Eintracht Frankfurt;Brasil;1999-07-04;DEFENSA;35;0;0;0;0
+JUGADOR;Philipp;Max;Eintracht Frankfurt;Alemania;1993-09-30;DEFENSA;3;0;0;0;0
+JUGADOR;Ellyes;Skhiri;Eintracht Frankfurt;Túnez;1995-05-10;CENTRO_CAMPISTA;15;0;0;0;0
+JUGADOR;Hugo;Larsson;Eintracht Frankfurt;Suecia;2004-06-27;CENTRO_CAMPISTA;16;0;0;0;0
+JUGADOR;Mario;Götze;Eintracht Frankfurt;Alemania;1992-06-03;CENTRO_CAMPISTA;27;0;0;0;0
+JUGADOR;Ansgar;Knauff;Eintracht Frankfurt;Alemania;2002-01-10;DELANTERO;36;0;0;0;0
+JUGADOR;Omar;Marmoush;Eintracht Frankfurt;Egipto;1999-02-07;DELANTERO;7;0;0;0;0
+JUGADOR;Farès;Chaïbi;Eintracht Frankfurt;Argelia;2002-11-28;DELANTERO;8;0;0;0;0
+JUGADOR;Igor;Matanović;Eintracht Frankfurt;Croacia;2003-03-31;DELANTERO;9;0;0;0;0
+
+JUGADOR;Moritz;Nicolas;Borussia Mönchengladbach;Alemania;1997-10-21;PORTERO;33;0;0;0;0
+JUGADOR;Stefan;Lainer;Borussia Mönchengladbach;Austria;1992-08-27;DEFENSA;22;0;0;0;0
+JUGADOR;Ko;Itakura;Borussia Mönchengladbach;Japón;1997-01-27;DEFENSA;3;0;0;0;0
+JUGADOR;Nico;Elvedi;Borussia Mönchengladbach;Suiza;1996-09-30;DEFENSA;30;0;0;0;0
+JUGADOR;Julian;Weigl;Borussia Mönchengladbach;Alemania;1995-09-08;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Rocco;Reitz;Borussia Mönchengladbach;Alemania;2002-05-29;CENTRO_CAMPISTA;27;0;0;0;0
+JUGADOR;Florian;Neuhaus;Borussia Mönchengladbach;Alemania;1997-03-16;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Alassane;Pléa;Borussia Mönchengladbach;Francia;1993-03-10;DELANTERO;14;0;0;0;0
+JUGADOR;Nathan;Ngoumou;Borussia Mönchengladbach;Francia;2000-03-14;DELANTERO;19;0;0;0;0
+JUGADOR;Robin;Hack;Borussia Mönchengladbach;Alemania;1998-08-27;DELANTERO;25;0;0;0;0
+JUGADOR;Tomas;Cvancara;Borussia Mönchengladbach;República Checa;2000-08-13;DELANTERO;31;0;0;0;0
+
+JUGADOR;Noah;Atubolu;SC Freiburg;Alemania;2002-05-25;PORTERO;1;0;0;0;0
+JUGADOR;Matthias;Ginter;SC Freiburg;Alemania;1994-01-19;DEFENSA;28;0;0;0;0
+JUGADOR;Philipp;Lienhart;SC Freiburg;Austria;1996-07-11;DEFENSA;3;0;0;0;0
+JUGADOR;Christian;Günter;SC Freiburg;Alemania;1993-02-28;DEFENSA;30;0;0;0;0
+JUGADOR;Maximilian;Eggestein;SC Freiburg;Alemania;1996-12-08;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Nicolas;Höfler;SC Freiburg;Alemania;1990-03-09;CENTRO_CAMPISTA;27;0;0;0;0
+JUGADOR;Ritsu;Doan;SC Freiburg;Japón;1998-06-16;CENTRO_CAMPISTA;42;0;0;0;0
+JUGADOR;Vincenzo;Grifo;SC Freiburg;Italia;1993-04-07;DELANTERO;32;0;0;0;0
+JUGADOR;Roland;Sallai;SC Freiburg;Hungría;1997-05-22;DELANTERO;22;0;0;0;0
+JUGADOR;Lucas;Höler;SC Freiburg;Alemania;1994-07-10;DELANTERO;9;0;0;0;0
+JUGADOR;Michael;Gregoritsch;SC Freiburg;Austria;1994-04-18;DELANTERO;38;0;0;0;0
+
+JUGADOR;Koen;Casteels;VfL Wolfsburg;Bélgica;1992-06-25;PORTERO;1;0;0;0;0
+JUGADOR;Ridle;Baku;VfL Wolfsburg;Alemania;1998-04-08;DEFENSA;20;0;0;0;0
+JUGADOR;Maxence;Lacroix;VfL Wolfsburg;Francia;2000-04-06;DEFENSA;4;0;0;0;0
+JUGADOR;Sebastiaan;Bornauw;VfL Wolfsburg;Bélgica;1999-03-22;DEFENSA;3;0;0;0;0
+JUGADOR;Joakim;Mæhle;VfL Wolfsburg;Dinamarca;1997-05-20;DEFENSA;21;0;0;0;0
+JUGADOR;Maximilian;Arnold;VfL Wolfsburg;Alemania;1994-05-27;CENTRO_CAMPISTA;27;0;0;0;0
+JUGADOR;Lovro;Majer;VfL Wolfsburg;Croacia;1998-01-17;CENTRO_CAMPISTA;19;0;0;0;0
+JUGADOR;Yannick;Gerhardt;VfL Wolfsburg;Alemania;1994-03-13;CENTRO_CAMPISTA;31;0;0;0;0
+JUGADOR;Jonas;Wind;VfL Wolfsburg;Dinamarca;1999-02-07;DELANTERO;23;0;0;0;0
+JUGADOR;Patrick;Wimmer;VfL Wolfsburg;Austria;2001-05-30;DELANTERO;39;0;0;0;0
+JUGADOR;Tiago;Tomás;VfL Wolfsburg;Portugal;2002-06-16;DELANTERO;11;0;0;0;0
+
+JUGADOR;Oliver;Baumann;TSG Hoffenheim;Alemania;1990-06-02;PORTERO;1;0;0;0;0
+JUGADOR;Pavel;Kadeřábek;TSG Hoffenheim;República Checa;1992-04-25;DEFENSA;3;0;0;0;0
+JUGADOR;Kevin;Akpoguma;TSG Hoffenheim;Alemania;1995-04-19;DEFENSA;25;0;0;0;0
+JUGADOR;Ozan;Kabak;TSG Hoffenheim;Turquía;2000-03-25;DEFENSA;5;0;0;0;0
+JUGADOR;Robert;Skov;TSG Hoffenheim;Dinamarca;1996-05-20;DEFENSA;29;0;0;0;0
+JUGADOR;Anton;Stach;TSG Hoffenheim;Alemania;1998-11-15;CENTRO_CAMPISTA;16;0;0;0;0
+JUGADOR;Grischa;Prömel;TSG Hoffenheim;Alemania;1995-01-09;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Andrej;Kramarić;TSG Hoffenheim;Croacia;1991-06-19;DELANTERO;27;0;0;0;0
+JUGADOR;Maximilian;Beier;TSG Hoffenheim;Alemania;2002-10-17;DELANTERO;14;0;0;0;0
+JUGADOR;Ihlas;Bebou;TSG Hoffenheim;Togo;1994-04-23;DELANTERO;9;0;0;0;0
+JUGADOR;Marius;Bülter;TSG Hoffenheim;Alemania;1993-03-29;DELANTERO;21;0;0;0;0
+
+JUGADOR;Jiri;Pavlenka;Werder Bremen;República Checa;1992-04-14;PORTERO;1;0;0;0;0
+JUGADOR;Anthony;Jung;Werder Bremen;Alemania;1991-11-03;DEFENSA;3;0;0;0;0
+JUGADOR;Milos;Veljkovic;Werder Bremen;Serbia;1995-09-26;DEFENSA;13;0;0;0;0
+JUGADOR;Marco;Friedl;Werder Bremen;Austria;1998-03-16;DEFENSA;32;0;0;0;0
+JUGADOR;Mitchell;Weiser;Werder Bremen;Alemania;1994-04-21;DEFENSA;8;0;0;0;0
+JUGADOR;Jens;Stage;Werder Bremen;Dinamarca;1996-11-08;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Romano;Schmid;Werder Bremen;Austria;2000-01-27;CENTRO_CAMPISTA;20;0;0;0;0
+JUGADOR;Leonardo;Bittencourt;Werder Bremen;Alemania;1993-12-19;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Marvin;Ducksch;Werder Bremen;Alemania;1994-03-07;DELANTERO;7;0;0;0;0
+JUGADOR;Rafael;Borré;Werder Bremen;Colombia;1995-09-15;DELANTERO;19;0;0;0;0
+JUGADOR;Nick;Woltemade;Werder Bremen;Alemania;2002-02-14;DELANTERO;29;0;0;0;0
+
+JUGADOR;Finn;Dahmen;FC Augsburg;Alemania;1998-03-27;PORTERO;1;0;0;0;0
+JUGADOR;Kevin;Mbabu;FC Augsburg;Suiza;1995-04-19;DEFENSA;43;0;0;0;0
+JUGADOR;Jeffrey;Gouweleeuw;FC Augsburg;Países Bajos;1991-07-10;DEFENSA;6;0;0;0;0
+JUGADOR;Felix;Uduokhai;FC Augsburg;Alemania;1997-09-09;DEFENSA;19;0;0;0;0
+JUGADOR;Iago;dos Santos;FC Augsburg;Brasil;1997-03-23;DEFENSA;22;0;0;0;0
+JUGADOR;Elvis;Rexhbecaj;FC Augsburg;Kosovo;1997-11-01;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Arne;Maier;FC Augsburg;Alemania;1999-01-08;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Ruben;Vargas;FC Augsburg;Suiza;1998-08-05;DELANTERO;16;0;0;0;0
+JUGADOR;Ermedin;Demirović;FC Augsburg;Bosnia;1998-03-25;DELANTERO;9;0;0;0;0
+JUGADOR;Phillip;Tietz;FC Augsburg;Alemania;1997-07-09;DELANTERO;21;0;0;0;0
+JUGADOR;Dion;Beljo;FC Augsburg;Croacia;2002-03-01;DELANTERO;17;0;0;0;0
+
+JUGADOR;Marvin;Schwäbe;1. FC Köln;Alemania;1995-04-25;PORTERO;1;0;0;0;0
+JUGADOR;Benno;Schmitz;1. FC Köln;Alemania;1994-11-17;DEFENSA;2;0;0;0;0
+JUGADOR;Timo;Hübers;1. FC Köln;Alemania;1996-07-20;DEFENSA;4;0;0;0;0
+JUGADOR;Jeff;Chabot;1. FC Köln;Alemania;1998-02-12;DEFENSA;24;0;0;0;0
+JUGADOR;Florian;Kainz;1. FC Köln;Austria;1992-10-24;CENTRO_CAMPISTA;11;0;0;0;0
+JUGADOR;Eric;Martel;1. FC Köln;Alemania;2002-04-29;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Dejan;Ljubicic;1. FC Köln;Austria;1997-10-08;CENTRO_CAMPISTA;7;0;0;0;0
+JUGADOR;Linton;Maina;1. FC Köln;Alemania;1999-06-23;DELANTERO;37;0;0;0;0
+JUGADOR;Davie;Selke;1. FC Köln;Alemania;1995-01-20;DELANTERO;27;0;0;0;0
+JUGADOR;Mark;Uth;1. FC Köln;Alemania;1991-08-24;DELANTERO;13;0;0;0;0
+JUGADOR;Jan;Thielmann;1. FC Köln;Alemania;2002-05-26;DELANTERO;29;0;0;0;0
+
+JUGADOR;Kevin;Müller;1. FC Heidenheim;Alemania;1991-03-15;PORTERO;1;0;0;0;0
+JUGADOR;Omar;Traoré;1. FC Heidenheim;Alemania;1998-02-24;DEFENSA;23;0;0;0;0
+JUGADOR;Patrick;Mainka;1. FC Heidenheim;Alemania;1994-11-06;DEFENSA;6;0;0;0;0
+JUGADOR;Benedikt;Gimber;1. FC Heidenheim;Alemania;1997-02-19;DEFENSA;5;0;0;0;0
+JUGADOR;Lennard;Maloney;1. FC Heidenheim;Estados Unidos;1999-10-08;CENTRO_CAMPISTA;33;0;0;0;0
+JUGADOR;Jan;Schöppner;1. FC Heidenheim;Alemania;1999-06-12;CENTRO_CAMPISTA;3;0;0;0;0
+JUGADOR;Eren;Dinkci;1. FC Heidenheim;Alemania;2001-12-13;DELANTERO;18;0;0;0;0
+JUGADOR;Marvin;Pieringer;1. FC Heidenheim;Alemania;1999-10-04;DELANTERO;9;0;0;0;0
+JUGADOR;Tim;Kleindienst;1. FC Heidenheim;Alemania;1995-08-31;DELANTERO;10;0;0;0;0
+JUGADOR;Adrian;Beck;1. FC Heidenheim;Alemania;1997-06-09;DELANTERO;21;0;0;0;0
+JUGADOR;Denis;Thomalla;1. FC Heidenheim;Alemania;1992-08-16;DELANTERO;11;0;0;0;0
+
+JUGADOR;Robin;Zentner;FSV Mainz 05;Alemania;1994-10-28;PORTERO;27;0;0;0;0
+JUGADOR;Silvan;Widmer;FSV Mainz 05;Suiza;1993-03-05;DEFENSA;30;0;0;0;0
+JUGADOR;Stefan;Bell;FSV Mainz 05;Alemania;1991-08-24;DEFENSA;16;0;0;0;0
+JUGADOR;Dominik;Kohr;FSV Mainz 05;Alemania;1994-01-31;DEFENSA;31;0;0;0;0
+JUGADOR;Anthony;Caci;FSV Mainz 05;Francia;1997-07-01;DEFENSA;19;0;0;0;0
+JUGADOR;Leandro;Barreiro;FSV Mainz 05;Luxemburgo;2000-01-03;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Nadiem;Amiri;FSV Mainz 05;Alemania;1996-10-27;CENTRO_CAMPISTA;18;0;0;0;0
+JUGADOR;Jae-sung;Lee;FSV Mainz 05;Corea del Sur;1992-08-10;CENTRO_CAMPISTA;7;0;0;0;0
+JUGADOR;Karim;Onisiwo;FSV Mainz 05;Austria;1992-03-17;DELANTERO;21;0;0;0;0
+JUGADOR;Ludovic;Ajorque;FSV Mainz 05;Francia;1994-02-25;DELANTERO;17;0;0;0;0
+JUGADOR;Jonathan;Burkardt;FSV Mainz 05;Alemania;2000-07-11;DELANTERO;29;0;0;0;0
+
+JUGADOR;Marcel;Schuhen;SV Darmstadt 98;Alemania;1993-01-13;PORTERO;1;0;0;0;0
+JUGADOR;Christoph;Zimmermann;SV Darmstadt 98;Alemania;1993-01-12;DEFENSA;4;0;0;0;0
+JUGADOR;Klaus;Gjasula;SV Darmstadt 98;Albania;1989-12-14;CENTRO_CAMPISTA;32;0;0;0;0
+JUGADOR;Fabian;Holland;SV Darmstadt 98;Alemania;1990-07-11;DEFENSA;32;0;0;0;0
+JUGADOR;Mathias;Honsak;SV Darmstadt 98;Austria;1996-12-20;DELANTERO;18;0;0;0;0
+JUGADOR;Tim;Skarke;SV Darmstadt 98;Alemania;1996-09-07;DELANTERO;23;0;0;0;0
+JUGADOR;Oscar;Vilhelmsson;SV Darmstadt 98;Suecia;2003-01-02;DELANTERO;29;0;0;0;0
+JUGADOR;Phillip;Tietz;SV Darmstadt 98;Alemania;1997-07-09;DELANTERO;9;0;0;0;0
+JUGADOR;Tobias;Kempe;SV Darmstadt 98;Alemania;1989-06-23;CENTRO_CAMPISTA;11;0;0;0;0
+JUGADOR;Braydon;Manu;SV Darmstadt 98;Alemania;1997-03-28;DELANTERO;7;0;0;0;0
+JUGADOR;Emir;Karic;SV Darmstadt 98;Austria;1997-06-21;DEFENSA;26;0;0;0;0
+
+JUGADOR;Nikola;Vasilj;FC St. Pauli;Bosnia;1995-12-02;PORTERO;22;0;0;0;0
+JUGADOR;Jackson;Irvine;FC St. Pauli;Australia;1993-03-07;CENTRO_CAMPISTA;7;0;0;0;0
+JUGADOR;Eric;Smith;FC St. Pauli;Suecia;1997-01-08;DEFENSA;8;0;0;0;0
+JUGADOR;Karol;Mets;FC St. Pauli;Estonia;1993-05-16;DEFENSA;3;0;0;0;0
+JUGADOR;Philipp;Treu;FC St. Pauli;Alemania;2000-01-07;DEFENSA;23;0;0;0;0
+JUGADOR;Marcel;Hartel;FC St. Pauli;Alemania;1996-01-19;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Connor;Metcalfe;FC St. Pauli;Australia;1999-11-05;CENTRO_CAMPISTA;24;0;0;0;0
+JUGADOR;Elias;Saad;FC St. Pauli;Túnez;1999-12-31;DELANTERO;26;0;0;0;0
+JUGADOR;Johannes;Eggestein;FC St. Pauli;Alemania;1998-05-08;DELANTERO;11;0;0;0;0
+JUGADOR;Oladapo;Afolayan;FC St. Pauli;Inglaterra;1997-09-11;DELANTERO;17;0;0;0;0
+JUGADOR;Etienne;Amenyido;FC St. Pauli;Alemania;1998-03-19;DELANTERO;18;0;0;0;0
+
+JUGADOR;Thomas;Dähne;Holstein Kiel;Alemania;1994-01-04;PORTERO;1;0;0;0;0
+JUGADOR;Timo;Becker;Holstein Kiel;Alemania;1997-03-25;DEFENSA;17;0;0;0;0
+JUGADOR;Colin;Kleine-Bekel;Holstein Kiel;Alemania;2003-01-24;DEFENSA;5;0;0;0;0
+JUGADOR;Marko;Ivezic;Holstein Kiel;Serbia;2001-12-02;DEFENSA;6;0;0;0;0
+JUGADOR;Johannes;van den Bergh;Holstein Kiel;Alemania;1986-12-20;DEFENSA;3;0;0;0;0
+JUGADOR;Lewis;Holtby;Holstein Kiel;Alemania;1990-09-18;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Nicolai;Remberg;Holstein Kiel;Alemania;2000-06-18;CENTRO_CAMPISTA;22;0;0;0;0
+JUGADOR;Steven;Skrzybski;Holstein Kiel;Alemania;1992-11-18;DELANTERO;7;0;0;0;0
+JUGADOR;Benedikt;Pichler;Holstein Kiel;Austria;1997-07-20;DELANTERO;9;0;0;0;0
+JUGADOR;Alexander;Bernhardsson;Holstein Kiel;Suecia;1998-09-08;DELANTERO;11;0;0;0;0
+JUGADOR;Fiete;Arp;Holstein Kiel;Alemania;2000-01-06;DELANTERO;20;0;0;0;0
+
+JUGADOR;Manuel;Riemann;VfL Bochum;Alemania;1988-09-09;PORTERO;1;0;0;0;0
+JUGADOR;Ivan;Ordets;VfL Bochum;Ucrania;1992-07-08;DEFENSA;20;0;0;0;0
+JUGADOR;Bernardo;Fernandes;VfL Bochum;Brasil;1995-05-14;DEFENSA;5;0;0;0;0
+JUGADOR;Cristian;Gamboa;VfL Bochum;Costa Rica;1989-10-24;DEFENSA;2;0;0;0;0
+JUGADOR;Anthony;Losilla;VfL Bochum;Francia;1986-03-10;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Kevin;Stöger;VfL Bochum;Austria;1993-08-27;CENTRO_CAMPISTA;7;0;0;0;0
+JUGADOR;Patrick;Osterhage;VfL Bochum;Alemania;2000-02-01;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Takuma;Asano;VfL Bochum;Japón;1994-11-10;DELANTERO;11;0;0;0;0
+JUGADOR;Philipp;Hofmann;VfL Bochum;Alemania;1993-03-30;DELANTERO;33;0;0;0;0
+JUGADOR;Moritz;Broschinski;VfL Bochum;Alemania;2000-09-23;DELANTERO;29;0;0;0;0
+JUGADOR;Christopher;Antwi-Adjei;VfL Bochum;Alemania;1994-02-07;DELANTERO;22;0;0;0;0
+
+JUGADOR;Ron-Robert;Zieler;Hannover 96;Alemania;1989-02-12;PORTERO;1;0;0;0;0
+JUGADOR;Brooklyn;Ezeh;Hannover 96;Alemania;2001-06-15;DEFENSA;37;0;0;0;0
+JUGADOR;Phil;Neumann;Hannover 96;Alemania;1997-07-09;DEFENSA;5;0;0;0;0
+JUGADOR;Marcel;Halstenberg;Hannover 96;Alemania;1991-09-27;DEFENSA;23;0;0;0;0
+JUGADOR;Enzo;Leopold;Hannover 96;Alemania;2000-07-23;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Fabian;Kunze;Hannover 96;Alemania;1998-06-14;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Cedric;Teuchert;Hannover 96;Alemania;1997-01-09;DELANTERO;36;0;0;0;0
+JUGADOR;Håvard;Nielsen;Hannover 96;Noruega;1993-07-15;DELANTERO;9;0;0;0;0
+JUGADOR;Derrick;Köhn;Hannover 96;Alemania;1999-02-04;DEFENSA;18;0;0;0;0
+JUGADOR;Sebastian;Ernst;Hannover 96;Alemania;1995-03-04;CENTRO_CAMPISTA;13;0;0;0;0
+JUGADOR;Louis;Schaefer;Hannover 96;Alemania;2001-01-10;DELANTERO;29;0;0;0;0
