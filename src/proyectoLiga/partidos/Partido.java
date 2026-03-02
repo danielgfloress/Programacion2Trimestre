@@ -1,6 +1,7 @@
 package proyectoLiga.partidos;
 
 import proyectoLiga.enumerador.Posicion;
+import proyectoLiga.enumerador.Resultado;
 import proyectoLiga.liga.Equipo;
 import proyectoLiga.liga.Jornada;
 import proyectoLiga.personas.Jugador;
@@ -108,6 +109,78 @@ public class Partido {
 
     public void setTarjetasRojas(List<TarjetaRoja> tarjetasRojas) {
         this.tarjetasRojas = tarjetasRojas;
+    }
+
+    public static Resultado simularResultado () {
+
+        Random r = new Random();
+        int probabilidad = r.nextInt(100);
+
+        if (probabilidad < 45) {
+            return Resultado.LOCAL_GANA;
+        }else if (probabilidad < 70) {
+            return Resultado.EMPATE;
+        }
+
+        return Resultado.VISITANTE_GANA;
+
+    }
+
+    public static void aplicarResultado (Equipo equipoLocal, Equipo equipoVisitante, Resultado resultado) {
+
+        if (resultado == Resultado.LOCAL_GANA) {
+            equipoLocal.setPuntos(equipoLocal.getPuntos() + 3);
+        } else if (resultado == Resultado.VISITANTE_GANA) {
+            equipoVisitante.setPuntos(equipoVisitante.getPuntos() + 3);
+        } else {
+            equipoLocal.setPuntos(equipoLocal.getPuntos() + 1);
+            equipoVisitante.setPuntos(equipoVisitante.getPuntos() + 1);
+        }
+
+    }
+
+
+    //funcion esta mal
+    public static void simularJornada(List<Partido> jornada, Equipo equipoSeleccionado) {
+
+        boolean juegaSeleccionado = false;
+
+        for (Partido partido : jornada) {
+
+            if (partido.getEquipoLocal().equals(equipoSeleccionado) || partido.getEquipoVisitante().equals(equipoSeleccionado)) {
+
+                juegaSeleccionado = true;
+                break;
+            }
+
+        }
+
+        if (juegaSeleccionado) {
+            return;
+        }
+
+        for (Partido partido : jornada) {
+
+            Resultado resultado = simularResultado();
+            aplicarResultado(partido.getEquipoLocal(), partido.getEquipoVisitante(), resultado);
+
+        }
+
+    }
+
+    public static void puntosPartido(Partido partido, Equipo equipoLocal, Equipo equipoVisitante) {
+
+        if (partido.getGolesLocal() > partido.getGolesVisitante()) {
+            Resultado resultado = Resultado.LOCAL_GANA;
+            aplicarResultado(equipoLocal, equipoVisitante, resultado);
+        } else if (partido.getGolesLocal() < partido.getGolesVisitante()) {
+            Resultado resultado = Resultado.VISITANTE_GANA;
+            aplicarResultado(equipoLocal, equipoVisitante, resultado);
+        } else {
+            Resultado resultado = Resultado.EMPATE;
+            aplicarResultado(equipoLocal, equipoVisitante, resultado);
+        }
+
     }
 
     public static void simularPartido(Partido partido, List<Jugador> jugadores, Equipo equipoSeleccionado){
@@ -483,6 +556,9 @@ public class Partido {
 
             System.out.println("\n\n" + equipoSeleccionado.getNombre() + " " + golesAFavor + " - " + golesEnContra + " " + partido.getEquipoVisitante().getNombre());
 
+            puntosPartido(partido, partido.getEquipoLocal(), partido.getEquipoVisitante());
+            System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
+
         }else{
 
             int golesAFavor = golesFavor.nextInt(4);
@@ -496,32 +572,12 @@ public class Partido {
 
             System.out.println("\n\n" + partido.getEquipoLocal().getNombre() + " " + golesEnContra + " - " + golesAFavor + " " + equipoSeleccionado.getNombre());
 
+            puntosPartido(partido, partido.getEquipoLocal(), partido.getEquipoVisitante());
+            System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
+
         }
 
     }
-
-    public int puntosPartido(Partido partido, Equipo equipoSeleccionado) {
-
-        int golesEquipo;
-        int golesRival;
-
-        if (equipoSeleccionado.equals(partido.getEquipoLocal())) {
-            golesEquipo = partido.getGolesLocal();
-            golesRival = partido.getGolesVisitante();
-        } else {
-            golesEquipo = partido.getGolesVisitante();
-            golesRival = partido.getGolesLocal();
-        }
-
-        if (golesEquipo > golesRival) {
-            return 3;
-        } else if (golesEquipo == golesRival) {
-            return 1;
-        } else {
-            return 0;
-        }
-    }
-
 
     @Override
     public String toString() {

@@ -1,6 +1,7 @@
 package proyectoLiga.programas;
 
 import proyectoLiga.estadios.Estadio;
+import proyectoLiga.liga.Clasificacion;
 import proyectoLiga.liga.Equipo;
 import proyectoLiga.liga.Jornada;
 import proyectoLiga.partidos.Partido;
@@ -9,6 +10,8 @@ import proyectoLiga.personas.Jugador;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import static proyectoLiga.liga.Clasificacion.mostrarClasificacionSoloPuntos;
 
 public class Menu {
 
@@ -30,6 +33,7 @@ public class Menu {
     Errores errores = new Errores();
     Jornada jornada = new Jornada();
     Partido partido =  new Partido();
+    Clasificacion clasificacion = new Clasificacion();
     Scanner sc = new Scanner(System.in);
     int contadorJornadas = 0;
 
@@ -74,10 +78,6 @@ public class Menu {
                             System.out.println("Elige el número de un equipo válido");
                         }
 
-                        int puntosSeleccionado = 0;
-                        int contadorPuntos = 0;
-
-
                             for (int i = 0; i<38; i++){
 
                                 Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposLiga, equipoSeleccionado,partidosLiga);
@@ -102,22 +102,21 @@ public class Menu {
                                         case 2:
 
                                             Partido.simularPartido(partidoJornada,jugadoresLiga,equipoSeleccionado);
-                                            contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
-                                            System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
+                                            clasificacion.puntosResto(equiposLiga, partidoJornada);
 
                                             break;
 
                                         case 3:
 
                                             partido.partidoRapido(partidoJornada, equipoSeleccionado);
-                                            contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
-                                            System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
+                                            clasificacion.puntosResto(equiposLiga, partidoJornada);
+
 
                                             break;
 
                                         case 4:
 
-
+                                            mostrarClasificacionSoloPuntos(equiposLiga);
 
                                             break;
 
@@ -160,9 +159,6 @@ public class Menu {
                             System.out.println("Elige el número de un equipo válido");
                         }
 
-                        int puntosSeleccionado = 0;
-                        int contadorPuntos = 0;
-
 
                         for (int i = 0; i<38; i++){
 
@@ -189,8 +185,6 @@ public class Menu {
                                     case 2:
 
                                         Partido.simularPartido(partidoJornada,jugadoresPremier,equipoSeleccionado);
-                                        contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
-                                        System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
 
                                         break;
@@ -198,8 +192,6 @@ public class Menu {
                                     case 3:
 
                                         partido.partidoRapido(partidoJornada, equipoSeleccionado);
-                                        contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
-                                        System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
                                         break;
 
@@ -247,9 +239,6 @@ public class Menu {
                             System.out.println("Elige el número de un equipo válido");
                         }
 
-                        int puntosSeleccionado = 0;
-                        int contadorPuntos = 0;
-
 
                         for (int i = 0; i<38; i++){
 
@@ -276,8 +265,6 @@ public class Menu {
                                     case 2:
 
                                         Partido.simularPartido(partidoJornada,jugadoresSerieA,equipoSeleccionado);
-                                        contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
-                                        System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
 
                                         break;
@@ -285,8 +272,6 @@ public class Menu {
                                     case 3:
 
                                         partido.partidoRapido(partidoJornada, equipoSeleccionado);
-                                        contadorPuntos += partido.puntosPartido(partidoJornada,equipoSeleccionado);
-                                        System.out.println("\n\nEn total llevas "+contadorPuntos + " puntos");
 
                                         break;
 
