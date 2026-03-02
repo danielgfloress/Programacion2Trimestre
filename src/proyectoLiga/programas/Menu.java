@@ -36,9 +36,9 @@ public class Menu {
     List<Jugador> jugadoresBundesliga = CreacionObjetos.cargarJugadoresBundesliga(equiposBundesliga);
 
     List<Estadio> estadiosLigue1 = CreacionObjetos.cargarEstadiosLigue1();
-    List<Equipo> equiposLigue1 = CreacionObjetos.cargarEquiposLigue1(estadiosBundesliga);
+    List<Equipo> equiposLigue1 = CreacionObjetos.cargarEquiposLigue1(estadiosLigue1);
     List<Partido> partidosLigue1 = new ArrayList<>();
-    List<Jugador> jugadoresLigue1 = CreacionObjetos.cargarJugadoresLigue1(equiposBundesliga);
+    List<Jugador> jugadoresLigue1 = CreacionObjetos.cargarJugadoresLigue1(equiposLigue1);
 
     Errores errores = new Errores();
     Jornada jornada = new Jornada();
