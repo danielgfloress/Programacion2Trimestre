@@ -118,8 +118,7 @@ public class Partido {
 
         if (probabilidad < 45) {
             return Resultado.LOCAL_GANA;
-        }
-        if (probabilidad < 70) {
+        }else if (probabilidad < 70) {
             return Resultado.EMPATE;
         }
 
@@ -139,6 +138,7 @@ public class Partido {
         }
 
     }
+
 
     //funcion esta mal
     public static void simularJornada(List<Partido> jornada, Equipo equipoSeleccionado) {
@@ -168,7 +168,7 @@ public class Partido {
 
     }
 
-    public void puntosPartido(Partido partido, Equipo equipoLocal, Equipo equipoVisitante) {
+    public static void puntosPartido(Partido partido, Equipo equipoLocal, Equipo equipoVisitante) {
 
         if (partido.getGolesLocal() > partido.getGolesVisitante()) {
             Resultado resultado = Resultado.LOCAL_GANA;
