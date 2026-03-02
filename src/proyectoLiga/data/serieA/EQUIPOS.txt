@@ -1,20 +1,20 @@
-EQUIPO;Inter;Arena Nerazzurra
-EQUIPO;Milan;Stadio Rossonero
-EQUIPO;Juventus;Allianz Torino
-EQUIPO;Napoli;Diego Armando Arena
-EQUIPO;Roma;Olimpico Giallorosso
-EQUIPO;Lazio;Olimpico Biancoceleste
-EQUIPO;Atalanta;Gewiss Bergamo
-EQUIPO;Fiorentina;Artemio Viola
-EQUIPO;Bologna;DallAra Bologna
-EQUIPO;Torino;Olimpico Granata
-EQUIPO;Genoa;Ferraris Rossoblu
-EQUIPO;Udinese;Bluenergy Udine
-EQUIPO;Sassuolo;Mapei Reggio
-EQUIPO;Lecce;Via del Mare Lecce
-EQUIPO;Hellas Verona;Bentegodi Verona
-EQUIPO;Cagliari;Unipol Domus Cagliari
-EQUIPO;Empoli;Castellani Empoli
-EQUIPO;Monza;U-Power Monza
-EQUIPO;Parma;Tardini Parma
-EQUIPO;Venezia;Penzo Venezia
+EQUIPO;Inter;Arena Nerazzurra;89
+EQUIPO;Milan;Stadio Rossonero;87
+EQUIPO;Juventus;Allianz Torino;88
+EQUIPO;Napoli;Diego Armando Arena;86
+EQUIPO;Roma;Olimpico Giallorosso;85
+EQUIPO;Lazio;Olimpico Biancoceleste;83
+EQUIPO;Atalanta;Gewiss Bergamo;86
+EQUIPO;Fiorentina;Artemio Viola;83
+EQUIPO;Bologna;DallAra Bologna;82
+EQUIPO;Torino;Olimpico Granata;79
+EQUIPO;Genoa;Ferraris Rossoblu;78
+EQUIPO;Udinese;Bluenergy Udine;84
+EQUIPO;Sassuolo;Mapei Reggio;76
+EQUIPO;Lecce;Via del Mare Lecce;76
+EQUIPO;Hellas Verona;Bentegodi Verona;76
+EQUIPO;Cagliari;Unipol Domus Cagliari;76
+EQUIPO;Empoli;Castellani Empoli;72
+EQUIPO;Monza;U-Power Monza;70
+EQUIPO;Parma;Tardini Parma;70
+EQUIPO;Venezia;Penzo Venezia;72

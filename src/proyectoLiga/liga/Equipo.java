@@ -11,6 +11,7 @@ public class Equipo {
 
     private String nombre;
     private Estadio estadio;
+    private int media;
     private List<Jugador> plantilla;
     private int puntos;
     private int partidosJugados;
@@ -21,9 +22,10 @@ public class Equipo {
     private int golesContra;
 
 
-    public Equipo(String nombre, Estadio estadio, List<Jugador> plantilla, int puntos, int partidosJugados, int victorias, int empates, int derrotas, int golesFavor, int golesContra) {
+    public Equipo(String nombre, Estadio estadio, int media, List<Jugador> plantilla, int puntos, int partidosJugados, int victorias, int empates, int derrotas, int golesFavor, int golesContra) {
         this.nombre = nombre;
         this.estadio = estadio;
+        this.media = media;
         this.plantilla = plantilla;
         this.puntos = puntos;
         this.partidosJugados = partidosJugados;
@@ -48,6 +50,14 @@ public class Equipo {
 
     public void setEstadio(Estadio estadio) {
         this.estadio = estadio;
+    }
+
+    public int getMedia() {
+        return media;
+    }
+
+    public void setMedia(int media) {
+        this.media = media;
     }
 
     public List<Jugador> getPlantilla() {

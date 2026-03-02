@@ -1,20 +1,20 @@
-EQUIPO;Arsenal;Emirates Stadium
-EQUIPO;Aston Villa;Villa Park
-EQUIPO;AFC Bournemouth;Vitality Stadium
-EQUIPO;Brentford;Gtech Community Stadium
-EQUIPO;Brighton;Amex Stadium
-EQUIPO;Chelsea;Stamford Bridge
-EQUIPO;Crystal Palace;Selhurst Park
-EQUIPO;Everton;Goodison Park
-EQUIPO;Fulham;Craven Cottage
-EQUIPO;Liverpool;Anfield
-EQUIPO;Manchester City;Etihad Stadium
-EQUIPO;Manchester United;Old Trafford
-EQUIPO;Newcastle United;St James' Park
-EQUIPO;Nottingham Forest;The City Ground
-EQUIPO;Sheffield United;Bramall Lane
-EQUIPO;Tottenham Hotspur;Tottenham Hotspur Stadium
-EQUIPO;West Ham United;London Stadium
-EQUIPO;Wolverhampton Wanderers;Molineux Stadium
-EQUIPO;Leicester City;King Power Stadium
-EQUIPO;Southampton;St Mary's Stadium
+EQUIPO;Arsenal;Emirates Stadium;93
+EQUIPO;Aston Villa;Villa Park;86
+EQUIPO;AFC Bournemouth;Vitality Stadium;82
+EQUIPO;Brentford;Gtech Community Stadium;77
+EQUIPO;Brighton;Amex Stadium;78
+EQUIPO;Chelsea;Stamford Bridge;84
+EQUIPO;Crystal Palace;Selhurst Park;83
+EQUIPO;Everton;Goodison Park;76
+EQUIPO;Fulham;Craven Cottage;76
+EQUIPO;Liverpool;Anfield;88
+EQUIPO;Manchester City;Etihad Stadium;90
+EQUIPO;Manchester United;Old Trafford;89
+EQUIPO;Newcastle United;St James' Park;85
+EQUIPO;Nottingham Forest;The City Ground;72
+EQUIPO;Sheffield United;Bramall Lane;79
+EQUIPO;Tottenham Hotspur;Tottenham Hotspur Stadium;84
+EQUIPO;West Ham United;London Stadium;74
+EQUIPO;Wolverhampton Wanderers;Molineux Stadium;70
+EQUIPO;Leicester City;King Power Stadium;83
+EQUIPO;Southampton;St Mary's Stadium;73

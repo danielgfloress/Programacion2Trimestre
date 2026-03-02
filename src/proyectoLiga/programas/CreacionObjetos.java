@@ -59,6 +59,7 @@ public final class CreacionObjetos {
 
                 String nombre = d[1];
                 String nombreEstadio = d[2];
+                int media = Integer.parseInt(d[3]);
 
                 Estadio estadio = null;
                 for (Estadio e : estadios) {
@@ -71,6 +72,7 @@ public final class CreacionObjetos {
                 Equipo eq = new Equipo(
                         nombre,
                         estadio,
+                        media,
                         new ArrayList<>(), 0, 0, 0, 0, 0, 0, 0
                 );
 
@@ -227,6 +229,7 @@ public final class CreacionObjetos {
 
                 String nombre = d[1];
                 String nombreEstadio = d[2];
+                int media = Integer.parseInt(d[3]);
 
                 Estadio estadio = null;
                 for (Estadio e : estadios) {
@@ -239,6 +242,7 @@ public final class CreacionObjetos {
                 Equipo eq = new Equipo(
                         nombre,
                         estadio,
+                        media,
                         new ArrayList<>(), 0, 0, 0, 0, 0, 0, 0
                 );
 
@@ -394,6 +398,7 @@ public final class CreacionObjetos {
 
                 String nombre = d[1];
                 String nombreEstadio = d[2];
+                int media = Integer.parseInt(d[3]);
 
                 Estadio estadio = null;
                 for (Estadio e : estadios) {
@@ -406,6 +411,7 @@ public final class CreacionObjetos {
                 Equipo eq = new Equipo(
                         nombre,
                         estadio,
+                        media,
                         new ArrayList<>(), 0, 0, 0, 0, 0, 0, 0
                 );
 
