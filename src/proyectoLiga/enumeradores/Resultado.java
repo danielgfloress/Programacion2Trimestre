@@ -1,4 +1,4 @@
-package proyectoLiga.enumerador;
+package proyectoLiga.enumeradores;
 
 public enum Resultado {
 

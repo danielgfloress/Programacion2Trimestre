@@ -1,7 +1,7 @@
 package proyectoLiga.partidos;
 
-import proyectoLiga.enumerador.Posicion;
-import proyectoLiga.enumerador.Resultado;
+import proyectoLiga.enumeradores.Posicion;
+import proyectoLiga.enumeradores.Resultado;
 import proyectoLiga.liga.Equipo;
 import proyectoLiga.liga.Jornada;
 import proyectoLiga.personas.Jugador;

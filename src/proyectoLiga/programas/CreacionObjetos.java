@@ -1,6 +1,6 @@
 package proyectoLiga.programas;
 
-import proyectoLiga.enumerador.Posicion;
+import proyectoLiga.enumeradores.Posicion;
 import proyectoLiga.estadios.Estadio;
 import proyectoLiga.liga.Equipo;
 import proyectoLiga.personas.Entrenador;

@@ -1,6 +1,6 @@
 package proyectoLiga.personas;
 
-import proyectoLiga.enumerador.Posicion;
+import proyectoLiga.enumeradores.Posicion;
 import proyectoLiga.liga.Equipo;
 
 import java.time.LocalDate;
