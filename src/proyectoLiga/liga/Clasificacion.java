@@ -53,16 +53,18 @@ public class Clasificacion {
         }
 
         System.out.println("\n=== CLASIFICACIÓN ===");
-        System.out.printf("%-3s %-20s %-5s%n", "Pos", "Equipo", "Pts");
+        System.out.printf("%-3s %-20s %-5s %-5s %-5s\n", "Pos", "Equipo", "Pts", "GF", "GC");
 
-        int pos = 1;
+        int posicion = 1;
 
         for (Equipo e : equipos) {
-            System.out.printf("%-3d %-20s %-5d%n",
-                    pos,
+            System.out.printf("%-3d %-20s %-5d %-5d %-5d\n",
+                    posicion,
                     e.getNombre(),
-                    e.getPuntos());
-            pos++;
+                    e.getPuntos(),
+                    e.getGolesFavor(),
+                    e.getGolesContra());
+            posicion++;
         }
     }
 
