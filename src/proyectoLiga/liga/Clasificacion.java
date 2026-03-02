@@ -92,10 +92,10 @@ public class Clasificacion {
 
                 int golesAFavor = golesFavor.nextInt(7);
                 int golesEnContra = golesContra.nextInt(3);
-                partidoCreado.getEquipoLocal().setGolesFavor(golesAFavor);
-                partidoCreado.getEquipoLocal().setGolesContra(golesEnContra);
-                partidoCreado.getEquipoVisitante().setGolesFavor(golesEnContra);
-                partidoCreado.getEquipoVisitante().setGolesContra(golesAFavor);
+                partidoCreado.getEquipoLocal().setGolesFavor(golesAFavor + partidoCreado.getEquipoLocal().getGolesFavor());
+                partidoCreado.getEquipoLocal().setGolesContra(golesEnContra + partidoCreado.getEquipoLocal().getGolesContra());
+                partidoCreado.getEquipoVisitante().setGolesFavor(golesEnContra + partidoCreado.getEquipoVisitante().getGolesFavor());
+                partidoCreado.getEquipoVisitante().setGolesContra(golesAFavor + partidoCreado.getEquipoVisitante().getGolesContra());
                 partidoCreado.setGolesLocal(golesAFavor);
                 partidoCreado.setGolesVisitante(golesEnContra);
                 Partido.puntosPartido(partidoCreado, partidoCreado.getEquipoLocal(), partidoCreado.getEquipoVisitante());
@@ -116,10 +116,10 @@ public class Clasificacion {
 
                 int golesAFavor = golesFavor.nextInt(4);
                 int golesEnContra = golesContra.nextInt(4);
-                partidoCreado.getEquipoLocal().setGolesFavor(golesAFavor);
-                partidoCreado.getEquipoLocal().setGolesContra(golesEnContra);
-                partidoCreado.getEquipoVisitante().setGolesFavor(golesEnContra);
-                partidoCreado.getEquipoVisitante().setGolesContra(golesAFavor);
+                partidoCreado.getEquipoLocal().setGolesFavor(golesAFavor + partidoCreado.getEquipoLocal().getGolesFavor());
+                partidoCreado.getEquipoLocal().setGolesContra(golesEnContra + partidoCreado.getEquipoLocal().getGolesContra());
+                partidoCreado.getEquipoVisitante().setGolesFavor(golesEnContra + partidoCreado.getEquipoVisitante().getGolesFavor());
+                partidoCreado.getEquipoVisitante().setGolesContra(golesAFavor + partidoCreado.getEquipoVisitante().getGolesContra());
                 partidoCreado.setGolesLocal(golesAFavor);
                 partidoCreado.setGolesVisitante(golesEnContra);
                 Partido.puntosPartido(partidoCreado, partidoCreado.getEquipoLocal(), partidoCreado.getEquipoVisitante());
@@ -128,10 +128,10 @@ public class Clasificacion {
 
                 int golesAFavor = golesFavor.nextInt(3);
                 int golesEnContra = golesContra.nextInt(4);
-                partidoCreado.getEquipoLocal().setGolesFavor(golesAFavor);
-                partidoCreado.getEquipoLocal().setGolesContra(golesEnContra);
-                partidoCreado.getEquipoVisitante().setGolesFavor(golesEnContra);
-                partidoCreado.getEquipoVisitante().setGolesContra(golesAFavor);
+                partidoCreado.getEquipoLocal().setGolesFavor(golesAFavor + partidoCreado.getEquipoLocal().getGolesFavor());
+                partidoCreado.getEquipoLocal().setGolesContra(golesEnContra + partidoCreado.getEquipoLocal().getGolesContra());
+                partidoCreado.getEquipoVisitante().setGolesFavor(golesEnContra + partidoCreado.getEquipoVisitante().getGolesFavor());
+                partidoCreado.getEquipoVisitante().setGolesContra(golesAFavor + partidoCreado.getEquipoVisitante().getGolesContra());
                 partidoCreado.setGolesLocal(golesAFavor);
                 partidoCreado.setGolesVisitante(golesEnContra);
                 Partido.puntosPartido(partidoCreado, partidoCreado.getEquipoLocal(), partidoCreado.getEquipoVisitante());
@@ -140,10 +140,10 @@ public class Clasificacion {
 
                 int golesAFavor = golesFavor.nextInt(3);
                 int golesEnContra = golesContra.nextInt(5);
-                partidoCreado.getEquipoLocal().setGolesFavor(golesAFavor);
-                partidoCreado.getEquipoLocal().setGolesContra(golesEnContra);
-                partidoCreado.getEquipoVisitante().setGolesFavor(golesEnContra);
-                partidoCreado.getEquipoVisitante().setGolesContra(golesAFavor);
+                partidoCreado.getEquipoLocal().setGolesFavor(golesAFavor + partidoCreado.getEquipoLocal().getGolesFavor());
+                partidoCreado.getEquipoLocal().setGolesContra(golesEnContra + partidoCreado.getEquipoLocal().getGolesContra());
+                partidoCreado.getEquipoVisitante().setGolesFavor(golesEnContra + partidoCreado.getEquipoVisitante().getGolesFavor());
+                partidoCreado.getEquipoVisitante().setGolesContra(golesAFavor + partidoCreado.getEquipoVisitante().getGolesContra());
                 partidoCreado.setGolesLocal(golesAFavor);
                 partidoCreado.setGolesVisitante(golesEnContra);
                 Partido.puntosPartido(partidoCreado, partidoCreado.getEquipoLocal(), partidoCreado.getEquipoVisitante());
