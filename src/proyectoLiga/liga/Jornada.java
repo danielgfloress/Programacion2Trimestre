@@ -45,41 +45,82 @@ public class Jornada {
         this.jugada = jugada;
     }
 
-    public static boolean compararPartidos(List<Partido> partidos, Partido partido){
 
-        for (int i= 0; i < partidos.size(); i++){
+    public static Partido mostrarJornadaSinRepetir(
+            List<Equipo> equipos,
+            Equipo equipoSeleccionado,
+            List<Partido> partidosLiga,
+            int jornadaActual
+    ) {
+        int partidosIda = equipos.size() - 1;
 
-            Partido partidoVuelta =  partidos.get(i);
+        if (partidosLiga.size() >= partidosIda) {
 
-            if (partido.getEquipoLocal().equals(partidoVuelta.getEquipoLocal()) && partido.getEquipoVisitante().equals(partidoVuelta.getEquipoVisitante())){
+            int indiceIda = partidosLiga.size() - partidosIda;
+            Partido ida = partidosLiga.get(indiceIda);
 
-            return false;}
-
+            Partido vuelta = new Partido(
+                    ida.getEquipoVisitante(),
+                    ida.getEquipoLocal(),
+                    false
+            );
+            vuelta.setJornada(jornadaActual);
+            return vuelta;
         }
 
+        List<Equipo> rivalesDisponibles = new ArrayList<>();
 
-    return true;}
+        for (int i = 0; i < equipos.size(); i++) {
+            Equipo candidato = equipos.get(i);
 
-
-    public static Partido mostrarJornadaSinRepetir(List<Equipo> equipos,Equipo equipoSeleccionado, List<Partido> partidosLiga) {
-
-        Partido partido;
-
-        do {
-            Equipo rival;
-            do {
-                rival = equipos.get(equipoRandom.nextInt(equipos.size()));
-            } while (rival.equals(equipoSeleccionado));
-
-            if (equipoRandom.nextInt(2) == 0) {
-                partido = new Partido(equipoSeleccionado, rival);
-            } else {
-                partido = new Partido(rival, equipoSeleccionado);
+            if (candidato.equals(equipoSeleccionado)) {
+                continue;
             }
 
+            boolean yaJugadoContraEse = false;
 
-        } while (!compararPartidos(partidosLiga, partido));
+            for (int j = 0; j < partidosLiga.size(); j++) {
+                Partido p = partidosLiga.get(j);
 
+                if (equipoSeleccionado.equals(p.getEquipoLocal())) {
+                    if (candidato.equals(p.getEquipoVisitante())) {
+                        yaJugadoContraEse = true;
+                        break;
+                    }
+                }
+
+                else if (equipoSeleccionado.equals(p.getEquipoVisitante())) {
+                    if (candidato.equals(p.getEquipoLocal())) {
+                        yaJugadoContraEse = true;
+                        break;
+                    }
+                }
+            }
+
+            if (!yaJugadoContraEse) {
+                rivalesDisponibles.add(candidato);
+            }
+        }
+
+        if (rivalesDisponibles.size() == 0) {
+            Partido ida = partidosLiga.get(0);
+            Partido vuelta = new Partido(ida.getEquipoVisitante(), ida.getEquipoLocal(), false);
+            vuelta.setJornada(jornadaActual);
+            return vuelta;
+        }
+
+        Equipo rival = rivalesDisponibles.get(equipoRandom.nextInt(rivalesDisponibles.size()));
+
+        Partido partido;
+        int local = equipoRandom.nextInt(2);
+
+        if (local == 0) {
+            partido = new Partido(equipoSeleccionado, rival, false);
+        } else {
+            partido = new Partido(rival, equipoSeleccionado, false);
+        }
+
+        partido.setJornada(jornadaActual);
         return partido;
     }
 

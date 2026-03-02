@@ -1,20 +1,20 @@
-ESTADIO;Arena Nerazzurra;Milano;80210;Inter
-ESTADIO;Stadio Rossonero;Milano;78500;Milan
-ESTADIO;Allianz Torino;Torino;41200;Juventus
-ESTADIO;Diego Armando Arena;Napoli;54800;Napoli
-ESTADIO;Olimpico Giallorosso;Roma;70500;Roma
-ESTADIO;Olimpico Biancoceleste;Roma;69000;Lazio
-ESTADIO;Gewiss Bergamo;Bergamo;24700;Atalanta
-ESTADIO;Artemio Viola;Firenze;43000;Fiorentina
-ESTADIO;DallAra Bologna;Bologna;38500;Bologna
-ESTADIO;Olimpico Granata;Torino;27500;Torino
-ESTADIO;Ferraris Rossoblu;Genova;36000;Genoa
-ESTADIO;Bluenergy Udine;Udine;25100;Udinese
-ESTADIO;Mapei Reggio;Reggio Emilia;21400;Sassuolo
-ESTADIO;Via del Mare Lecce;Lecce;31000;Lecce
-ESTADIO;Bentegodi Verona;Verona;39200;Hellas Verona
-ESTADIO;Unipol Domus Cagliari;Cagliari;16500;Cagliari
-ESTADIO;Castellani Empoli;Empoli;16200;Empoli
-ESTADIO;U-Power Monza;Monza;18600;Monza
-ESTADIO;Tardini Parma;Parma;27900;Parma
-ESTADIO;Penzo Venezia;Venezia;11800;Venezia
+ESTADIO;Stadio Giuseppe Meazza;Milano;80210;Inter
+ESTADIO;San Siro;Milano;78500;Milan
+ESTADIO;Allianz Stadium;Torino;41200;Juventus
+ESTADIO;Stadio Diego Armando Maradona;Napoli;54800;Napoli
+ESTADIO;Stadio Olimpico;Roma;70500;Roma
+ESTADIO;Stadio Olimpico;Roma;69000;Lazio
+ESTADIO;Gewiss Stadium;Bergamo;24700;Atalanta
+ESTADIO;Stadio Artemio Franchi;Firenze;43000;Fiorentina
+ESTADIO;Stadio Renato Dall'Ara;Bologna;38500;Bologna
+ESTADIO;Stadio Olimpico Grande Torino;Torino;27500;Torino
+ESTADIO;Stadio Luigi Ferraris;Genova;36000;Genoa
+ESTADIO;Bluenergy Stadium;Udine;25100;Udinese
+ESTADIO;Mapei Stadium – Città del Tricolore;Reggio Emilia;21400;Sassuolo
+ESTADIO;Stadio Via del Mare;Lecce;31000;Lecce
+ESTADIO;Stadio Marcantonio Bentegodi;Verona;39200;Hellas Verona
+ESTADIO;Unipol Domus;Cagliari;16500;Cagliari
+ESTADIO;Stadio Carlo Castellani – Computer Gross Arena;Empoli;16200;Empoli
+ESTADIO;U-Power Stadium;Monza;18600;Monza
+ESTADIO;Stadio Ennio Tardini;Parma;27900;Parma
+ESTADIO;Stadio Pier Luigi Penzo;Venezia;11800;Venezia

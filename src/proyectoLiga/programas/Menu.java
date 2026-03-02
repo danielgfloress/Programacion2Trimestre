@@ -46,20 +46,16 @@ public class Menu {
 
         do {
 
-            System.out.println("¿Qué competición quieres jugar?");
+            System.out.println("\n\n\n¿Qué competición quieres jugar?");
             System.out.println("1. Liga Española");
             System.out.println("2. Premier League");
-            System.out.println("3. Copa del Rey");
+            System.out.println("3. Serie A");
             System.out.println("4. Mundial");
             System.out.println("5. Salir");
             opciones = errores.numeroEntero(sc);
 
             switch (opciones) {
                 case 1:
-
-                    contadorJornadas = 0;
-
-                    do {
 
                         System.out.println("Elige un equipo: ");
                         for (int i = 0; i < equiposLiga.size(); i++) {
@@ -80,8 +76,15 @@ public class Menu {
 
                             for (int i = 0; i<38; i++){
 
-                                Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposLiga, equipoSeleccionado,partidosLiga);
-                                    partidosLiga.add(partidoJornada);
+                                Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposLiga, equipoSeleccionado,partidosLiga, (i));
+                                if (partidoJornada == null) {
+
+                                    i--;
+                                    continue;
+
+                                }
+
+                                partidosLiga.add(partidoJornada);
 
                                 do {
 
@@ -95,7 +98,8 @@ public class Menu {
 
                                         case 1:
 
-                                            System.out.println("\n\n" + partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\nEstadio: "+partidoJornada.getEquipoLocal().getEstadio().getNombre());
+                                            System.out.println("\n\nJORNADA " + (i+1));
+                                            System.out.println(partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\nEstadio: "+partidoJornada.getEquipoLocal().getEstadio().getNombre());
 
                                             break;
 
@@ -103,6 +107,8 @@ public class Menu {
 
                                             Partido.simularPartido(partidoJornada,jugadoresLiga,equipoSeleccionado);
                                             clasificacion.puntosResto(equiposLiga, partidoJornada);
+                                            Partido.puntosPartido(partidoJornada,partidoJornada.getEquipoLocal(),partidoJornada.getEquipoVisitante());
+                                            System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
 
                                             break;
 
@@ -128,21 +134,17 @@ public class Menu {
 
                                     }
 
-
                             }while(opciones != 2 && opciones != 3);
 
                             }
 
-                            contadorJornadas++;
-                    }while(contadorJornadas != 38);
+                    mostrarClasificacionSoloPuntos(equiposLiga);
+
                     break;
 
                 case 2:
 
-                    contadorJornadas = 0;
-
-                    do {
-
+                        contadorJornadas = 1;
                         System.out.println("Elige un equipo: ");
                         for (int i = 0; i < equiposPremier.size(); i++) {
 
@@ -162,7 +164,7 @@ public class Menu {
 
                         for (int i = 0; i<38; i++){
 
-                            Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposPremier, equipoSeleccionado,partidosPremier);
+                            Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposPremier, equipoSeleccionado,partidosPremier,(i));
                             partidosPremier.add(partidoJornada);
 
                             do {
@@ -177,7 +179,8 @@ public class Menu {
 
                                     case 1:
 
-                                        System.out.println("\n\n" + partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\n\nEstadio " + partidoJornada.getEquipoLocal().getEstadio().getNombre());
+                                        System.out.println("\n\nJORNADA " + (i+1));
+                                        System.out.println(partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\n\nEstadio " + partidoJornada.getEquipoLocal().getEstadio().getNombre());
 
 
                                         break;
@@ -185,6 +188,8 @@ public class Menu {
                                     case 2:
 
                                         Partido.simularPartido(partidoJornada,jugadoresPremier,equipoSeleccionado);
+                                        Partido.puntosPartido(partidoJornada,partidoJornada.getEquipoLocal(),partidoJornada.getEquipoVisitante());
+                                        System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
 
 
                                         break;
@@ -197,7 +202,7 @@ public class Menu {
 
                                     case 4:
 
-
+                                        mostrarClasificacionSoloPuntos(equiposPremier);
 
                                         break;
 
@@ -212,16 +217,11 @@ public class Menu {
 
                         }
 
-                        contadorJornadas++;
-                    }while(contadorJornadas != 38);
+                    mostrarClasificacionSoloPuntos(equiposLiga);
 
                     break;
 
                 case 3:
-
-                    contadorJornadas = 0;
-
-                    do {
 
                         System.out.println("Elige un equipo: ");
                         for (int i = 0; i < equiposSerieA.size(); i++) {
@@ -242,7 +242,7 @@ public class Menu {
 
                         for (int i = 0; i<38; i++){
 
-                            Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposSerieA, equipoSeleccionado,partidosSerieA);
+                            Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposSerieA, equipoSeleccionado,partidosSerieA,(i));
                             partidosSerieA.add(partidoJornada);
 
                             do {
@@ -257,7 +257,8 @@ public class Menu {
 
                                     case 1:
 
-                                        System.out.println("\n\n" + partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\n\nEstadio " + partidoJornada.getEquipoLocal().getEstadio().getNombre());
+                                        System.out.println("\n\nJORNADA " + (i+1));
+                                        System.out.println(partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\n\nEstadio " + partidoJornada.getEquipoLocal().getEstadio().getNombre());
 
 
                                         break;
@@ -265,6 +266,8 @@ public class Menu {
                                     case 2:
 
                                         Partido.simularPartido(partidoJornada,jugadoresSerieA,equipoSeleccionado);
+                                        Partido.puntosPartido(partidoJornada,partidoJornada.getEquipoLocal(),partidoJornada.getEquipoVisitante());
+                                        System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
 
 
                                         break;
@@ -277,7 +280,7 @@ public class Menu {
 
                                     case 4:
 
-
+                                        mostrarClasificacionSoloPuntos(equiposSerieA);
 
                                         break;
 
@@ -292,8 +295,7 @@ public class Menu {
 
                         }
 
-                        contadorJornadas++;
-                    }while(contadorJornadas != 38);
+                    mostrarClasificacionSoloPuntos(equiposLiga);
 
                     break;
 

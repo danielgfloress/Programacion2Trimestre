@@ -44,10 +44,10 @@ public class Clasificacion {
 
                 if (equipos.get(j).getPuntos() < equipos.get(j + 1).getPuntos()) {
 
-                    // Intercambiar posiciones
                     Equipo temp = equipos.get(j);
                     equipos.set(j, equipos.get(j + 1));
                     equipos.set(j + 1, temp);
+
                 }
             }
         }
@@ -86,15 +86,67 @@ public class Clasificacion {
 
             partidoCreado = new Partido(equipoLocal, equipoVisitante);
 
-            int golesAFavor = golesFavor.nextInt(4);
-            int golesEnContra = golesContra.nextInt(4);
-            partidoCreado.getEquipoLocal().setGolesFavor(golesAFavor);
-            partidoCreado.getEquipoLocal().setGolesContra(golesEnContra);
-            partidoCreado.getEquipoVisitante().setGolesFavor(golesEnContra);
-            partidoCreado.getEquipoVisitante().setGolesContra(golesAFavor);
-            partidoCreado.setGolesLocal(golesEnContra);
-            partidoCreado.setGolesVisitante(golesAFavor);
-            Partido.puntosPartido(partidoCreado, partidoCreado.getEquipoLocal(), partidoCreado.getEquipoVisitante());
+            if (equipoLocal.getMedia() + 10 > equipoVisitante.getMedia()) {
+
+                int golesAFavor = golesFavor.nextInt(7);
+                int golesEnContra = golesContra.nextInt(3);
+                partidoCreado.getEquipoLocal().setGolesFavor(golesAFavor);
+                partidoCreado.getEquipoLocal().setGolesContra(golesEnContra);
+                partidoCreado.getEquipoVisitante().setGolesFavor(golesEnContra);
+                partidoCreado.getEquipoVisitante().setGolesContra(golesAFavor);
+                partidoCreado.setGolesLocal(golesAFavor);
+                partidoCreado.setGolesVisitante(golesEnContra);
+                Partido.puntosPartido(partidoCreado, partidoCreado.getEquipoLocal(), partidoCreado.getEquipoVisitante());
+
+            }else if (equipoLocal.getMedia() > equipoVisitante.getMedia()) {
+
+                int golesAFavor = golesFavor.nextInt(6);
+                int golesEnContra = golesContra.nextInt(3);
+                partidoCreado.getEquipoLocal().setGolesFavor(golesAFavor);
+                partidoCreado.getEquipoLocal().setGolesContra(golesEnContra);
+                partidoCreado.getEquipoVisitante().setGolesFavor(golesEnContra);
+                partidoCreado.getEquipoVisitante().setGolesContra(golesAFavor);
+                partidoCreado.setGolesLocal(golesAFavor);
+                partidoCreado.setGolesVisitante(golesEnContra);
+                Partido.puntosPartido(partidoCreado, partidoCreado.getEquipoLocal(), partidoCreado.getEquipoVisitante());
+
+            }else if (equipoLocal.getMedia() == equipoVisitante.getMedia()) {
+
+                int golesAFavor = golesFavor.nextInt(4);
+                int golesEnContra = golesContra.nextInt(4);
+                partidoCreado.getEquipoLocal().setGolesFavor(golesAFavor);
+                partidoCreado.getEquipoLocal().setGolesContra(golesEnContra);
+                partidoCreado.getEquipoVisitante().setGolesFavor(golesEnContra);
+                partidoCreado.getEquipoVisitante().setGolesContra(golesAFavor);
+                partidoCreado.setGolesLocal(golesAFavor);
+                partidoCreado.setGolesVisitante(golesEnContra);
+                Partido.puntosPartido(partidoCreado, partidoCreado.getEquipoLocal(), partidoCreado.getEquipoVisitante());
+
+            }else if (equipoLocal.getMedia() < equipoVisitante.getMedia()) {
+
+                int golesAFavor = golesFavor.nextInt(3);
+                int golesEnContra = golesContra.nextInt(4);
+                partidoCreado.getEquipoLocal().setGolesFavor(golesAFavor);
+                partidoCreado.getEquipoLocal().setGolesContra(golesEnContra);
+                partidoCreado.getEquipoVisitante().setGolesFavor(golesEnContra);
+                partidoCreado.getEquipoVisitante().setGolesContra(golesAFavor);
+                partidoCreado.setGolesLocal(golesAFavor);
+                partidoCreado.setGolesVisitante(golesEnContra);
+                Partido.puntosPartido(partidoCreado, partidoCreado.getEquipoLocal(), partidoCreado.getEquipoVisitante());
+
+            }else if (equipoLocal.getMedia() < equipoVisitante.getMedia() + 10) {
+
+                int golesAFavor = golesFavor.nextInt(3);
+                int golesEnContra = golesContra.nextInt(5);
+                partidoCreado.getEquipoLocal().setGolesFavor(golesAFavor);
+                partidoCreado.getEquipoLocal().setGolesContra(golesEnContra);
+                partidoCreado.getEquipoVisitante().setGolesFavor(golesEnContra);
+                partidoCreado.getEquipoVisitante().setGolesContra(golesAFavor);
+                partidoCreado.setGolesLocal(golesAFavor);
+                partidoCreado.setGolesVisitante(golesEnContra);
+                Partido.puntosPartido(partidoCreado, partidoCreado.getEquipoLocal(), partidoCreado.getEquipoVisitante());
+
+            }
 
         }
 
