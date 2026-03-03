@@ -4,6 +4,7 @@ import proyectoLiga.estadios.Estadio;
 import proyectoLiga.liga.Clasificacion;
 import proyectoLiga.liga.Equipo;
 import proyectoLiga.liga.Jornada;
+import proyectoLiga.liga.Liga;
 import proyectoLiga.partidos.Partido;
 import proyectoLiga.personas.Jugador;
 
@@ -40,6 +41,18 @@ public class Menu {
     List<Partido> partidosLigue1 = new ArrayList<>();
     List<Jugador> jugadoresLigue1 = CreacionObjetos.cargarJugadoresLigue1(equiposLigue1);
 
+    Liga liga = new Liga();
+
+    Liga ligaEspanola = new Liga("España", equiposLiga, jugadoresLiga, partidosLiga);
+
+    Liga premier = new Liga("Inglaterra", equiposPremier, jugadoresPremier, partidosPremier);
+
+    Liga serieA = new Liga("Italia", equiposSerieA, jugadoresSerieA, partidosSerieA);
+
+    Liga bundesliga = new Liga("Alemania", equiposBundesliga, jugadoresBundesliga, partidosBundesliga);
+
+    Liga ligue1 = new Liga("Francia", equiposLigue1, jugadoresLigue1, partidosLigue1);
+
     Errores errores = new Errores();
     Jornada jornada = new Jornada();
     Partido partido =  new Partido();
@@ -67,442 +80,41 @@ public class Menu {
             System.out.println("6. Salir");
             opciones = errores.numeroEntero(sc);
 
-            switch (opciones) {
+            switch(opciones) {
                 case 1:
 
-                        System.out.println("Elige un equipo: ");
-                        for (int i = 0; i < equiposLiga.size(); i++) {
-
-
-                            System.out.println((i + 1) + ". " + equiposLiga.get(i).getNombre());
-
-                        }
-
-                        opciones = errores.numeroEntero(sc);
-
-                        if (opciones <21 && opciones > 0){
-                            equipoSeleccionado = elegirEquipo(opciones - 1, equiposLiga, equipo);
-                            System.out.println("\n\n\nHas elegido al " + equipoSeleccionado.getNombre() + " para ser su entrenador esta temporada, prepárate para darlo todo este año.\n\n");
-                        }else {
-                            System.out.println("Elige el número de un equipo válido");
-                        }
-
-                            for (int i = 0; i<38; i++){
-
-                                Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposLiga, equipoSeleccionado,partidosLiga, (i));
-
-                                partidosLiga.add(partidoJornada);
-
-                                do {
-
-                                    System.out.println("\n\n1. Ver Siguiente Partido");
-                                    System.out.println("2. Simular Partido");
-                                    System.out.println("3. Simular Partido Rápido");
-                                    System.out.println("4. Ver Clasificación");
-                                    opciones = errores.numeroEntero(sc);
-
-                                    switch (opciones){
-
-                                        case 1:
-
-                                            System.out.println("\n\nJORNADA " + (i+1));
-                                            System.out.println(partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\nEstadio: "+partidoJornada.getEquipoLocal().getEstadio().getNombre());
-
-                                            break;
-
-                                        case 2:
-
-                                            Partido.simularPartido(partidoJornada,jugadoresLiga,equipoSeleccionado);
-                                            clasificacion.puntosResto(equiposLiga, partidoJornada, jugadoresLiga);
-                                            Partido.puntosPartido(partidoJornada,partidoJornada.getEquipoLocal(),partidoJornada.getEquipoVisitante());
-                                            System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
-
-                                            break;
-
-                                        case 3:
-
-                                            partido.partidoRapido(partidoJornada, equipoSeleccionado, jugadoresLiga);
-                                            clasificacion.puntosResto(equiposLiga, partidoJornada, jugadoresLiga);
-
-
-                                            break;
-
-                                        case 4:
-
-                                            mostrarClasificacionSoloPuntos(equiposLiga);
-
-                                            break;
-
-                                        default:
-                                            System.out.println("Juega un partido para pasar de Jornada");
-                                            break;
-
-
-
-                                    }
-
-                            }while(opciones != 2 && opciones != 3);
-
-                            }
-
-                        mostrarClasificacionSoloPuntos(equiposLiga);
-                    System.out.println("\n\nPremios:");
-                    System.out.println("Pichichi: " + Jugador.pichichi(equiposLiga).getNombre() + " " + Jugador.pichichi(equiposLiga).getApellido() + " del " + Jugador.pichichi(equiposLiga).getEquipo().getNombre() + " con " + Jugador.pichichi(equiposLiga).getGoles() + " goles");
-
-                    jugador.resetearJugadores(jugadoresLiga);
-                    equipo.resetearTodo(equiposLiga);
-
+                    Liga.jugarLiga(ligaEspanola);
                     break;
 
                 case 2:
 
-                        System.out.println("Elige un equipo: ");
-                        for (int i = 0; i < equiposPremier.size(); i++) {
-
-                            System.out.println((i + 1) + ". " + equiposPremier.get(i).getNombre());
-
-                        }
-
-                        opciones = errores.numeroEntero(sc);
-
-                        if (opciones <21 && opciones > 0){
-                            equipoSeleccionado = elegirEquipo(opciones - 1, equiposPremier, equipo);
-                            System.out.println("\n\n\nHas elegido al " + equipoSeleccionado.getNombre() + " para ser su entrenador esta temporada, prepárate para darlo todo este año.\n\n");
-                        }else {
-                            System.out.println("Elige el número de un equipo válido");
-                        }
-
-
-                        for (int i = 0; i<38; i++){
-
-                            Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposPremier, equipoSeleccionado,partidosPremier,(i));
-                            partidosPremier.add(partidoJornada);
-
-                            do {
-
-                                System.out.println("\n\n1. Ver Siguiente Partido");
-                                System.out.println("2. Simular Partido");
-                                System.out.println("3. Simular Partido Rápido");
-                                System.out.println("4. Ver Clasificación");
-                                opciones = errores.numeroEntero(sc);
-
-                                switch (opciones){
-
-                                    case 1:
-
-                                        System.out.println("\n\nJORNADA " + (i+1));
-                                        System.out.println(partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\n\nEstadio " + partidoJornada.getEquipoLocal().getEstadio().getNombre());
-
-
-                                        break;
-
-                                    case 2:
-
-                                        Partido.simularPartido(partidoJornada,jugadoresPremier,equipoSeleccionado);
-                                        clasificacion.puntosResto(equiposPremier, partidoJornada, jugadoresPremier);
-                                        Partido.puntosPartido(partidoJornada,partidoJornada.getEquipoLocal(),partidoJornada.getEquipoVisitante());
-                                        System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
-
-
-                                        break;
-
-                                    case 3:
-
-                                        partido.partidoRapido(partidoJornada, equipoSeleccionado,jugadoresPremier);
-                                        clasificacion.puntosResto(equiposPremier, partidoJornada, jugadoresPremier);
-
-                                        break;
-
-                                    case 4:
-
-                                        mostrarClasificacionSoloPuntos(equiposPremier);
-
-                                        break;
-
-                                    default:
-                                        System.out.println("Juega un partido para pasar de Jornada");
-
-
-
-                                }
-
-                            }while(opciones != 2 && opciones != 3);
-
-                        }
-
-                    mostrarClasificacionSoloPuntos(equiposLiga);
-                    mostrarClasificacionSoloPuntos(equiposPremier);
-                    System.out.println("\n\nPremios:");
-                    System.out.println("Pichichi: " + Jugador.pichichi(equiposPremier).getNombre() + " " + Jugador.pichichi(equiposPremier).getApellido() + " del " + Jugador.pichichi(equiposPremier).getEquipo().getNombre() + " con " + Jugador.pichichi(equiposPremier).getGoles() + " goles");
-                    jugador.resetearJugadores(jugadoresPremier);
-                    equipo.resetearTodo(equiposPremier);
-
+                    Liga.jugarLiga(premier);
                     break;
 
                 case 3:
 
-                        System.out.println("Elige un equipo: ");
-                        for (int i = 0; i < equiposSerieA.size(); i++) {
-
-                            System.out.println((i + 1) + ". " + equiposSerieA.get(i).getNombre());
-
-                        }
-
-                        opciones = errores.numeroEntero(sc);
-
-                        if (opciones <21 && opciones > 0){
-                            equipoSeleccionado = elegirEquipo(opciones - 1, equiposSerieA, equipo);
-                            System.out.println("\n\n\nHas elegido al " + equipoSeleccionado.getNombre() + " para ser su entrenador esta temporada, prepárate para darlo todo este año.\n\n");
-                        }else {
-                            System.out.println("Elige el número de un equipo válido");
-                        }
-
-
-                        for (int i = 0; i<38; i++){
-
-                            Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposSerieA, equipoSeleccionado,partidosSerieA,(i));
-                            partidosSerieA.add(partidoJornada);
-
-                            do {
-
-                                System.out.println("\n\n1. Ver Siguiente Partido");
-                                System.out.println("2. Simular Partido");
-                                System.out.println("3. Simular Partido Rápido");
-                                System.out.println("4. Ver Clasificación");
-                                opciones = errores.numeroEntero(sc);
-
-                                switch (opciones){
-
-                                    case 1:
-
-                                        System.out.println("\n\nJORNADA " + (i+1));
-                                        System.out.println(partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\n\nEstadio " + partidoJornada.getEquipoLocal().getEstadio().getNombre());
-
-
-                                        break;
-
-                                    case 2:
-
-                                        Partido.simularPartido(partidoJornada,jugadoresSerieA,equipoSeleccionado);
-                                        clasificacion.puntosResto(equiposSerieA, partidoJornada, jugadoresSerieA);
-                                        Partido.puntosPartido(partidoJornada,partidoJornada.getEquipoLocal(),partidoJornada.getEquipoVisitante());
-                                        System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
-
-
-                                        break;
-
-                                    case 3:
-
-                                        partido.partidoRapido(partidoJornada, equipoSeleccionado,jugadoresSerieA);
-                                        clasificacion.puntosResto(equiposSerieA, partidoJornada,jugadoresSerieA);
-
-                                        break;
-
-                                    case 4:
-
-                                        mostrarClasificacionSoloPuntos(equiposSerieA);
-
-                                        break;
-
-                                    default:
-                                        System.out.println("Juega un partido para pasar de Jornada");
-
-
-
-                                }
-
-                            }while(opciones != 2 && opciones != 3);
-
-                        }
-
-                    mostrarClasificacionSoloPuntos(equiposSerieA);
-                    System.out.println("\n\nPremios:");
-                    System.out.println("Pichichi: " + Jugador.pichichi(equiposSerieA).getNombre() + " " + Jugador.pichichi(equiposSerieA).getApellido() + " del " + Jugador.pichichi(equiposSerieA).getEquipo().getNombre() + " con " + Jugador.pichichi(equiposSerieA).getGoles() + " goles");
-                    mostrarClasificacionSoloPuntos(equiposLiga);
-                    jugador.resetearJugadores(jugadoresSerieA);
-                    equipo.resetearTodo(equiposSerieA);
-
+                    Liga.jugarLiga(serieA);
                     break;
 
                 case 4:
 
-                    System.out.println("Elige un equipo: ");
-                    for (int i = 0; i < equiposBundesliga.size(); i++) {
-
-
-                        System.out.println((i + 1) + ". " + equiposBundesliga.get(i).getNombre());
-
-                    }
-
-                    opciones = errores.numeroEntero(sc);
-
-                    if (opciones <21 && opciones > 0){
-                        equipoSeleccionado = elegirEquipo(opciones - 1, equiposBundesliga, equipo);
-                        System.out.println("\n\n\nHas elegido al " + equipoSeleccionado.getNombre() + " para ser su entrenador esta temporada, prepárate para darlo todo este año.\n\n");
-                    }else {
-                        System.out.println("Elige el número de un equipo válido");
-                    }
-
-                    for (int i = 0; i<38; i++){
-
-                        Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposBundesliga, equipoSeleccionado,partidosBundesliga, (i));
-
-                        partidosBundesliga.add(partidoJornada);
-
-                        do {
-
-                            System.out.println("\n\n1. Ver Siguiente Partido");
-                            System.out.println("2. Simular Partido");
-                            System.out.println("3. Simular Partido Rápido");
-                            System.out.println("4. Ver Clasificación");
-                            opciones = errores.numeroEntero(sc);
-
-                            switch (opciones){
-
-                                case 1:
-
-                                    System.out.println("\n\nJORNADA " + (i+1));
-                                    System.out.println(partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\nEstadio: "+partidoJornada.getEquipoLocal().getEstadio().getNombre());
-
-                                    break;
-
-                                case 2:
-
-                                    Partido.simularPartido(partidoJornada,jugadoresBundesliga,equipoSeleccionado);
-                                    clasificacion.puntosResto(equiposBundesliga, partidoJornada,jugadoresBundesliga);
-                                    Partido.puntosPartido(partidoJornada,partidoJornada.getEquipoLocal(),partidoJornada.getEquipoVisitante());
-                                    System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
-
-                                    break;
-
-                                case 3:
-
-                                    partido.partidoRapido(partidoJornada, equipoSeleccionado,jugadoresBundesliga);
-                                    clasificacion.puntosResto(equiposBundesliga, partidoJornada,jugadoresBundesliga);
-
-
-                                    break;
-
-                                case 4:
-
-                                    mostrarClasificacionSoloPuntos(equiposBundesliga);
-
-                                    break;
-
-                                default:
-                                    System.out.println("Juega un partido para pasar de Jornada");
-                                    break;
-
-
-
-                            }
-
-                        }while(opciones != 2 && opciones != 3);
-
-                    }
-
-                    mostrarClasificacionSoloPuntos(equiposBundesliga);
-                    System.out.println("\n\nPremios:");
-                    System.out.println("Pichichi: " + Jugador.pichichi(equiposBundesliga).getNombre() + " " + Jugador.pichichi(equiposBundesliga).getApellido() + " del " + Jugador.pichichi(equiposBundesliga).getEquipo().getNombre() + " con " + Jugador.pichichi(equiposBundesliga).getGoles() + " goles");
-                    jugador.resetearJugadores(jugadoresBundesliga);
-                    equipo.resetearTodo(equiposBundesliga);
-
+                    Liga.jugarLiga(bundesliga);
                     break;
 
                 case 5:
 
-                    System.out.println("Elige un equipo: ");
-                    for (int i = 0; i < equiposLigue1.size(); i++) {
-
-
-                        System.out.println((i + 1) + ". " + equiposLigue1.get(i).getNombre());
-
-                    }
-
-                    opciones = errores.numeroEntero(sc);
-
-                    if (opciones <21 && opciones > 0){
-                        equipoSeleccionado = elegirEquipo(opciones - 1, equiposLigue1, equipo);
-                        System.out.println("\n\n\nHas elegido al " + equipoSeleccionado.getNombre() + " para ser su entrenador esta temporada, prepárate para darlo todo este año.\n\n");
-                    }else {
-                        System.out.println("Elige el número de un equipo válido");
-                    }
-
-                    for (int i = 0; i<38; i++){
-
-                        Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposLigue1, equipoSeleccionado,partidosLigue1, (i));
-
-                        partidosLigue1.add(partidoJornada);
-
-                        do {
-
-                            System.out.println("\n\n1. Ver Siguiente Partido");
-                            System.out.println("2. Simular Partido");
-                            System.out.println("3. Simular Partido Rápido");
-                            System.out.println("4. Ver Clasificación");
-                            opciones = errores.numeroEntero(sc);
-
-                            switch (opciones){
-
-                                case 1:
-
-                                    System.out.println("\n\nJORNADA " + (i+1));
-                                    System.out.println(partidoJornada.getEquipoLocal().getNombre() + " - " + partidoJornada.getEquipoVisitante().getNombre() + "\nEstadio: "+partidoJornada.getEquipoLocal().getEstadio().getNombre());
-
-                                    break;
-
-                                case 2:
-
-                                    Partido.simularPartido(partidoJornada,jugadoresLigue1,equipoSeleccionado);
-                                    clasificacion.puntosResto(equiposLigue1, partidoJornada,jugadoresLigue1);
-                                    Partido.puntosPartido(partidoJornada,partidoJornada.getEquipoLocal(),partidoJornada.getEquipoVisitante());
-                                    System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
-
-                                    break;
-
-                                case 3:
-
-                                    partido.partidoRapido(partidoJornada, equipoSeleccionado,jugadoresLigue1);
-                                    clasificacion.puntosResto(equiposLigue1, partidoJornada,jugadoresLigue1);
-
-
-                                    break;
-
-                                case 4:
-
-                                    mostrarClasificacionSoloPuntos(equiposLigue1);
-
-                                    break;
-
-                                default:
-                                    System.out.println("Juega un partido para pasar de Jornada");
-                                    break;
-
-
-
-                            }
-
-                        }while(opciones != 2 && opciones != 3);
-
-                    }
-
-                    mostrarClasificacionSoloPuntos(equiposLigue1);
-                    System.out.println("\n\nPremios:");
-                    System.out.println("Pichichi: " + Jugador.pichichi(equiposLigue1).getNombre() + " " + jugador.pichichi(equiposLigue1).getApellido() + " del " + Jugador.pichichi(equiposLigue1).getEquipo().getNombre() + " con " + Jugador.pichichi(equiposLigue1).getGoles() + " goles");
-                    jugador.resetearJugadores(jugadoresLigue1);
-                    equipo.resetearTodo(equiposLigue1);
-
+                    Liga.jugarLiga(ligue1);
                     break;
 
                 case 6:
-                    System.out.println("¿PORQUÉ NO TE ATREVES A JUGAR NINGÚN MODO?");
+
                     break;
 
                 default:
-                    System.out.println("VENGA ANDA ELIGE UN MODO DE JUEGO");
-                    break;
-            }
 
+                    System.out.println("¿Por que no te atreves a jugar una liga?");
+
+            }
 
         }while (opciones != 6);
 
