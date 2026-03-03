@@ -2,6 +2,7 @@ package proyectoLiga.personas;
 
 import proyectoLiga.enumeradores.Posicion;
 import proyectoLiga.liga.Equipo;
+import proyectoLiga.liga.Liga;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -15,6 +16,7 @@ public class Jugador extends AbstractPersona {
     private int asistencias;
     private int tarjetasAmarillas;
     private int tarjetasRojas;
+    Liga liga = new Liga();
 
     public Jugador() {
     }
@@ -95,14 +97,14 @@ public class Jugador extends AbstractPersona {
         return jugadorPichichi;
     }
 
-    public Jugador zarra(List<Equipo> equipos){
+    public Jugador zarra(Liga liga, List<Equipo> equipos){
 
         Jugador jugadorZarra = null;
 
         for (Equipo equipo : equipos) {
             for (Jugador jugador : equipo.getPlantilla()) {
 
-                if (jugadorZarra == null || (jugador.getGoles() > jugadorZarra.getGoles() && jugador.getNacionalidad().equalsIgnoreCase(liga.getPais))) {
+                if (jugadorZarra == null || (jugador.getGoles() > jugadorZarra.getGoles() && jugador.getNacionalidad().equalsIgnoreCase(liga.getPais()))) {
 
                     jugadorZarra = jugador;
                 }
