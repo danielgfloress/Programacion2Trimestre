@@ -532,23 +532,41 @@ public class Partido {
 
             int golesAFavor;
             int golesEnContra;
+            List<Jugador> jugadoresLocal = new ArrayList<>(jugadores);
+            List<Jugador> jugadoresVisitante = new ArrayList<>(jugadores);
+            Random jugadorRandom = new Random();
+            jugadoresLocal = partido.getEquipoLocal().getPlantilla();
+            jugadoresVisitante = partido.getEquipoVisitante().getPlantilla();
+
+            jugadoresLocal.remove(partido.getEquipoLocal().getPlantilla().get(0));
+            jugadoresVisitante.remove(partido.getEquipoVisitante().getPlantilla().get(0));
 
             if (partido.getEquipoLocal().getMedia() > partido.getEquipoVisitante().getMedia()){
 
                 golesAFavor = goles.nextInt(6);
                 golesEnContra = goles.nextInt(3);
-                List<Jugador> jugadoresLocal = new ArrayList<>(jugadores);
-                List<Jugador> jugadoresVisitante = new ArrayList<>(jugadores);
-                Random jugadorRandom = new Random();
-                jugadoresLocal = partido.getEquipoLocal().getPlantilla();
-                jugadoresVisitante = partido.getEquipoVisitante().getPlantilla();
-
-                jugadoresLocal.remove(partido.getEquipoLocal().getPlantilla().get(0));
-                jugadoresVisitante.remove(partido.getEquipoVisitante().getPlantilla().get(0));
 
                 for (int i = 0; i < golesAFavor ; i++){
 
-                    Jugador jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
+                    List<Jugador> jugadoresGoleadores = new ArrayList<>();
+                    for (Jugador j : jugadoresLocal) {
+                        int probabilidadGol = 1;
+                        if (j.getPosicion().equals(Posicion.DELANTERO)){
+
+                            probabilidadGol = 4;
+
+                        }
+                        else if (j.getPosicion().equals(Posicion.CENTRO_CAMPISTA)){
+
+                            probabilidadGol = 2;
+
+                        }
+                        for (int k = 0; k < probabilidadGol; k++){
+
+                            jugadoresGoleadores.add(j);
+                        }
+                    }
+                    Jugador jugadorClaveLocal = jugadoresGoleadores.get(jugadorRandom.nextInt(jugadoresGoleadores.size()));
 
 
                     jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
@@ -557,7 +575,25 @@ public class Partido {
 
                 for (int i=0; i<golesEnContra;i++){
 
-                    Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
+                    List<Jugador> jugadoresGoleadores = new ArrayList<>();
+                    for (Jugador j : jugadoresVisitante) {
+                        int probabilidadGol = 1;
+                        if (j.getPosicion().equals(Posicion.DELANTERO)){
+
+                            probabilidadGol = 4;
+
+                        }
+                        else if (j.getPosicion().equals(Posicion.CENTRO_CAMPISTA)){
+
+                            probabilidadGol = 2;
+
+                        }
+                        for (int k = 0; k < probabilidadGol; k++){
+
+                            jugadoresGoleadores.add(j);
+                        }
+                    }
+                    Jugador jugadorClaveVisitante = jugadoresGoleadores.get(jugadorRandom.nextInt(jugadoresGoleadores.size()));
 
                     jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
 
@@ -576,18 +612,29 @@ public class Partido {
                 golesAFavor = goles.nextInt(6);
                 golesEnContra = goles.nextInt(4);
 
-                List<Jugador> jugadoresLocal = new ArrayList<>(jugadores);
-                List<Jugador> jugadoresVisitante = new ArrayList<>(jugadores);
-                Random jugadorRandom = new Random();
-                jugadoresLocal = partido.getEquipoLocal().getPlantilla();
-                jugadoresVisitante = partido.getEquipoVisitante().getPlantilla();
 
-                jugadoresLocal.remove(partido.getEquipoLocal().getPlantilla().get(0));
-                jugadoresVisitante.remove(partido.getEquipoVisitante().getPlantilla().get(0));
 
                 for (int i = 0; i < golesAFavor ; i++){
 
-                    Jugador jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
+                    List<Jugador> jugadoresGoleadores = new ArrayList<>();
+                    for (Jugador j : jugadoresLocal) {
+                        int probabilidadGol = 1;
+                        if (j.getPosicion().equals(Posicion.DELANTERO)){
+
+                            probabilidadGol = 4;
+
+                        }
+                        else if (j.getPosicion().equals(Posicion.CENTRO_CAMPISTA)){
+
+                            probabilidadGol = 2;
+
+                        }
+                        for (int k = 0; k < probabilidadGol; k++){
+
+                            jugadoresGoleadores.add(j);
+                        }
+                    }
+                    Jugador jugadorClaveLocal = jugadoresGoleadores.get(jugadorRandom.nextInt(jugadoresGoleadores.size()));
 
 
                     jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
@@ -596,7 +643,25 @@ public class Partido {
 
                 for (int i=0; i<golesEnContra;i++){
 
-                    Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
+                    List<Jugador> jugadoresGoleadores = new ArrayList<>();
+                    for (Jugador j : jugadoresVisitante) {
+                        int probabilidadGol = 1;
+                        if (j.getPosicion().equals(Posicion.DELANTERO)){
+
+                            probabilidadGol = 4;
+
+                        }
+                        else if (j.getPosicion().equals(Posicion.CENTRO_CAMPISTA)){
+
+                            probabilidadGol = 2;
+
+                        }
+                        for (int k = 0; k < probabilidadGol; k++){
+
+                            jugadoresGoleadores.add(j);
+                        }
+                    }
+                    Jugador jugadorClaveVisitante = jugadoresGoleadores.get(jugadorRandom.nextInt(jugadoresGoleadores.size()));
 
                     jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
 
@@ -613,15 +678,6 @@ public class Partido {
 
                 golesAFavor = goles.nextInt(4);
                 golesEnContra = goles.nextInt(4);
-
-                List<Jugador> jugadoresLocal = new ArrayList<>(jugadores);
-                List<Jugador> jugadoresVisitante = new ArrayList<>(jugadores);
-                Random jugadorRandom = new Random();
-                jugadoresLocal = partido.getEquipoLocal().getPlantilla();
-                jugadoresVisitante = partido.getEquipoVisitante().getPlantilla();
-
-                jugadoresLocal.remove(partido.getEquipoLocal().getPlantilla().get(0));
-                jugadoresVisitante.remove(partido.getEquipoVisitante().getPlantilla().get(0));
 
                 for (int i = 0; i < golesAFavor ; i++){
 

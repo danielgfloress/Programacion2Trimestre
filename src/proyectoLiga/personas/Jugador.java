@@ -95,6 +95,24 @@ public class Jugador extends AbstractPersona {
         return jugadorPichichi;
     }
 
+    public Jugador zarra(List<Equipo> equipos){
+
+        Jugador jugadorZarra = null;
+
+        for (Equipo equipo : equipos) {
+            for (Jugador jugador : equipo.getPlantilla()) {
+
+                if (jugadorZarra == null || (jugador.getGoles() > jugadorZarra.getGoles() && jugador.getNacionalidad().equalsIgnoreCase(liga.getPais))) {
+
+                    jugadorZarra = jugador;
+                }
+            }
+        }
+
+        return jugadorZarra;
+
+    }
+
     public static void resetearJugadores (List<Jugador> jugadores) {
 
         for (Jugador jugador : jugadores) {
