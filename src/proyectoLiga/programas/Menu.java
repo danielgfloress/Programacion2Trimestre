@@ -43,6 +43,8 @@ public class Menu {
     Errores errores = new Errores();
     Jornada jornada = new Jornada();
     Partido partido =  new Partido();
+    Equipo equipo = new Equipo();
+    Jugador jugador = new Jugador();
     Clasificacion clasificacion = new Clasificacion();
     Scanner sc = new Scanner(System.in);
     int contadorJornadas = 0;
@@ -151,6 +153,9 @@ public class Menu {
 
                     mostrarClasificacionSoloPuntos(equiposLiga);
 
+                    jugador.resetearJugadores(jugadoresLiga);
+                    equipo.resetearTodo(equiposLiga);
+
                     break;
 
                 case 2:
@@ -229,6 +234,8 @@ public class Menu {
                         }
 
                     mostrarClasificacionSoloPuntos(equiposLiga);
+                    jugador.resetearJugadores(jugadoresPremier);
+                    equipo.resetearTodo(equiposPremier);
 
                     break;
 
@@ -307,6 +314,8 @@ public class Menu {
                         }
 
                     mostrarClasificacionSoloPuntos(equiposLiga);
+                    jugador.resetearJugadores(jugadoresSerieA);
+                    equipo.resetearTodo(equiposSerieA);
 
                     break;
 
@@ -394,6 +403,8 @@ public class Menu {
                     }
 
                     mostrarClasificacionSoloPuntos(equiposBundesliga);
+                    jugador.resetearJugadores(jugadoresBundesliga);
+                    equipo.resetearTodo(equiposBundesliga);
 
                     break;
 
@@ -481,6 +492,8 @@ public class Menu {
                     }
 
                     mostrarClasificacionSoloPuntos(equiposLigue1);
+                    jugador.resetearJugadores(jugadoresLigue1);
+                    equipo.resetearTodo(equiposLigue1);
 
                     break;
 

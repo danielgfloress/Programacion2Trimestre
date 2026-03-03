@@ -4,6 +4,7 @@ import proyectoLiga.enumeradores.Posicion;
 import proyectoLiga.liga.Equipo;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Objects;
 
 public class Jugador extends AbstractPersona {
@@ -71,6 +72,19 @@ public class Jugador extends AbstractPersona {
 
     public void setTarjetasRojas(int tarjetasRojas) {
         this.tarjetasRojas = tarjetasRojas;
+    }
+
+    public static void resetearJugadores (List<Jugador> jugadores) {
+
+        for (Jugador jugador : jugadores) {
+
+            jugador.setAsistencias(0);
+            jugador.setGoles(0);
+            jugador.setTarjetasAmarillas(0);
+            jugador.setTarjetasRojas(0);
+
+        }
+
     }
 
     @Override

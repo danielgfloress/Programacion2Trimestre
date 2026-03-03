@@ -21,7 +21,7 @@ public class Equipo {
     private int golesFavor;
     private int golesContra;
 
-
+    public Equipo() {}
     public Equipo(String nombre, Estadio estadio, int media, List<Jugador> plantilla, int puntos, int partidosJugados, int victorias, int empates, int derrotas, int golesFavor, int golesContra) {
         this.nombre = nombre;
         this.estadio = estadio;
@@ -122,6 +122,21 @@ public class Equipo {
 
     public void setGolesContra(int golesContra) {
         this.golesContra = golesContra;
+    }
+
+    public static void resetearTodo (List<Equipo> equipos) {
+
+        for (Equipo equipo : equipos) {
+
+            equipo.setPuntos(0);
+            equipo.setVictorias(0);
+            equipo.setEmpates(0);
+            equipo.setDerrotas(0);
+            equipo.setGolesFavor(0);
+            equipo.setGolesContra(0);
+
+        }
+
     }
 
     @Override
