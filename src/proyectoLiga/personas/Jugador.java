@@ -97,7 +97,7 @@ public class Jugador extends AbstractPersona {
         return jugadorPichichi;
     }
 
-    public Jugador zarra(Liga liga, List<Equipo> equipos){
+    public static Jugador zarra(Liga liga, List<Equipo> equipos){
 
         Jugador jugadorZarra = null;
 

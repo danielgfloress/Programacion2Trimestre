@@ -5,6 +5,7 @@ import proyectoLiga.enumeradores.Resultado;
 import proyectoLiga.liga.Equipo;
 import proyectoLiga.liga.Jornada;
 import proyectoLiga.personas.Jugador;
+import proyectoLiga.velocidadDeTexto.VelocidadDeTexto;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +28,7 @@ public class Partido {
     private List<Gol> goles;
     private List<TarjetaAmarilla> tarjetasAmarillas;
     private List<TarjetaRoja> tarjetasRojas;
+    VelocidadDeTexto imprimir = new VelocidadDeTexto();
 
     public Partido() {
 
@@ -204,7 +206,7 @@ public class Partido {
 
                     if (jugadorClaveLocal.getTarjetasRojas()==1 || jugadorClaveLocal.getPosicion().equals(Posicion.PORTERO)){
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }else {
 
@@ -213,14 +215,14 @@ public class Partido {
                         jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
                         partido.getEquipoLocal().setGolesFavor(1 + partido.getEquipoLocal().getGolesFavor());
                         partido.getEquipoVisitante().setGolesContra(1 + partido.getEquipoVisitante().getGolesContra());
-                        System.out.println(AZUL + "Minuto " + i + " Gol del " + equipoSeleccionado.getNombre() + ", gol de " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
+                        VelocidadDeTexto.escribirLento(AZUL + "Minuto " + i + " Gol del " + equipoSeleccionado.getNombre() + ", gol de " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET,10);
 
                     }
 
                 } else if (opciones > 20 && opciones <26) {
                     if (jugadorClaveVisitante.getTarjetasRojas()==1 || jugadorClaveVisitante.getPosicion().equals(Posicion.PORTERO)){
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }else {
 
@@ -229,7 +231,7 @@ public class Partido {
                         jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
                         partido.getEquipoVisitante().setGolesFavor(1 + partido.getEquipoVisitante().getGolesFavor());
                         partido.getEquipoLocal().setGolesContra(1 + partido.getEquipoLocal().getGolesContra());
-                        System.out.println(ROJO + "Minuto " + i + " Gol del " + partido.getEquipoVisitante().getNombre() + ", gol de " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
+                        VelocidadDeTexto.escribirLento(ROJO + "Minuto " + i + " Gol del " + partido.getEquipoVisitante().getNombre() + ", gol de " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET,10);
 
                     }
 
@@ -237,32 +239,32 @@ public class Partido {
 
                     if (jugadorClaveLocal.getTarjetasRojas()==1) {
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }else if (jugadorClaveLocal.getTarjetasAmarillas()==0) {
                         jugadorClaveLocal.setTarjetasAmarillas(1);
-                        System.out.println(AMARILLO + "Minuto " + i + " amarilla para el " + equipoSeleccionado.getNombre() + ", al jugador " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
+                        VelocidadDeTexto.escribirLento(AMARILLO + "Minuto " + i + " amarilla para el " + equipoSeleccionado.getNombre() + ", al jugador " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET,10);
                     }else if (jugadorClaveLocal.getTarjetasAmarillas()==1) {
 
                         jugadorClaveLocal.setTarjetasAmarillas(2);
                         jugadorClaveLocal.setTarjetasRojas(1);
-                        System.out.println(ROJO +"Minuto "+i+ " Expulsión a " + jugadorClaveLocal.getNombre() + " por doble amarilla por protestar" + RESET);
+                        VelocidadDeTexto.escribirLento(ROJO +"Minuto "+i+ " Expulsión a " + jugadorClaveLocal.getNombre() + " por doble amarilla por protestar" + RESET,10);
 
                         if (jugadorClaveLocal.getPosicion().equals(Posicion.PORTERO)){
 
                             jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
 
-                            System.out.println("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveLocal.getNombre() + " "+ jugadorClaveLocal.getApellido());
+                            VelocidadDeTexto.escribirLento("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveLocal.getNombre() + " "+ jugadorClaveLocal.getApellido(),10);
 
                         }
 
                     } else if (jugadorClaveLocal.getTarjetasRojas()==1) {
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }else{
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }
 
@@ -270,32 +272,32 @@ public class Partido {
 
                     if (jugadorClaveVisitante.getTarjetasRojas()==1) {
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }else if(jugadorClaveVisitante.getTarjetasAmarillas()==0) {
                         jugadorClaveVisitante.setTarjetasAmarillas(1);
-                        System.out.println(AMARILLO + "Minuto " + i + " amarilla para el " + partido.getEquipoVisitante().getNombre() + ", al jugador " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
+                        VelocidadDeTexto.escribirLento(AMARILLO + "Minuto " + i + " amarilla para el " + partido.getEquipoVisitante().getNombre() + ", al jugador " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET,10);
                     }else if (jugadorClaveVisitante.getTarjetasAmarillas()==1) {
 
                         jugadorClaveVisitante.setTarjetasAmarillas(2);
                         jugadorClaveVisitante.setTarjetasRojas(1);
-                        System.out.println(ROJO +"Minuto "+i+ " Expulsión a " + jugadorClaveVisitante.getNombre() + " por doble amarilla por protestar" + RESET);
+                        VelocidadDeTexto.escribirLento(ROJO +"Minuto "+i+ " Expulsión a " + jugadorClaveVisitante.getNombre() + " por doble amarilla por protestar" + RESET,10);
 
                         if (jugadorClaveVisitante.getPosicion().equals(Posicion.PORTERO)){
 
                             jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
 
-                            System.out.println("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveVisitante.getNombre() + " "+ jugadorClaveVisitante.getApellido());
+                            VelocidadDeTexto.escribirLento("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveVisitante.getNombre() + " "+ jugadorClaveVisitante.getApellido(),10);
 
                         }
 
                     }else if (jugadorClaveVisitante.getTarjetasRojas()==1) {
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     } else {
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }
 
@@ -304,19 +306,19 @@ public class Partido {
                     if (jugadorClaveLocal.getTarjetasRojas()==0) {
 
                         jugadorClaveLocal.setTarjetasRojas(1);
-                        System.out.println(ROJO + "Minuto " + i + " ROJA DIRECTA PARA EL " + equipoSeleccionado.getNombre() + " para el jugador " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
+                        VelocidadDeTexto.escribirLento(ROJO + "Minuto " + i + " ROJA DIRECTA PARA EL " + equipoSeleccionado.getNombre() + " para el jugador " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET,10);
 
                         if (jugadorClaveLocal.getPosicion().equals(Posicion.PORTERO)){
 
                             jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
 
-                            System.out.println("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveLocal.getNombre() + " "+ jugadorClaveLocal.getApellido());
+                            VelocidadDeTexto.escribirLento("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveLocal.getNombre() + " "+ jugadorClaveLocal.getApellido(),10);
 
                         }
 
                     }else {
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }
 
@@ -325,31 +327,31 @@ public class Partido {
                     if (jugadorClaveVisitante.getTarjetasRojas()==0) {
 
                         jugadorClaveVisitante.setTarjetasRojas(1);
-                        System.out.println(ROJO + "Minuto " + i + " ROJA DIRECTA PARA EL " + partido.getEquipoVisitante().getNombre() + " para el jugador " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
+                        VelocidadDeTexto.escribirLento(ROJO + "Minuto " + i + " ROJA DIRECTA PARA EL " + partido.getEquipoVisitante().getNombre() + " para el jugador " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET,10);
 
                         if (jugadorClaveVisitante.getPosicion().equals(Posicion.PORTERO)){
 
                             jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
 
-                            System.out.println("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveVisitante.getNombre() + " "+ jugadorClaveVisitante.getApellido());
+                            VelocidadDeTexto.escribirLento("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveVisitante.getNombre() + " "+ jugadorClaveVisitante.getApellido(),10);
 
                         }
 
                     }else{
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }
 
                 }else {
 
-                    System.out.println("Minuto " + i);
+                    VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                 }
 
             }
 
-            System.out.println("\n\n" + equipoSeleccionado.getNombre() + " " + golesFavor + " - " + golesContra + " " + partido.getEquipoVisitante().getNombre());
+            VelocidadDeTexto.escribirLento("\n\n" + equipoSeleccionado.getNombre() + " " + golesFavor + " - " + golesContra + " " + partido.getEquipoVisitante().getNombre(),100);
 
 
         }else if (partido.getEquipoVisitante().equals(equipoSeleccionado)){
@@ -378,7 +380,7 @@ public class Partido {
 
                     if (jugadorClaveVisitante.getTarjetasRojas()==1 || jugadorClaveVisitante.getPosicion().equals(Posicion.PORTERO)){
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }else {
 
@@ -387,7 +389,7 @@ public class Partido {
                         jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
                         partido.getEquipoVisitante().setGolesFavor(1 + partido.getEquipoVisitante().getGolesFavor());
                         partido.getEquipoLocal().setGolesContra(1 + partido.getEquipoLocal().getGolesContra());
-                        System.out.println(AZUL + "Minuto " + i + " Gol del " + equipoSeleccionado.getNombre() + ", gol de " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
+                        VelocidadDeTexto.escribirLento(AZUL + "Minuto " + i + " Gol del " + equipoSeleccionado.getNombre() + ", gol de " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET,10);
 
                     }
 
@@ -395,7 +397,7 @@ public class Partido {
 
                     if (jugadorClaveLocal.getTarjetasRojas()==1 || jugadorClaveLocal.getPosicion().equals(Posicion.PORTERO)){
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }else {
 
@@ -404,7 +406,7 @@ public class Partido {
                         jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
                         partido.getEquipoLocal().setGolesFavor(1 + partido.getEquipoLocal().getGolesFavor());
                         partido.getEquipoVisitante().setGolesContra(1 + partido.getEquipoVisitante().getGolesContra());
-                        System.out.println(ROJO + "Minuto " + i + " Gol del " + partido.getEquipoLocal().getNombre() + ", gol de " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
+                        VelocidadDeTexto.escribirLento(ROJO + "Minuto " + i + " Gol del " + partido.getEquipoLocal().getNombre() + ", gol de " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET,10);
 
                     }
 
@@ -412,30 +414,30 @@ public class Partido {
 
                     if (jugadorClaveVisitante.getTarjetasRojas()==1) {
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }else if (jugadorClaveVisitante.getTarjetasAmarillas()==0) {
 
                         jugadorClaveVisitante.setTarjetasAmarillas(1);
-                        System.out.println(AMARILLO + "Minuto " + i + " amarilla para el " + equipoSeleccionado.getNombre() + ", al jugador " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
+                        VelocidadDeTexto.escribirLento(AMARILLO + "Minuto " + i + " amarilla para el " + equipoSeleccionado.getNombre() + ", al jugador " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET,10);
 
                     }else if (jugadorClaveVisitante.getTarjetasAmarillas()==1) {
 
                         jugadorClaveVisitante.setTarjetasAmarillas(2);
                         jugadorClaveVisitante.setTarjetasRojas(1);
-                        System.out.println(ROJO + "Minuto " +i+ " Expulsión a " + jugadorClaveVisitante.getNombre() + " por doble amarilla por protestar" + RESET);
+                        VelocidadDeTexto.escribirLento(ROJO + "Minuto " +i+ " Expulsión a " + jugadorClaveVisitante.getNombre() + " por doble amarilla por protestar" + RESET,10);
 
                         if (jugadorClaveVisitante.getPosicion().equals(Posicion.PORTERO)){
 
                             jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
 
-                            System.out.println("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveVisitante.getNombre() + " "+ jugadorClaveVisitante.getApellido());
+                            VelocidadDeTexto.escribirLento("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveVisitante.getNombre() + " "+ jugadorClaveVisitante.getApellido(),10);
 
                         }
 
                     }else {
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }
 
@@ -443,78 +445,78 @@ public class Partido {
 
                     if (jugadorClaveLocal.getTarjetasRojas()==1) {
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }else if (jugadorClaveLocal.getTarjetasAmarillas()==0) {
 
                         jugadorClaveLocal.setTarjetasAmarillas(1);
-                        System.out.println(AMARILLO + "Minuto " + i + " amarilla para el " + partido.getEquipoLocal().getNombre() + ", al jugador " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
+                        VelocidadDeTexto.escribirLento(AMARILLO + "Minuto " + i + " amarilla para el " + partido.getEquipoLocal().getNombre() + ", al jugador " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET,10);
 
                     }else if (jugadorClaveLocal.getTarjetasAmarillas()==1) {
 
                         jugadorClaveLocal.setTarjetasAmarillas(2);
                         jugadorClaveLocal.setTarjetasRojas(1);
-                        System.out.println(ROJO + "Minuto " +i+ " Expulsión a " + jugadorClaveLocal.getNombre() + " por doble amarilla por protestar" + RESET);
+                        VelocidadDeTexto.escribirLento(ROJO + "Minuto " +i+ " Expulsión a " + jugadorClaveLocal.getNombre() + " por doble amarilla por protestar" + RESET,10);
 
                         if (jugadorClaveLocal.getPosicion().equals(Posicion.PORTERO)){
 
                             jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
 
-                            System.out.println("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveLocal.getNombre() + " "+ jugadorClaveLocal.getApellido());
+                            VelocidadDeTexto.escribirLento("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveLocal.getNombre() + " "+ jugadorClaveLocal.getApellido(),10);
 
                         }
 
                     }else {
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }
 
-                } else if (rojas.nextInt(1000)<=1) {
+                } else if (opcionesRoja<=1) {
 
                     if (jugadorClaveLocal.getTarjetasRojas()==0) {
 
                         jugadorClaveLocal.setTarjetasRojas(1);
-                        System.out.println(ROJO + "Minuto " + i + " ROJA DIRECTA PARA EL " + equipoSeleccionado.getNombre() + " para el jugador " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
+                        VelocidadDeTexto.escribirLento(ROJO + "Minuto " + i + " ROJA DIRECTA PARA EL " + equipoSeleccionado.getNombre() + " para el jugador " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET,10);
 
                         if (jugadorClaveVisitante.getPosicion().equals(Posicion.PORTERO)){
 
                             jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
 
-                            System.out.println("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveVisitante.getNombre() + " "+ jugadorClaveVisitante.getApellido());
+                            VelocidadDeTexto.escribirLento("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveVisitante.getNombre() + " "+ jugadorClaveVisitante.getApellido(),10);
 
                         }
 
                     }else{
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }
 
-                }else if (rojas.nextInt(1000)<3 && rojas.nextInt(1000)>=2) {
+                }else if (opcionesRoja<3 && opcionesRoja>=2) {
 
                     if (jugadorClaveVisitante.getTarjetasRojas()==0) {
 
                         jugadorClaveVisitante.setTarjetasRojas(1);
-                        System.out.println(ROJO + "Minuto " + i + " ROJA DIRECTA PARA EL " + partido.getEquipoLocal().getNombre() + " para el jugador " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
+                        VelocidadDeTexto.escribirLento(ROJO + "Minuto " + i + " ROJA DIRECTA PARA EL " + partido.getEquipoLocal().getNombre() + " para el jugador " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET,10);
 
                         if (jugadorClaveLocal.getPosicion().equals(Posicion.PORTERO)){
 
                             jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
 
-                            System.out.println("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveLocal.getNombre() + " "+ jugadorClaveLocal.getApellido());
+                            VelocidadDeTexto.escribirLento("En sustitución al portero expulsado ocupara su lugar en la porteria " + jugadorClaveLocal.getNombre() + " "+ jugadorClaveLocal.getApellido(),10);
 
                         }
 
                     }else{
 
-                        System.out.println("Minuto " + i);
+                        VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                     }
 
                 }else {
 
-                    System.out.println("Minuto " + i);
+                    VelocidadDeTexto.escribirLento("Minuto " + i,10);
 
                 }
 
@@ -522,7 +524,7 @@ public class Partido {
 
             }
 
-            System.out.println ("\n\n" + partido.getEquipoLocal().getNombre() + " " + partido.getGolesLocal()+ " - " + partido.getGolesVisitante() + " " + equipoSeleccionado.getNombre());
+            VelocidadDeTexto.escribirLento ("\n\n" + partido.getEquipoLocal().getNombre() + " " + partido.getGolesLocal()+ " - " + partido.getGolesVisitante() + " " + equipoSeleccionado.getNombre(),100);
 
         }
 
@@ -540,11 +542,23 @@ public class Partido {
             List<Jugador> jugadoresLocal;
             List<Jugador> jugadoresVisitante;
             Random jugadorRandom = new Random();
+
             jugadoresLocal = new ArrayList<>(partido.getEquipoLocal().getPlantilla());
             jugadoresVisitante = new ArrayList<>(partido.getEquipoVisitante().getPlantilla());
 
-            jugadoresLocal.remove(partido.getEquipoLocal().getPlantilla().get(0));
-            jugadoresVisitante.remove(partido.getEquipoVisitante().getPlantilla().get(0));
+            jugadoresLocal.removeIf(j -> j.getPosicion() == Posicion.PORTERO);
+            jugadoresVisitante.removeIf(j -> j.getPosicion() == Posicion.PORTERO);
+
+            if (jugadoresLocal.isEmpty()){
+
+                jugadoresLocal = new ArrayList<>(partido.getEquipoLocal().getPlantilla());
+
+            }
+            if (jugadoresVisitante.isEmpty()){
+
+                jugadoresVisitante = new ArrayList<>(partido.getEquipoVisitante().getPlantilla());
+
+            }
 
             if (partido.getEquipoLocal().getMedia() > partido.getEquipoVisitante().getMedia()){
 
@@ -570,6 +584,9 @@ public class Partido {
 
                             jugadoresGoleadores.add(j);
                         }
+                    }
+                    if (jugadoresGoleadores.isEmpty()) {
+                        jugadoresGoleadores.addAll(jugadoresLocal);
                     }
                     Jugador jugadorClaveLocal = jugadoresGoleadores.get(jugadorRandom.nextInt(jugadoresGoleadores.size()));
 
@@ -597,6 +614,9 @@ public class Partido {
 
                             jugadoresGoleadores.add(j);
                         }
+                    }
+                    if (jugadoresGoleadores.isEmpty()) {
+                        jugadoresGoleadores.addAll(jugadoresVisitante);
                     }
                     Jugador jugadorClaveVisitante = jugadoresGoleadores.get(jugadorRandom.nextInt(jugadoresGoleadores.size()));
 
@@ -639,6 +659,9 @@ public class Partido {
                             jugadoresGoleadores.add(j);
                         }
                     }
+                    if (jugadoresGoleadores.isEmpty()) {
+                        jugadoresGoleadores.addAll(jugadoresLocal);
+                    }
                     Jugador jugadorClaveLocal = jugadoresGoleadores.get(jugadorRandom.nextInt(jugadoresGoleadores.size()));
 
 
@@ -666,6 +689,9 @@ public class Partido {
                             jugadoresGoleadores.add(j);
                         }
                     }
+                    if (jugadoresGoleadores.isEmpty()) {
+                        jugadoresGoleadores.addAll(jugadoresVisitante);
+                    }
                     Jugador jugadorClaveVisitante = jugadoresGoleadores.get(jugadorRandom.nextInt(jugadoresGoleadores.size()));
 
                     jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
@@ -686,8 +712,19 @@ public class Partido {
 
                 for (int i = 0; i < golesAFavor ; i++){
 
-                    Jugador jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
+                    List<Jugador> posibilidadAumentadaLocal = new ArrayList<>();
+                    for (Jugador j : jugadoresLocal) {
 
+                        int probabilidad = 1;
+                        if (j.getPosicion().equals(Posicion.DELANTERO)) probabilidad = 4;
+                        else if (j.getPosicion().equals(Posicion.CENTRO_CAMPISTA)) probabilidad = 2;
+                        for (int k = 0; k < probabilidad; k++) posibilidadAumentadaLocal.add(j);
+
+                    }
+                    if (posibilidadAumentadaLocal.isEmpty()) {
+                        posibilidadAumentadaLocal.addAll(jugadoresLocal);
+                    }
+                    Jugador jugadorClaveLocal = posibilidadAumentadaLocal.get(jugadorRandom.nextInt(posibilidadAumentadaLocal.size()));
 
                     jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
 
@@ -695,7 +732,20 @@ public class Partido {
 
                 for (int i=0; i<golesEnContra;i++){
 
-                    Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
+                    List<Jugador> posibilidadAumentadaVisitante = new ArrayList<>();
+                    for (Jugador j : jugadoresVisitante) {
+
+                        int probabilidad = 1;
+                        if (j.getPosicion().equals(Posicion.DELANTERO)) probabilidad = 4;
+                        else if (j.getPosicion().equals(Posicion.CENTRO_CAMPISTA)) probabilidad = 2;
+                        for (int k = 0; k < probabilidad; k++) posibilidadAumentadaVisitante.add(j);
+
+                    }
+                    if (posibilidadAumentadaVisitante.isEmpty()) {
+                        posibilidadAumentadaVisitante.addAll(jugadoresVisitante);
+                    }
+                    Jugador jugadorClaveVisitante = posibilidadAumentadaVisitante.get(jugadorRandom.nextInt(posibilidadAumentadaVisitante.size()));
+
 
                     jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
 
@@ -729,16 +779,32 @@ public class Partido {
                 List<Jugador> jugadoresLocal;
                 List<Jugador> jugadoresVisitante;
                 Random jugadorRandom = new Random();
+
+
                 jugadoresLocal = new ArrayList<>(partido.getEquipoLocal().getPlantilla());
                 jugadoresVisitante = new ArrayList<>(partido.getEquipoVisitante().getPlantilla());
 
-                jugadoresLocal.remove(partido.getEquipoLocal().getPlantilla().get(0));
-                jugadoresVisitante.remove(partido.getEquipoVisitante().getPlantilla().get(0));
+                jugadoresLocal.removeIf(j -> j.getPosicion() == Posicion.PORTERO);
+                jugadoresVisitante.removeIf(j -> j.getPosicion() == Posicion.PORTERO);
+
+                if (jugadoresLocal.isEmpty()) jugadoresLocal = new ArrayList<>(partido.getEquipoLocal().getPlantilla());
+                if (jugadoresVisitante.isEmpty()) jugadoresVisitante = new ArrayList<>(partido.getEquipoVisitante().getPlantilla());
 
                 for (int i = 0; i < golesAFavor ; i++){
 
-                    Jugador jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
+                    List<Jugador> posibilidadAumentadaLocal = new ArrayList<>();
+                    for (Jugador j : jugadoresLocal) {
 
+                        int probabilidad = 1;
+                        if (j.getPosicion().equals(Posicion.DELANTERO)) probabilidad = 4;
+                        else if (j.getPosicion().equals(Posicion.CENTRO_CAMPISTA)) probabilidad = 2;
+                        for (int k = 0; k < probabilidad; k++) posibilidadAumentadaLocal.add(j);
+
+                    }
+                    if (posibilidadAumentadaLocal.isEmpty()) {
+                        posibilidadAumentadaLocal.addAll(jugadoresLocal);
+                    }
+                    Jugador jugadorClaveLocal = posibilidadAumentadaLocal.get(jugadorRandom.nextInt(posibilidadAumentadaLocal.size()));
 
                     jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
 
@@ -746,7 +812,19 @@ public class Partido {
 
                 for (int i=0; i<golesEnContra;i++){
 
-                    Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
+                    List<Jugador> posibilidadAumentadaVisitante = new ArrayList<>();
+                    for (Jugador j : jugadoresVisitante) {
+
+                        int probabilidad = 1;
+                        if (j.getPosicion().equals(Posicion.DELANTERO)) probabilidad = 4;
+                        else if (j.getPosicion().equals(Posicion.CENTRO_CAMPISTA)) probabilidad = 2;
+                        for (int k = 0; k < probabilidad; k++) posibilidadAumentadaVisitante.add(j);
+
+                    }
+                    if (posibilidadAumentadaVisitante.isEmpty()) {
+                        posibilidadAumentadaVisitante.addAll(jugadoresVisitante);
+                    }
+                    Jugador jugadorClaveVisitante = posibilidadAumentadaVisitante.get(jugadorRandom.nextInt(posibilidadAumentadaVisitante.size()));
 
                     jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
 
@@ -764,18 +842,41 @@ public class Partido {
                 golesAFavor = goles.nextInt(4);
                 golesEnContra = goles.nextInt(5);
 
-                List<Jugador> jugadoresLocal;
-                List<Jugador> jugadoresVisitante;
+                List<Jugador> jugadoresLocal = new ArrayList<>(jugadores);
+                List<Jugador> jugadoresVisitante = new ArrayList<>(jugadores);
                 Random jugadorRandom = new Random();
-                jugadoresLocal = new ArrayList<>(partido.getEquipoLocal().getPlantilla());
-                jugadoresVisitante = new ArrayList<>(partido.getEquipoVisitante().getPlantilla());
+                jugadoresLocal = partido.getEquipoLocal().getPlantilla();
+                jugadoresVisitante = partido.getEquipoVisitante().getPlantilla();
 
-                jugadoresLocal.remove(partido.getEquipoLocal().getPlantilla().get(0));
-                jugadoresVisitante.remove(partido.getEquipoVisitante().getPlantilla().get(0));
+                jugadoresLocal.removeIf(j -> j.getPosicion() == Posicion.PORTERO);
+                jugadoresVisitante.removeIf(j -> j.getPosicion() == Posicion.PORTERO);
+
+                if (jugadoresLocal.isEmpty()){
+
+                    jugadoresLocal = new ArrayList<>(partido.getEquipoLocal().getPlantilla());
+
+                }
+                if (jugadoresVisitante.isEmpty()){
+
+                    jugadoresVisitante = new ArrayList<>(partido.getEquipoVisitante().getPlantilla());
+
+                }
 
                 for (int i = 0; i < golesAFavor ; i++){
 
-                    Jugador jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
+                    List<Jugador> posibilidadAumentadaLocal = new ArrayList<>();
+                    for (Jugador j : jugadoresLocal) {
+
+                        int probabilidad = 1;
+                        if (j.getPosicion().equals(Posicion.DELANTERO)) probabilidad = 4;
+                        else if (j.getPosicion().equals(Posicion.CENTRO_CAMPISTA)) probabilidad = 2;
+                        for (int k = 0; k < probabilidad; k++) posibilidadAumentadaLocal.add(j);
+
+                    }
+                    if (posibilidadAumentadaLocal.isEmpty()) {
+                        posibilidadAumentadaLocal.addAll(jugadoresLocal);
+                    }
+                    Jugador jugadorClaveLocal = posibilidadAumentadaLocal.get(jugadorRandom.nextInt(posibilidadAumentadaLocal.size()));
 
 
                     jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
@@ -784,7 +885,19 @@ public class Partido {
 
                 for (int i=0; i<golesEnContra;i++){
 
-                    Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
+                    List<Jugador> posibilidadAumentadaVisitante = new ArrayList<>();
+                    for (Jugador j : jugadoresVisitante) {
+
+                        int probabilidad = 1;
+                        if (j.getPosicion().equals(Posicion.DELANTERO)) probabilidad = 4;
+                        else if (j.getPosicion().equals(Posicion.CENTRO_CAMPISTA)) probabilidad = 2;
+                        for (int k = 0; k < probabilidad; k++) posibilidadAumentadaVisitante.add(j);
+
+                    }
+                    if (posibilidadAumentadaVisitante.isEmpty()) {
+                        posibilidadAumentadaVisitante.addAll(jugadoresVisitante);
+                    }
+                    Jugador jugadorClaveVisitante = posibilidadAumentadaVisitante.get(jugadorRandom.nextInt(posibilidadAumentadaVisitante.size()));
 
                     jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
 
@@ -802,18 +915,33 @@ public class Partido {
                 golesAFavor = goles.nextInt(3);
                 golesEnContra = goles.nextInt(5);
 
-                List<Jugador> jugadoresLocal;
-                List<Jugador> jugadoresVisitante;
+                List<Jugador> jugadoresLocal = new ArrayList<>(jugadores);
+                List<Jugador> jugadoresVisitante = new ArrayList<>(jugadores);
                 Random jugadorRandom = new Random();
                 jugadoresLocal = new ArrayList<>(partido.getEquipoLocal().getPlantilla());
                 jugadoresVisitante = new ArrayList<>(partido.getEquipoVisitante().getPlantilla());
 
-                jugadoresLocal.remove(partido.getEquipoLocal().getPlantilla().get(0));
-                jugadoresVisitante.remove(partido.getEquipoVisitante().getPlantilla().get(0));
+                jugadoresLocal.removeIf(j -> j.getPosicion() == Posicion.PORTERO);
+                jugadoresVisitante.removeIf(j -> j.getPosicion() == Posicion.PORTERO);
+
+                if (jugadoresLocal.isEmpty()) jugadoresLocal = new ArrayList<>(partido.getEquipoLocal().getPlantilla());
+                if (jugadoresVisitante.isEmpty()) jugadoresVisitante = new ArrayList<>(partido.getEquipoVisitante().getPlantilla());
 
                 for (int i = 0; i < golesAFavor ; i++){
 
-                    Jugador jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
+                    List<Jugador> posibilidadAumentadaLocal = new ArrayList<>();
+                    for (Jugador j : jugadoresLocal) {
+
+                        int probabilidad = 1;
+                        if (j.getPosicion().equals(Posicion.DELANTERO)) probabilidad = 4;
+                        else if (j.getPosicion().equals(Posicion.CENTRO_CAMPISTA)) probabilidad = 2;
+                        for (int k = 0; k < probabilidad; k++) posibilidadAumentadaLocal.add(j);
+
+                    }
+                    if (posibilidadAumentadaLocal.isEmpty()) {
+                        posibilidadAumentadaLocal.addAll(jugadoresLocal);
+                    }
+                    Jugador jugadorClaveLocal = posibilidadAumentadaLocal.get(jugadorRandom.nextInt(posibilidadAumentadaLocal.size()));
 
 
                     jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
@@ -822,7 +950,19 @@ public class Partido {
 
                 for (int i=0; i<golesEnContra;i++){
 
-                    Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
+                    List<Jugador> posibilidadAumentadaVisitante = new ArrayList<>();
+                    for (Jugador j : jugadoresVisitante) {
+
+                        int probabilidad = 1;
+                        if (j.getPosicion().equals(Posicion.DELANTERO)) probabilidad = 4;
+                        else if (j.getPosicion().equals(Posicion.CENTRO_CAMPISTA)) probabilidad = 2;
+                        for (int k = 0; k < probabilidad; k++) posibilidadAumentadaVisitante.add(j);
+
+                    }
+                    if (posibilidadAumentadaVisitante.isEmpty()) {
+                        posibilidadAumentadaVisitante.addAll(jugadoresVisitante);
+                    }
+                    Jugador jugadorClaveVisitante = posibilidadAumentadaVisitante.get(jugadorRandom.nextInt(posibilidadAumentadaVisitante.size()));
 
                     jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
 
