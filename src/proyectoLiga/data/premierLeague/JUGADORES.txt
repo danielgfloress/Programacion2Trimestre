@@ -202,17 +202,17 @@ JUGADOR;Jarrod;Bowen;West Ham United;Inglaterra;1996-12-20;DELANTERO;7;0;0;0;0
 JUGADOR;Mohammed;Kudus;West Ham United;Ghana;2000-08-02;DELANTERO;9;0;0;0;0
 JUGADOR;Michail;Antonio;West Ham United;Jamaica;1990-03-28;DELANTERO;11;0;0;0;0
 
-JUGADOR;Jose;Sa;Wolverhampton Wanderers;Portugal;1993-01-17;PORTERO;1;0;0;0;0
-JUGADOR;Nelson;Semedo;Wolverhampton Wanderers;Portugal;1993-11-16;DEFENSA;2;0;0;0;0
-JUGADOR;Max;Kilman;Wolverhampton Wanderers;Inglaterra;1997-05-23;DEFENSA;3;0;0;0;0
-JUGADOR;Craig;Dawson;Wolverhampton Wanderers;Inglaterra;1990-09-06;DEFENSA;4;0;0;0;0
-JUGADOR;Rayan;AitNouri;Wolverhampton Wanderers;Argelia;2001-06-06;DEFENSA;5;0;0;0;0
-JUGADOR;Joao;Gomes;Wolverhampton Wanderers;Brasil;2001-02-12;CENTRO_CAMPISTA;6;0;0;0;0
-JUGADOR;Mario;Lemina;Wolverhampton Wanderers;Gabón;1993-09-01;CENTRO_CAMPISTA;8;0;0;0;0
-JUGADOR;Pablo;Sarabia;Wolverhampton Wanderers;España;1992-05-11;CENTRO_CAMPISTA;10;0;0;0;0
-JUGADOR;Pedro;Neto;Wolverhampton Wanderers;Portugal;2000-03-09;DELANTERO;7;0;0;0;0
-JUGADOR;Matheus;Cunha;Wolverhampton Wanderers;Brasil;1999-05-27;DELANTERO;9;0;0;0;0
-JUGADOR;Hwang;Heechan;Wolverhampton Wanderers;Corea del Sur;1996-01-26;DELANTERO;11;0;0;0;0
+JUGADOR;Jose;Sa;Wolverhampton;Portugal;1993-01-17;PORTERO;1;0;0;0;0
+JUGADOR;Nelson;Semedo;Wolverhampton;Portugal;1993-11-16;DEFENSA;2;0;0;0;0
+JUGADOR;Max;Kilman;Wolverhampton;Inglaterra;1997-05-23;DEFENSA;3;0;0;0;0
+JUGADOR;Craig;Dawson;Wolverhampton;Inglaterra;1990-09-06;DEFENSA;4;0;0;0;0
+JUGADOR;Rayan;AitNouri;Wolverhampton;Argelia;2001-06-06;DEFENSA;5;0;0;0;0
+JUGADOR;Joao;Gomes;Wolverhampton;Brasil;2001-02-12;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Mario;Lemina;Wolverhampton;Gabón;1993-09-01;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Pablo;Sarabia;Wolverhampton;España;1992-05-11;CENTRO_CAMPISTA;10;0;0;0;0
+JUGADOR;Pedro;Neto;Wolverhampton;Portugal;2000-03-09;DELANTERO;7;0;0;0;0
+JUGADOR;Matheus;Cunha;Wolverhampton;Brasil;1999-05-27;DELANTERO;9;0;0;0;0
+JUGADOR;Hwang;Heechan;Wolverhampton;Corea del Sur;1996-01-26;DELANTERO;11;0;0;0;0
 
 JUGADOR;Mads;Hermansen;Leicester City;Dinamarca;2000-07-11;PORTERO;1;0;0;0;0
 JUGADOR;Ricardo;Pereira;Leicester City;Portugal;1993-10-06;DEFENSA;2;0;0;0;0

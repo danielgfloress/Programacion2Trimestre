@@ -15,6 +15,6 @@ ESTADIO;The City Ground;Nottingham;30445;Nottingham Forest
 ESTADIO;Bramall Lane;Sheffield;32050;Sheffield United
 ESTADIO;Tottenham Hotspur Stadium;London;62850;Tottenham Hotspur
 ESTADIO;London Stadium;London;62500;West Ham United
-ESTADIO;Molineux Stadium;Wolverhampton;32050;Wolverhampton Wanderers
+ESTADIO;Molineux Stadium;Wolverhampton;32050;Wolverhampton
 ESTADIO;King Power Stadium;Leicester;32261;Leicester City
 ESTADIO;St Mary's Stadium;Southampton;32384;Southampton

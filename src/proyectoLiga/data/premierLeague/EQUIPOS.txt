@@ -15,6 +15,6 @@ EQUIPO;Nottingham Forest;The City Ground;72
 EQUIPO;Sheffield United;Bramall Lane;79
 EQUIPO;Tottenham Hotspur;Tottenham Hotspur Stadium;84
 EQUIPO;West Ham United;London Stadium;74
-EQUIPO;Wolverhampton Wanderers;Molineux Stadium;70
+EQUIPO;Wolverhampton;Molineux Stadium;70
 EQUIPO;Leicester City;King Power Stadium;83
 EQUIPO;Southampton;St Mary's Stadium;73

@@ -15,6 +15,6 @@ ENTRENADOR;Nuno;Espírito Santo;Nottingham Forest;Inglaterra;1977-09-14;15;Trans
 ENTRENADOR;Chris;Wilder;Sheffield United;Inglaterra;1978-02-01;14;Presión
 ENTRENADOR;Ange;Postecoglou;Tottenham Hotspur;Inglaterra;1976-01-25;16;Ataque rápido
 ENTRENADOR;David;Moyes;West Ham United;Inglaterra;1978-04-08;13;Balón parado
-ENTRENADOR;Gary;O'Neil;Wolverhampton Wanderers;Italia;1978-02-09;14;Bloque medio
+ENTRENADOR;Gary;O'Neil;Wolverhampton;Italia;1978-02-09;14;Bloque medio
 ENTRENADOR;Enzo;Maresca;Leicester City;Portugal;1976-06-06;18;Ofensivo
 ENTRENADOR;Russell;Martin;Southampton;Inglaterra;1975-04-10;16;Presión alta
