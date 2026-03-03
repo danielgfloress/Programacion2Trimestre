@@ -16,6 +16,9 @@ public class Jugador extends AbstractPersona {
     private int tarjetasAmarillas;
     private int tarjetasRojas;
 
+    public Jugador() {
+    }
+
     public Jugador(String nombre, String apellido, Equipo equipo, String nacionalidad, LocalDate fechaNacimiento, Posicion posicion, int dorsal, int goles, int asistencias, int tarjetasAmarillas, int tarjetasRojas) {
         super(nombre, apellido, equipo, nacionalidad, fechaNacimiento);
         this.posicion = posicion;
@@ -72,6 +75,24 @@ public class Jugador extends AbstractPersona {
 
     public void setTarjetasRojas(int tarjetasRojas) {
         this.tarjetasRojas = tarjetasRojas;
+    }
+
+    public static Jugador pichichi(List<Equipo> equipos){
+
+        Jugador jugadorPichichi = null;
+
+        for (Equipo equipo : equipos) {
+            for (Jugador jugador : equipo.getPlantilla()) {
+
+                if (jugadorPichichi == null ||
+                        jugador.getGoles() > jugadorPichichi.getGoles()) {
+
+                    jugadorPichichi = jugador;
+                }
+            }
+        }
+
+        return jugadorPichichi;
     }
 
     public static void resetearJugadores (List<Jugador> jugadores) {

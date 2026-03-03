@@ -16,10 +16,10 @@ JUGADOR;Jules;Koundé;FC Barcelona;Francia;1998-11-12;DEFENSA;23;0;0;0;0
 JUGADOR;Alejandro;Balde;FC Barcelona;España;2003-10-18;DEFENSA;28;0;0;0;0
 JUGADOR;Andreas;Christensen;FC Barcelona;Dinamarca;1996-04-10;DEFENSA;15;0;0;0;0
 JUGADOR;Pablo;Gavi;FC Barcelona;España;2004-08-05;CENTRO_CAMPISTA;6;0;0;0;0
-JUGADOR;Pedro;González;FC Barcelona;España;2002-11-25;CENTRO_CAMPISTA;8;0;0;0;0
+JUGADOR;Pedri;González;FC Barcelona;España;2002-11-25;CENTRO_CAMPISTA;8;0;0;0;0
 JUGADOR;Frenkie;de Jong;FC Barcelona;Países Bajos;1997-05-12;CENTRO_CAMPISTA;21;0;0;0;0
 JUGADOR;Robert;Lewandowski;FC Barcelona;Polonia;1988-08-21;DELANTERO;9;0;0;0;0
-JUGADOR;Raphael;Dias;FC Barcelona;Brasil;1996-12-14;DELANTERO;11;0;0;0;0
+JUGADOR;Rapinha;Dias;FC Barcelona;Brasil;1996-12-14;DELANTERO;11;0;0;0;0
 JUGADOR;Lamine;Yamal;FC Barcelona;España;2007-07-13;DELANTERO;27;0;0;0;0
 
 JUGADOR;Jan;Oblak;Atlético de Madrid;Eslovenia;1993-01-07;PORTERO;13;0;0;0;0

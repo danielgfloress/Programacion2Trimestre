@@ -13,6 +13,9 @@ public abstract class AbstractPersona {
     protected String nacionalidad;
     protected LocalDate fechaNacimiento;
 
+    public AbstractPersona() {
+    }
+
     protected AbstractPersona(String nombre, String apellido, Equipo equipo, String nacionalidad, LocalDate fechaNacimiento) {
         this.nombre = nombre;
         this.apellido = apellido;

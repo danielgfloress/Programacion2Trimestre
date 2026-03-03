@@ -90,12 +90,6 @@ public class Menu {
                             for (int i = 0; i<38; i++){
 
                                 Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposLiga, equipoSeleccionado,partidosLiga, (i));
-                                if (partidoJornada == null) {
-
-                                    i--;
-                                    continue;
-
-                                }
 
                                 partidosLiga.add(partidoJornada);
 
@@ -119,7 +113,7 @@ public class Menu {
                                         case 2:
 
                                             Partido.simularPartido(partidoJornada,jugadoresLiga,equipoSeleccionado);
-                                            clasificacion.puntosResto(equiposLiga, partidoJornada);
+                                            clasificacion.puntosResto(equiposLiga, partidoJornada, jugadoresLiga);
                                             Partido.puntosPartido(partidoJornada,partidoJornada.getEquipoLocal(),partidoJornada.getEquipoVisitante());
                                             System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
 
@@ -127,8 +121,8 @@ public class Menu {
 
                                         case 3:
 
-                                            partido.partidoRapido(partidoJornada, equipoSeleccionado);
-                                            clasificacion.puntosResto(equiposLiga, partidoJornada);
+                                            partido.partidoRapido(partidoJornada, equipoSeleccionado, jugadoresLiga);
+                                            clasificacion.puntosResto(equiposLiga, partidoJornada, jugadoresLiga);
 
 
                                             break;
@@ -151,7 +145,9 @@ public class Menu {
 
                             }
 
-                    mostrarClasificacionSoloPuntos(equiposLiga);
+                        mostrarClasificacionSoloPuntos(equiposLiga);
+                    System.out.println("\n\nPremios:");
+                    System.out.println("Pichichi: " + Jugador.pichichi(equiposLiga).getNombre() + " " + Jugador.pichichi(equiposLiga).getApellido() + " del " + Jugador.pichichi(equiposLiga).getEquipo().getNombre() + " con " + Jugador.pichichi(equiposLiga).getGoles() + " goles");
 
                     jugador.resetearJugadores(jugadoresLiga);
                     equipo.resetearTodo(equiposLiga);
@@ -160,7 +156,6 @@ public class Menu {
 
                 case 2:
 
-                        contadorJornadas = 1;
                         System.out.println("Elige un equipo: ");
                         for (int i = 0; i < equiposPremier.size(); i++) {
 
@@ -204,6 +199,7 @@ public class Menu {
                                     case 2:
 
                                         Partido.simularPartido(partidoJornada,jugadoresPremier,equipoSeleccionado);
+                                        clasificacion.puntosResto(equiposPremier, partidoJornada, jugadoresPremier);
                                         Partido.puntosPartido(partidoJornada,partidoJornada.getEquipoLocal(),partidoJornada.getEquipoVisitante());
                                         System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
 
@@ -212,7 +208,8 @@ public class Menu {
 
                                     case 3:
 
-                                        partido.partidoRapido(partidoJornada, equipoSeleccionado);
+                                        partido.partidoRapido(partidoJornada, equipoSeleccionado,jugadoresPremier);
+                                        clasificacion.puntosResto(equiposPremier, partidoJornada, jugadoresPremier);
 
                                         break;
 
@@ -234,6 +231,9 @@ public class Menu {
                         }
 
                     mostrarClasificacionSoloPuntos(equiposLiga);
+                    mostrarClasificacionSoloPuntos(equiposPremier);
+                    System.out.println("\n\nPremios:");
+                    System.out.println("Pichichi: " + Jugador.pichichi(equiposPremier).getNombre() + " " + Jugador.pichichi(equiposPremier).getApellido() + " del " + Jugador.pichichi(equiposPremier).getEquipo().getNombre() + " con " + Jugador.pichichi(equiposPremier).getGoles() + " goles");
                     jugador.resetearJugadores(jugadoresPremier);
                     equipo.resetearTodo(equiposPremier);
 
@@ -284,6 +284,7 @@ public class Menu {
                                     case 2:
 
                                         Partido.simularPartido(partidoJornada,jugadoresSerieA,equipoSeleccionado);
+                                        clasificacion.puntosResto(equiposSerieA, partidoJornada, jugadoresSerieA);
                                         Partido.puntosPartido(partidoJornada,partidoJornada.getEquipoLocal(),partidoJornada.getEquipoVisitante());
                                         System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
 
@@ -292,7 +293,8 @@ public class Menu {
 
                                     case 3:
 
-                                        partido.partidoRapido(partidoJornada, equipoSeleccionado);
+                                        partido.partidoRapido(partidoJornada, equipoSeleccionado,jugadoresSerieA);
+                                        clasificacion.puntosResto(equiposSerieA, partidoJornada,jugadoresSerieA);
 
                                         break;
 
@@ -313,6 +315,9 @@ public class Menu {
 
                         }
 
+                    mostrarClasificacionSoloPuntos(equiposSerieA);
+                    System.out.println("\n\nPremios:");
+                    System.out.println("Pichichi: " + Jugador.pichichi(equiposSerieA).getNombre() + " " + Jugador.pichichi(equiposSerieA).getApellido() + " del " + Jugador.pichichi(equiposSerieA).getEquipo().getNombre() + " con " + Jugador.pichichi(equiposSerieA).getGoles() + " goles");
                     mostrarClasificacionSoloPuntos(equiposLiga);
                     jugador.resetearJugadores(jugadoresSerieA);
                     equipo.resetearTodo(equiposSerieA);
@@ -341,12 +346,6 @@ public class Menu {
                     for (int i = 0; i<38; i++){
 
                         Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposBundesliga, equipoSeleccionado,partidosBundesliga, (i));
-                        if (partidoJornada == null) {
-
-                            i--;
-                            continue;
-
-                        }
 
                         partidosBundesliga.add(partidoJornada);
 
@@ -370,7 +369,7 @@ public class Menu {
                                 case 2:
 
                                     Partido.simularPartido(partidoJornada,jugadoresBundesliga,equipoSeleccionado);
-                                    clasificacion.puntosResto(equiposBundesliga, partidoJornada);
+                                    clasificacion.puntosResto(equiposBundesliga, partidoJornada,jugadoresBundesliga);
                                     Partido.puntosPartido(partidoJornada,partidoJornada.getEquipoLocal(),partidoJornada.getEquipoVisitante());
                                     System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
 
@@ -378,8 +377,8 @@ public class Menu {
 
                                 case 3:
 
-                                    partido.partidoRapido(partidoJornada, equipoSeleccionado);
-                                    clasificacion.puntosResto(equiposBundesliga, partidoJornada);
+                                    partido.partidoRapido(partidoJornada, equipoSeleccionado,jugadoresBundesliga);
+                                    clasificacion.puntosResto(equiposBundesliga, partidoJornada,jugadoresBundesliga);
 
 
                                     break;
@@ -403,6 +402,8 @@ public class Menu {
                     }
 
                     mostrarClasificacionSoloPuntos(equiposBundesliga);
+                    System.out.println("\n\nPremios:");
+                    System.out.println("Pichichi: " + Jugador.pichichi(equiposBundesliga).getNombre() + " " + Jugador.pichichi(equiposBundesliga).getApellido() + " del " + Jugador.pichichi(equiposBundesliga).getEquipo().getNombre() + " con " + Jugador.pichichi(equiposBundesliga).getGoles() + " goles");
                     jugador.resetearJugadores(jugadoresBundesliga);
                     equipo.resetearTodo(equiposBundesliga);
 
@@ -430,12 +431,6 @@ public class Menu {
                     for (int i = 0; i<38; i++){
 
                         Partido partidoJornada = Jornada.mostrarJornadaSinRepetir(equiposLigue1, equipoSeleccionado,partidosLigue1, (i));
-                        if (partidoJornada == null) {
-
-                            i--;
-                            continue;
-
-                        }
 
                         partidosLigue1.add(partidoJornada);
 
@@ -459,7 +454,7 @@ public class Menu {
                                 case 2:
 
                                     Partido.simularPartido(partidoJornada,jugadoresLigue1,equipoSeleccionado);
-                                    clasificacion.puntosResto(equiposLigue1, partidoJornada);
+                                    clasificacion.puntosResto(equiposLigue1, partidoJornada,jugadoresLigue1);
                                     Partido.puntosPartido(partidoJornada,partidoJornada.getEquipoLocal(),partidoJornada.getEquipoVisitante());
                                     System.out.println("Tus puntos: " + equipoSeleccionado.getPuntos());
 
@@ -467,8 +462,8 @@ public class Menu {
 
                                 case 3:
 
-                                    partido.partidoRapido(partidoJornada, equipoSeleccionado);
-                                    clasificacion.puntosResto(equiposLigue1, partidoJornada);
+                                    partido.partidoRapido(partidoJornada, equipoSeleccionado,jugadoresLigue1);
+                                    clasificacion.puntosResto(equiposLigue1, partidoJornada,jugadoresLigue1);
 
 
                                     break;
@@ -492,6 +487,8 @@ public class Menu {
                     }
 
                     mostrarClasificacionSoloPuntos(equiposLigue1);
+                    System.out.println("\n\nPremios:");
+                    System.out.println("Pichichi: " + Jugador.pichichi(equiposLigue1).getNombre() + " " + jugador.pichichi(equiposLigue1).getApellido() + " del " + Jugador.pichichi(equiposLigue1).getEquipo().getNombre() + " con " + Jugador.pichichi(equiposLigue1).getGoles() + " goles");
                     jugador.resetearJugadores(jugadoresLigue1);
                     equipo.resetearTodo(equiposLigue1);
 
@@ -507,7 +504,7 @@ public class Menu {
             }
 
 
-        }while (opciones != 5);
+        }while (opciones != 6);
 
     }
 

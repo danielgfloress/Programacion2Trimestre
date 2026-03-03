@@ -198,9 +198,9 @@ public class Partido {
                 Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
 
 
-                if (oportunidades.nextInt(701) <= 6){
+                if (oportunidades.nextInt(701) <= 15 ){
 
-                    if (jugadorClaveLocal.getTarjetasRojas()==1){
+                    if (jugadorClaveLocal.getTarjetasRojas()==1 || jugadorClaveLocal.getPosicion().equals(Posicion.PORTERO)){
 
                         System.out.println("Minuto " + i);
 
@@ -208,14 +208,15 @@ public class Partido {
 
                         golesFavor++;
                         partido.setGolesLocal(golesFavor);
+                        jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
                         partido.getEquipoLocal().setGolesFavor(1 + partido.getEquipoLocal().getGolesFavor());
                         partido.getEquipoVisitante().setGolesContra(1 + partido.getEquipoVisitante().getGolesContra());
                         System.out.println(AZUL + "Minuto " + i + " Gol del " + equipoSeleccionado.getNombre() + ", gol de " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
 
                     }
 
-                } else if (oportunidades.nextInt(701)>10 && oportunidades.nextInt(701)<13) {
-                    if (jugadorClaveVisitante.getTarjetasRojas()==1){
+                } else if (oportunidades.nextInt(701)>15 && oportunidades.nextInt(701)<18) {
+                    if (jugadorClaveVisitante.getTarjetasRojas()==1 || jugadorClaveVisitante.getPosicion().equals(Posicion.PORTERO)){
 
                         System.out.println("Minuto " + i);
 
@@ -223,13 +224,14 @@ public class Partido {
 
                         golesContra++;
                         partido.setGolesVisitante(golesContra);
+                        jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
                         partido.getEquipoVisitante().setGolesFavor(1 + partido.getEquipoVisitante().getGolesFavor());
                         partido.getEquipoLocal().setGolesContra(1 + partido.getEquipoLocal().getGolesContra());
                         System.out.println(ROJO + "Minuto " + i + " Gol del " + partido.getEquipoVisitante().getNombre() + ", gol de " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
 
                     }
 
-                } else if (oportunidades.nextInt(701)>=16 && oportunidades.nextInt(701)<20) {
+                } else if (oportunidades.nextInt(701)>=18 && oportunidades.nextInt(701)<21) {
 
                     if (jugadorClaveLocal.getTarjetasRojas()==1) {
 
@@ -262,7 +264,7 @@ public class Partido {
 
                     }
 
-                }else if (oportunidades.nextInt(701)>=20 && oportunidades.nextInt(701)<22) {
+                }else if (oportunidades.nextInt(701)>=21 && oportunidades.nextInt(701)<23) {
 
                     if (jugadorClaveVisitante.getTarjetasRojas()==1) {
 
@@ -367,9 +369,9 @@ public class Partido {
                 Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
 
 
-                if (oportunidades.nextInt(701)<=5){
+                if (oportunidades.nextInt(701)<=7){
 
-                    if (jugadorClaveVisitante.getTarjetasRojas()==1){
+                    if (jugadorClaveVisitante.getTarjetasRojas()==1 || jugadorClaveVisitante.getPosicion().equals(Posicion.PORTERO)){
 
                         System.out.println("Minuto " + i);
 
@@ -377,6 +379,7 @@ public class Partido {
 
                         golesFavor++;
                         partido.setGolesVisitante(golesFavor);
+                        jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
                         partido.getEquipoVisitante().setGolesFavor(1 + partido.getEquipoVisitante().getGolesFavor());
                         partido.getEquipoLocal().setGolesContra(1 + partido.getEquipoLocal().getGolesContra());
                         System.out.println(AZUL + "Minuto " + i + " Gol del " + equipoSeleccionado.getNombre() + ", gol de " + jugadorClaveVisitante.getNombre() + " " + jugadorClaveVisitante.getApellido() + RESET);
@@ -385,7 +388,7 @@ public class Partido {
 
                 } else if (oportunidades.nextInt(701)>7 && oportunidades.nextInt(701)<10) {
 
-                    if (jugadorClaveLocal.getTarjetasRojas()==1){
+                    if (jugadorClaveLocal.getTarjetasRojas()==1 || jugadorClaveLocal.getPosicion().equals(Posicion.PORTERO)){
 
                         System.out.println("Minuto " + i);
 
@@ -393,6 +396,7 @@ public class Partido {
 
                         golesContra++;
                         partido.setGolesLocal(golesContra);
+                        jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
                         partido.getEquipoLocal().setGolesFavor(1 + partido.getEquipoLocal().getGolesFavor());
                         partido.getEquipoVisitante().setGolesContra(1 + partido.getEquipoVisitante().getGolesContra());
                         System.out.println(ROJO + "Minuto " + i + " Gol del " + partido.getEquipoLocal().getNombre() + ", gol de " + jugadorClaveLocal.getNombre() + " " + jugadorClaveLocal.getApellido() + RESET);
@@ -520,19 +524,46 @@ public class Partido {
 
     }
 
-    public void partidoRapido(Partido partido, Equipo equipoSeleccionado){
+    public void partidoRapido(Partido partido, Equipo equipoSeleccionado, List<Jugador> jugadores){
 
         Random goles = new Random();
 
         if (equipoSeleccionado.equals(partido.getEquipoLocal())){
 
-            int golesAFavor = 0;
-            int golesEnContra = 0;
+            int golesAFavor;
+            int golesEnContra;
 
             if (partido.getEquipoLocal().getMedia() > partido.getEquipoVisitante().getMedia()){
 
                 golesAFavor = goles.nextInt(6);
                 golesEnContra = goles.nextInt(3);
+                List<Jugador> jugadoresLocal = new ArrayList<>(jugadores);
+                List<Jugador> jugadoresVisitante = new ArrayList<>(jugadores);
+                Random jugadorRandom = new Random();
+                jugadoresLocal = partido.getEquipoLocal().getPlantilla();
+                jugadoresVisitante = partido.getEquipoVisitante().getPlantilla();
+
+                jugadoresLocal.remove(partido.getEquipoLocal().getPlantilla().get(0));
+                jugadoresVisitante.remove(partido.getEquipoVisitante().getPlantilla().get(0));
+
+                for (int i = 0; i < golesAFavor ; i++){
+
+                    Jugador jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
+
+
+                    jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
+
+                }
+
+                for (int i=0; i<golesEnContra;i++){
+
+                    Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
+
+                    jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
+
+                }
+
+
                 partido.getEquipoLocal().setGolesFavor(golesAFavor + partido.getEquipoLocal().getGolesFavor());
                 partido.getEquipoLocal().setGolesContra(golesEnContra +  partido.getEquipoLocal().getGolesContra());
                 partido.getEquipoVisitante().setGolesFavor(golesEnContra + partido.getEquipoVisitante().getGolesFavor());
@@ -544,6 +575,33 @@ public class Partido {
 
                 golesAFavor = goles.nextInt(6);
                 golesEnContra = goles.nextInt(4);
+
+                List<Jugador> jugadoresLocal = new ArrayList<>(jugadores);
+                List<Jugador> jugadoresVisitante = new ArrayList<>(jugadores);
+                Random jugadorRandom = new Random();
+                jugadoresLocal = partido.getEquipoLocal().getPlantilla();
+                jugadoresVisitante = partido.getEquipoVisitante().getPlantilla();
+
+                jugadoresLocal.remove(partido.getEquipoLocal().getPlantilla().get(0));
+                jugadoresVisitante.remove(partido.getEquipoVisitante().getPlantilla().get(0));
+
+                for (int i = 0; i < golesAFavor ; i++){
+
+                    Jugador jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
+
+
+                    jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
+
+                }
+
+                for (int i=0; i<golesEnContra;i++){
+
+                    Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
+
+                    jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
+
+                }
+
                 partido.getEquipoLocal().setGolesFavor(golesAFavor + partido.getEquipoLocal().getGolesFavor());
                 partido.getEquipoLocal().setGolesContra(golesEnContra +  partido.getEquipoLocal().getGolesContra());
                 partido.getEquipoVisitante().setGolesFavor(golesEnContra + partido.getEquipoVisitante().getGolesFavor());
@@ -555,6 +613,33 @@ public class Partido {
 
                 golesAFavor = goles.nextInt(4);
                 golesEnContra = goles.nextInt(4);
+
+                List<Jugador> jugadoresLocal = new ArrayList<>(jugadores);
+                List<Jugador> jugadoresVisitante = new ArrayList<>(jugadores);
+                Random jugadorRandom = new Random();
+                jugadoresLocal = partido.getEquipoLocal().getPlantilla();
+                jugadoresVisitante = partido.getEquipoVisitante().getPlantilla();
+
+                jugadoresLocal.remove(partido.getEquipoLocal().getPlantilla().get(0));
+                jugadoresVisitante.remove(partido.getEquipoVisitante().getPlantilla().get(0));
+
+                for (int i = 0; i < golesAFavor ; i++){
+
+                    Jugador jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
+
+
+                    jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
+
+                }
+
+                for (int i=0; i<golesEnContra;i++){
+
+                    Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
+
+                    jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
+
+                }
+
                 partido.getEquipoLocal().setGolesFavor(golesAFavor + partido.getEquipoLocal().getGolesFavor());
                 partido.getEquipoLocal().setGolesContra(golesEnContra +  partido.getEquipoLocal().getGolesContra());
                 partido.getEquipoVisitante().setGolesFavor(golesEnContra + partido.getEquipoVisitante().getGolesFavor());
@@ -579,6 +664,33 @@ public class Partido {
 
                 golesAFavor = goles.nextInt(4);
                 golesEnContra = goles.nextInt(4);
+
+                List<Jugador> jugadoresLocal = new ArrayList<>(jugadores);
+                List<Jugador> jugadoresVisitante = new ArrayList<>(jugadores);
+                Random jugadorRandom = new Random();
+                jugadoresLocal = partido.getEquipoLocal().getPlantilla();
+                jugadoresVisitante = partido.getEquipoVisitante().getPlantilla();
+
+                jugadoresLocal.remove(partido.getEquipoLocal().getPlantilla().get(0));
+                jugadoresVisitante.remove(partido.getEquipoVisitante().getPlantilla().get(0));
+
+                for (int i = 0; i < golesAFavor ; i++){
+
+                    Jugador jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
+
+
+                    jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
+
+                }
+
+                for (int i=0; i<golesEnContra;i++){
+
+                    Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
+
+                    jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
+
+                }
+
                 partido.getEquipoLocal().setGolesFavor(golesAFavor + partido.getEquipoLocal().getGolesFavor());
                 partido.getEquipoLocal().setGolesContra(golesEnContra +  partido.getEquipoLocal().getGolesContra());
                 partido.getEquipoVisitante().setGolesFavor(golesEnContra + partido.getEquipoVisitante().getGolesFavor());
@@ -590,6 +702,33 @@ public class Partido {
 
                 golesAFavor = goles.nextInt(4);
                 golesEnContra = goles.nextInt(5);
+
+                List<Jugador> jugadoresLocal = new ArrayList<>(jugadores);
+                List<Jugador> jugadoresVisitante = new ArrayList<>(jugadores);
+                Random jugadorRandom = new Random();
+                jugadoresLocal = partido.getEquipoLocal().getPlantilla();
+                jugadoresVisitante = partido.getEquipoVisitante().getPlantilla();
+
+                jugadoresLocal.remove(partido.getEquipoLocal().getPlantilla().get(0));
+                jugadoresVisitante.remove(partido.getEquipoVisitante().getPlantilla().get(0));
+
+                for (int i = 0; i < golesAFavor ; i++){
+
+                    Jugador jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
+
+
+                    jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
+
+                }
+
+                for (int i=0; i<golesEnContra;i++){
+
+                    Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
+
+                    jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
+
+                }
+
                 partido.getEquipoLocal().setGolesFavor(golesAFavor + partido.getEquipoLocal().getGolesFavor());
                 partido.getEquipoLocal().setGolesContra(golesEnContra +  partido.getEquipoLocal().getGolesContra());
                 partido.getEquipoVisitante().setGolesFavor(golesEnContra + partido.getEquipoVisitante().getGolesFavor());
@@ -601,6 +740,33 @@ public class Partido {
 
                 golesAFavor = goles.nextInt(3);
                 golesEnContra = goles.nextInt(5);
+
+                List<Jugador> jugadoresLocal = new ArrayList<>(jugadores);
+                List<Jugador> jugadoresVisitante = new ArrayList<>(jugadores);
+                Random jugadorRandom = new Random();
+                jugadoresLocal = partido.getEquipoLocal().getPlantilla();
+                jugadoresVisitante = partido.getEquipoVisitante().getPlantilla();
+
+                jugadoresLocal.remove(partido.getEquipoLocal().getPlantilla().get(0));
+                jugadoresVisitante.remove(partido.getEquipoVisitante().getPlantilla().get(0));
+
+                for (int i = 0; i < golesAFavor ; i++){
+
+                    Jugador jugadorClaveLocal = jugadoresLocal.get(jugadorRandom.nextInt(jugadoresLocal.size()));
+
+
+                    jugadorClaveLocal.setGoles(1 + jugadorClaveLocal.getGoles());
+
+                }
+
+                for (int i=0; i<golesEnContra;i++){
+
+                    Jugador jugadorClaveVisitante = jugadoresVisitante.get(jugadorRandom.nextInt(jugadoresVisitante.size()));
+
+                    jugadorClaveVisitante.setGoles(1 + jugadorClaveVisitante.getGoles());
+
+                }
+
                 partido.getEquipoLocal().setGolesFavor(golesAFavor + partido.getEquipoLocal().getGolesFavor());
                 partido.getEquipoLocal().setGolesContra(golesEnContra +  partido.getEquipoLocal().getGolesContra());
                 partido.getEquipoVisitante().setGolesFavor(golesEnContra + partido.getEquipoVisitante().getGolesFavor());
