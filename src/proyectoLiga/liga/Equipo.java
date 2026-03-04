@@ -139,6 +139,22 @@ public class Equipo {
 
     }
 
+    public static Equipo campeon(Liga liga) {
+
+        Equipo equipoCampeon = null;
+
+        for(Equipo equipo : liga.getEquipos()) {
+
+            if(equipoCampeon == null || equipo.getPuntos()>equipoCampeon.getPuntos()) {
+
+                equipoCampeon = equipo;
+
+            }
+
+        }
+
+    return equipoCampeon;}
+
     @Override
     public String toString() {
         return "nombre='" + nombre + '\'' +
