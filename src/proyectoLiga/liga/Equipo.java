@@ -161,7 +161,7 @@ public class Equipo {
 
         for(Equipo equipo : equipos) {
 
-            if(equipoGoleador == null || equipo.getGolesFavor()>equipoGoleador.getGolesContra()) {
+            if(equipoGoleador == null || equipo.getGolesFavor()>equipoGoleador.getGolesFavor()) {
 
                 equipoGoleador = equipo;
 
