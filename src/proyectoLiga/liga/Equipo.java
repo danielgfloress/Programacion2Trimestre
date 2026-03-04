@@ -155,11 +155,11 @@ public class Equipo {
 
     return equipoCampeon;}
 
-    public static Equipo equipoGoleador(Liga liga) {
+    public static Equipo equipoGoleador(Liga liga, List<Equipo> equipos) {
 
         Equipo equipoGoleador = null;
 
-        for(Equipo equipo : liga.getEquipos()) {
+        for(Equipo equipo : equipos) {
 
             if(equipoGoleador == null || equipo.getGolesFavor()>equipoGoleador.getGolesContra()) {
 
