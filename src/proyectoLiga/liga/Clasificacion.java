@@ -13,10 +13,8 @@ public class Clasificacion {
 
     private List<Equipo> equiposOrdenados;
     private String jornadaActual;
-    Partido partido = new Partido();
 
-    public Clasificacion() {
-    }
+    public Clasificacion() {}
 
     public Clasificacion(List<Equipo> equiposOrdenados, String jornadaActual) {
         this.equiposOrdenados = equiposOrdenados;
@@ -359,11 +357,7 @@ public class Clasificacion {
 
         }
 
-
     }
-
-
-
 
     @Override
     public String toString() {

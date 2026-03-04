@@ -12,8 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import static proyectoLiga.liga.Clasificacion.mostrarClasificacionSoloPuntos;
-
 public class Menu {
 
     List<Estadio> estadios = CreacionObjetos.cargarEstadiosEspanola();
@@ -41,8 +39,6 @@ public class Menu {
     List<Partido> partidosLigue1 = new ArrayList<>();
     List<Jugador> jugadoresLigue1 = CreacionObjetos.cargarJugadoresLigue1(equiposLigue1);
 
-    Liga liga = new Liga();
-
     Liga ligaEspanola = new Liga("España", equiposLiga, jugadoresLiga, partidosLiga);
 
     Liga premier = new Liga("Inglaterra", equiposPremier, jugadoresPremier, partidosPremier);
@@ -54,20 +50,11 @@ public class Menu {
     Liga ligue1 = new Liga("Francia", equiposLigue1, jugadoresLigue1, partidosLigue1);
 
     Errores errores = new Errores();
-    Jornada jornada = new Jornada();
-    Partido partido =  new Partido();
-    Equipo equipo = new Equipo();
-    Jugador jugador = new Jugador();
-    Clasificacion clasificacion = new Clasificacion();
     Scanner sc = new Scanner(System.in);
-    int contadorJornadas = 0;
-
 
     public void Liga(){
 
         int opciones;
-        Equipo equipo = null;
-        Equipo equipoSeleccionado = null;
 
         do {
 

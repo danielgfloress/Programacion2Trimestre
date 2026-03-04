@@ -11,9 +11,7 @@ public class Jornada {
     private boolean jugada;
     private static final Random equipoRandom = new Random();
 
-    public Jornada() {
-
-    }
+    public Jornada() {}
 
     public Jornada(int numero, List<Partido> partidos, boolean jugada) {
         this.numero = numero;

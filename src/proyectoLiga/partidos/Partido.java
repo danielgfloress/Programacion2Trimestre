@@ -3,7 +3,6 @@ package proyectoLiga.partidos;
 import proyectoLiga.enumeradores.Posicion;
 import proyectoLiga.enumeradores.Resultado;
 import proyectoLiga.liga.Equipo;
-import proyectoLiga.liga.Jornada;
 import proyectoLiga.personas.AbstractPersona;
 import proyectoLiga.personas.Entrenador;
 import proyectoLiga.personas.Jugador;
@@ -45,17 +44,6 @@ public class Partido {
     public Partido(Equipo equipoLocal, Equipo equipoVisitante) {
         this.equipoLocal = equipoLocal;
         this.equipoVisitante = equipoVisitante;
-    }
-
-    public Partido(Equipo equipoLocal, Equipo equipoVisitante, int golesLocal, int golesVisitante, int jornada, List<Gol> goles, List<TarjetaAmarilla> tarjetasAmarillas, List<TarjetaRoja> tarjetasRojas) {
-        this.equipoLocal = equipoLocal;
-        this.equipoVisitante = equipoVisitante;
-        this.golesLocal = golesLocal;
-        this.golesVisitante = golesVisitante;
-        this.jornada = jornada;
-        this.goles = goles;
-        this.tarjetasAmarillas = tarjetasAmarillas;
-        this.tarjetasRojas = tarjetasRojas;
     }
 
     public Equipo getEquipoLocal() {
@@ -128,21 +116,6 @@ public class Partido {
 
     public void setTarjetasRojas(List<TarjetaRoja> tarjetasRojas) {
         this.tarjetasRojas = tarjetasRojas;
-    }
-
-    public static Resultado simularResultado () {
-
-        Random r = new Random();
-        int probabilidad = r.nextInt(100);
-
-        if (probabilidad < 45) {
-            return Resultado.LOCAL_GANA;
-        }else if (probabilidad < 70) {
-            return Resultado.EMPATE;
-        }
-
-        return Resultado.VISITANTE_GANA;
-
     }
 
     public static void aplicarResultado (Equipo equipoLocal, Equipo equipoVisitante, Resultado resultado) {
@@ -644,8 +617,6 @@ public class Partido {
 
                 golesAFavor = goles.nextInt(6);
                 golesEnContra = goles.nextInt(4);
-
-
 
                 for (int i = 0; i < golesAFavor ; i++){
 
