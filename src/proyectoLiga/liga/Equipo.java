@@ -155,6 +155,22 @@ public class Equipo {
 
     return equipoCampeon;}
 
+    public static Equipo equipoGoleador(Liga liga) {
+
+        Equipo equipoGoleador = null;
+
+        for(Equipo equipo : liga.getEquipos()) {
+
+            if(equipoGoleador == null || equipo.getGolesFavor()>equipoGoleador.getGolesContra()) {
+
+                equipoGoleador = equipo;
+
+            }
+
+        }
+
+        return equipoGoleador;}
+
     @Override
     public String toString() {
         return "nombre='" + nombre + '\'' +
