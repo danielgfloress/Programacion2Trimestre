@@ -20,10 +20,7 @@ public class Liga {
     private int jornadaActual;
 
     static Errores errores = new Errores();
-    Jornada jornada = new Jornada();
     static Partido partido =  new Partido();
-    Equipo equipo = new Equipo();
-    static Jugador jugador = new Jugador();
     static Clasificacion clasificacion = new Clasificacion();
     static Scanner sc = new Scanner(System.in);
 
@@ -163,7 +160,7 @@ public class Liga {
         mostrarClasificacionSoloPuntos(liga.equipos);
         System.out.println("\n\nPremios:");
         System.out.println("Campeón: " + Equipo.campeon(liga).getNombre());
-        System.out.println("El quipo que más goles ha metido es el: " + Equipo.equipoGoleador(liga, liga.equipos).getNombre());
+        System.out.println("El equipo que más goles ha metido es el: " + Equipo.equipoGoleador(liga, liga.equipos).getNombre());
         System.out.println("Pichichi: " + Jugador.pichichi(liga.equipos).getNombre() + " " + Jugador.pichichi(liga.equipos).getApellido() + " del " + Jugador.pichichi(liga.equipos).getEquipo().getNombre() + " con " + Jugador.pichichi(liga.equipos).getGoles() + " goles");
         System.out.println("Zarra: " + Jugador.zarra(liga, liga.equipos).getNombre() + " " + Jugador.zarra(liga, liga.equipos).getApellido() + " del " + Jugador.zarra(liga, liga.equipos).getEquipo().getNombre() + " con " + Jugador.zarra(liga, liga.equipos).getGoles() + " goles");
         System.out.println("Zamora: " + Jugador.zamora(liga, liga.equipos).getNombre() + " " + Jugador.zamora(liga, liga.equipos).getApellido() + " del " + Jugador.zamora(liga, liga.equipos).getEquipo().getNombre() + " con " + Jugador.zamora(liga, liga.equipos).getEquipo().getGolesContra() + " goles encajados");

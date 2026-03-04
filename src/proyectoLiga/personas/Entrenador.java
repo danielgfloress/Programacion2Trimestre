@@ -11,13 +11,12 @@ public class Entrenador extends AbstractPersona {
     private int experienciaAnios;
     private String estilo;
 
+    public Entrenador() {}
     public Entrenador(String nombre, String apellido, Equipo equipo, String nacionalidad, LocalDate fechaNacimiento, int experienciaAnios, String estilo) {
         super(nombre, apellido, equipo, nacionalidad, fechaNacimiento);
         this.experienciaAnios = experienciaAnios;
         this.estilo = estilo;
     }
-
-    public Entrenador() {}
 
     public int getExperienciaAnios() {
         return experienciaAnios;

@@ -19,8 +19,7 @@ public class Jugador extends AbstractPersona {
     private int tarjetasRojas;
     Liga liga = new Liga();
 
-    public Jugador() {
-    }
+    public Jugador() {}
 
     public Jugador(String nombre, String apellido, Equipo equipo, String nacionalidad, LocalDate fechaNacimiento, Posicion posicion, int dorsal, int goles, int asistencias, int tarjetasAmarillas, int tarjetasRojas) {
         super(nombre, apellido, equipo, nacionalidad, fechaNacimiento);
@@ -83,7 +82,7 @@ public class Jugador extends AbstractPersona {
     @Override
     public void hablar() {
 
-        VelocidadDeTexto.escribirLento("Jugador: ¡Voy a darlo todo en el campo!", 15);
+        VelocidadDeTexto.escribirLento("Jugadores: ¡Voy a darlo todo en el campo!", 15);
 
     }
 
