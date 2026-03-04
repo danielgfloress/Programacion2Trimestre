@@ -10,8 +10,8 @@ ESTADIO;Volkswagen Arena;Wolfsburg;30000;VfL Wolfsburg
 ESTADIO;PreZero Arena;Sinsheim;30150;TSG Hoffenheim
 ESTADIO;Weserstadion;Bremen;42100;Werder Bremen
 ESTADIO;WWK Arena;Augsburgo;30660;FC Augsburg
-ESTADIO;RheinEnergieStadion;Colonia;50000;1. FC Köln
-ESTADIO;Voith-Arena;Heidenheim;15000;1. FC Heidenheim
+ESTADIO;RheinEnergieStadion;Colonia;50000;FC Köln
+ESTADIO;Voith-Arena;Heidenheim;15000;FC Heidenheim
 ESTADIO;MEWA Arena;Mainz;34000;FSV Mainz 05
 ESTADIO;Merck-Stadion am Böllenfalltor;Darmstadt;17810;SV Darmstadt 98
 ESTADIO;Millerntor-Stadion;Hamburgo;29546;FC St. Pauli

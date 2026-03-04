@@ -142,29 +142,29 @@ JUGADOR;Ermedin;Demirović;FC Augsburg;Bosnia;1998-03-25;DELANTERO;9;0;0;0;0
 JUGADOR;Phillip;Tietz;FC Augsburg;Alemania;1997-07-09;DELANTERO;21;0;0;0;0
 JUGADOR;Dion;Beljo;FC Augsburg;Croacia;2002-03-01;DELANTERO;17;0;0;0;0
 
-JUGADOR;Marvin;Schwäbe;1. FC Köln;Alemania;1995-04-25;PORTERO;1;0;0;0;0
-JUGADOR;Benno;Schmitz;1. FC Köln;Alemania;1994-11-17;DEFENSA;2;0;0;0;0
-JUGADOR;Timo;Hübers;1. FC Köln;Alemania;1996-07-20;DEFENSA;4;0;0;0;0
-JUGADOR;Jeff;Chabot;1. FC Köln;Alemania;1998-02-12;DEFENSA;24;0;0;0;0
-JUGADOR;Florian;Kainz;1. FC Köln;Austria;1992-10-24;CENTRO_CAMPISTA;11;0;0;0;0
-JUGADOR;Eric;Martel;1. FC Köln;Alemania;2002-04-29;CENTRO_CAMPISTA;6;0;0;0;0
-JUGADOR;Dejan;Ljubicic;1. FC Köln;Austria;1997-10-08;CENTRO_CAMPISTA;7;0;0;0;0
-JUGADOR;Linton;Maina;1. FC Köln;Alemania;1999-06-23;DELANTERO;37;0;0;0;0
-JUGADOR;Davie;Selke;1. FC Köln;Alemania;1995-01-20;DELANTERO;27;0;0;0;0
-JUGADOR;Mark;Uth;1. FC Köln;Alemania;1991-08-24;DELANTERO;13;0;0;0;0
-JUGADOR;Jan;Thielmann;1. FC Köln;Alemania;2002-05-26;DELANTERO;29;0;0;0;0
+JUGADOR;Marvin;Schwäbe;FC Köln;Alemania;1995-04-25;PORTERO;1;0;0;0;0
+JUGADOR;Benno;Schmitz;FC Köln;Alemania;1994-11-17;DEFENSA;2;0;0;0;0
+JUGADOR;Timo;Hübers;Köln;Alemania;1996-07-20;DEFENSA;4;0;0;0;0
+JUGADOR;Jeff;Chabot;FC Köln;Alemania;1998-02-12;DEFENSA;24;0;0;0;0
+JUGADOR;Florian;Kainz;Köln;Austria;1992-10-24;CENTRO_CAMPISTA;11;0;0;0;0
+JUGADOR;Eric;Martel;FC Köln;Alemania;2002-04-29;CENTRO_CAMPISTA;6;0;0;0;0
+JUGADOR;Dejan;Ljubicic;;Austria;1997-10-08;CENTRO_CAMPISTA;7;0;0;0;0
+JUGADOR;Linton;Maina;Köln;Alemania;1999-06-23;DELANTERO;37;0;0;0;0
+JUGADOR;Davie;Selke;Köln;Alemania;1995-01-20;DELANTERO;27;0;0;0;0
+JUGADOR;Mark;Uth;1Köln;Alemania;1991-08-24;DELANTERO;13;0;0;0;0
+JUGADOR;Jan;Thielmann;FC Köln;Alemania;2002-05-26;DELANTERO;29;0;0;0;0
 
-JUGADOR;Kevin;Müller;1. FC Heidenheim;Alemania;1991-03-15;PORTERO;1;0;0;0;0
-JUGADOR;Omar;Traoré;1. FC Heidenheim;Alemania;1998-02-24;DEFENSA;23;0;0;0;0
-JUGADOR;Patrick;Mainka;1. FC Heidenheim;Alemania;1994-11-06;DEFENSA;6;0;0;0;0
-JUGADOR;Benedikt;Gimber;1. FC Heidenheim;Alemania;1997-02-19;DEFENSA;5;0;0;0;0
-JUGADOR;Lennard;Maloney;1. FC Heidenheim;Estados Unidos;1999-10-08;CENTRO_CAMPISTA;33;0;0;0;0
-JUGADOR;Jan;Schöppner;1. FC Heidenheim;Alemania;1999-06-12;CENTRO_CAMPISTA;3;0;0;0;0
-JUGADOR;Eren;Dinkci;1. FC Heidenheim;Alemania;2001-12-13;DELANTERO;18;0;0;0;0
-JUGADOR;Marvin;Pieringer;1. FC Heidenheim;Alemania;1999-10-04;DELANTERO;9;0;0;0;0
-JUGADOR;Tim;Kleindienst;1. FC Heidenheim;Alemania;1995-08-31;DELANTERO;10;0;0;0;0
-JUGADOR;Adrian;Beck;1. FC Heidenheim;Alemania;1997-06-09;DELANTERO;21;0;0;0;0
-JUGADOR;Denis;Thomalla;1. FC Heidenheim;Alemania;1992-08-16;DELANTERO;11;0;0;0;0
+JUGADOR;Kevin;Müller;Heidenheim;Alemania;1991-03-15;PORTERO;1;0;0;0;0
+JUGADOR;Omar;Traoré;Heidenheim;Alemania;1998-02-24;DEFENSA;23;0;0;0;0
+JUGADOR;Patrick;Mainka;FC Heidenheim;Alemania;1994-11-06;DEFENSA;6;0;0;0;0
+JUGADOR;Benedikt;Gimber;FC Heidenheim;Alemania;1997-02-19;DEFENSA;5;0;0;0;0
+JUGADOR;Lennard;Maloney;FC Heidenheim;Estados Unidos;1999-10-08;CENTRO_CAMPISTA;33;0;0;0;0
+JUGADOR;Jan;Schöppner;FC Heidenheim;Alemania;1999-06-12;CENTRO_CAMPISTA;3;0;0;0;0
+JUGADOR;Eren;Dinkci;FC Heidenheim;Alemania;2001-12-13;DELANTERO;18;0;0;0;0
+JUGADOR;Marvin;Pieringer;FC Heidenheim;Alemania;1999-10-04;DELANTERO;9;0;0;0;0
+JUGADOR;Tim;Kleindienst;FC Heidenheim;Alemania;1995-08-31;DELANTERO;10;0;0;0;0
+JUGADOR;Adrian;Beck;FC Heidenheim;Alemania;1997-06-09;DELANTERO;21;0;0;0;0
+JUGADOR;Denis;Thomalla;FC Heidenheim;Alemania;1992-08-16;DELANTERO;11;0;0;0;0
 
 JUGADOR;Robin;Zentner;FSV Mainz 05;Alemania;1994-10-28;PORTERO;27;0;0;0;0
 JUGADOR;Silvan;Widmer;FSV Mainz 05;Suiza;1993-03-05;DEFENSA;30;0;0;0;0

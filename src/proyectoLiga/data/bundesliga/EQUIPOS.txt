@@ -10,8 +10,8 @@ EQUIPO;VfL Wolfsburg;Volkswagen Arena;79
 EQUIPO;TSG Hoffenheim;PreZero Arena;78
 EQUIPO;Werder Bremen;Weserstadion;77
 EQUIPO;FC Augsburg;WWK Arena;75
-EQUIPO;1. FC Köln;RheinEnergieStadion;78
-EQUIPO;1. FC Heidenheim;Voith-Arena;74
+EQUIPO;FC Köln;RheinEnergieStadion;78
+EQUIPO;FC Heidenheim;Voith-Arena;74
 EQUIPO;FSV Mainz 05;MEWA Arena;76
 EQUIPO;SV Darmstadt 98;Merck-Stadion am Böllenfalltor;73
 EQUIPO;FC St. Pauli;Millerntor-Stadion;75
