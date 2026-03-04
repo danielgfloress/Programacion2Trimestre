@@ -64,6 +64,8 @@ public abstract class AbstractPersona {
         this.nombre = nombre;
     }
 
+    public void hablar() {}
+
     @Override
     public String toString() {
         return "nombre='" + nombre + '\'' +

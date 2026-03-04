@@ -3,6 +3,7 @@ package proyectoLiga.personas;
 import proyectoLiga.enumeradores.Posicion;
 import proyectoLiga.liga.Equipo;
 import proyectoLiga.liga.Liga;
+import proyectoLiga.velocidadDeTexto.VelocidadDeTexto;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -77,6 +78,13 @@ public class Jugador extends AbstractPersona {
 
     public void setTarjetasRojas(int tarjetasRojas) {
         this.tarjetasRojas = tarjetasRojas;
+    }
+
+    @Override
+    public void hablar() {
+
+        VelocidadDeTexto.escribirLento("Jugador: ¡Voy a darlo todo en el campo!", 15);
+
     }
 
     public static Jugador pichichi(List<Equipo> equipos){

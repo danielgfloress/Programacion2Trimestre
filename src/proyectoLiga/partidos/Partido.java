@@ -4,6 +4,8 @@ import proyectoLiga.enumeradores.Posicion;
 import proyectoLiga.enumeradores.Resultado;
 import proyectoLiga.liga.Equipo;
 import proyectoLiga.liga.Jornada;
+import proyectoLiga.personas.AbstractPersona;
+import proyectoLiga.personas.Entrenador;
 import proyectoLiga.personas.Jugador;
 import proyectoLiga.velocidadDeTexto.VelocidadDeTexto;
 
@@ -181,6 +183,12 @@ public class Partido {
         Random jugadorRandom = new Random();
         Random rojas = new Random();
 
+        AbstractPersona persona;
+        persona = new Jugador();
+        persona.hablar();
+
+        persona = new Entrenador();
+        persona.hablar();
 
         if (partido.getEquipoLocal().equals(equipoSeleccionado)){
 

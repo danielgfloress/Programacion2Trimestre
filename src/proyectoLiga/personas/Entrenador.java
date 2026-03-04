@@ -1,6 +1,7 @@
 package proyectoLiga.personas;
 
 import proyectoLiga.liga.Equipo;
+import proyectoLiga.velocidadDeTexto.VelocidadDeTexto;
 
 import java.time.LocalDate;
 import java.util.Objects;
@@ -16,6 +17,8 @@ public class Entrenador extends AbstractPersona {
         this.estilo = estilo;
     }
 
+    public Entrenador() {}
+
     public int getExperienciaAnios() {
         return experienciaAnios;
     }
@@ -30,6 +33,13 @@ public class Entrenador extends AbstractPersona {
 
     public void setEstilo(String estilo) {
         this.estilo = estilo;
+    }
+
+    @Override
+    public void hablar() {
+
+        VelocidadDeTexto.escribirLento("Entrenador: ¡Vamos chicos a por todas!", 15);
+
     }
 
     @Override
