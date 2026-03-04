@@ -164,6 +164,7 @@ public class Liga {
         System.out.println("\n\nPremios:");
         System.out.println("Pichichi: " + Jugador.pichichi(liga.equipos).getNombre() + " " + Jugador.pichichi(liga.equipos).getApellido() + " del " + Jugador.pichichi(liga.equipos).getEquipo().getNombre() + " con " + Jugador.pichichi(liga.equipos).getGoles() + " goles");
         System.out.println("Zarra: " + Jugador.zarra(liga, liga.equipos).getNombre() + " " + Jugador.zarra(liga, liga.equipos).getApellido() + " del " + Jugador.zarra(liga, liga.equipos).getEquipo().getNombre() + " con " + Jugador.zarra(liga, liga.equipos).getGoles() + " goles");
+        System.out.println("Zamora: " + Jugador.zamora(liga, liga.equipos).getNombre() + " " + Jugador.zamora(liga, liga.equipos).getApellido() + " del " + Jugador.zamora(liga, liga.equipos).getEquipo().getNombre() + " con " + Jugador.zamora(liga, liga.equipos).getEquipo().getGolesContra() + " goles encajados");
 
         Jugador.resetearJugadores(liga.jugadores);
         Equipo.resetearTodo(liga.equipos);

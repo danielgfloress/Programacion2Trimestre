@@ -123,6 +123,24 @@ public class Jugador extends AbstractPersona {
 
     }
 
+    public static Jugador zamora(Liga liga, List<Equipo> equipos){
+
+        Equipo equipoZamora = null;
+        Jugador jugadorZamora = null;
+
+        for (Equipo equipo : equipos) {
+
+            if (equipoZamora == null || equipo.getGolesContra() < equipoZamora.getGolesContra()) {
+
+                equipoZamora = equipo;
+                jugadorZamora = equipoZamora.getPlantilla().get(0);
+
+            }
+
+        }
+
+    return jugadorZamora;}
+
     public static void resetearJugadores (List<Jugador> jugadores) {
 
         for (Jugador jugador : jugadores) {
