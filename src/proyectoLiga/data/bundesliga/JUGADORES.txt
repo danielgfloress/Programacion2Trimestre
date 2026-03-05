@@ -144,18 +144,18 @@ JUGADOR;Dion;Beljo;FC Augsburg;Croacia;2002-03-01;DELANTERO;17;0;0;0;0
 
 JUGADOR;Marvin;Schwäbe;FC Köln;Alemania;1995-04-25;PORTERO;1;0;0;0;0
 JUGADOR;Benno;Schmitz;FC Köln;Alemania;1994-11-17;DEFENSA;2;0;0;0;0
-JUGADOR;Timo;Hübers;Köln;Alemania;1996-07-20;DEFENSA;4;0;0;0;0
+JUGADOR;Timo;Hübers;FC Köln;Alemania;1996-07-20;DEFENSA;4;0;0;0;0
 JUGADOR;Jeff;Chabot;FC Köln;Alemania;1998-02-12;DEFENSA;24;0;0;0;0
-JUGADOR;Florian;Kainz;Köln;Austria;1992-10-24;CENTRO_CAMPISTA;11;0;0;0;0
+JUGADOR;Florian;Kainz;FC Köln;Austria;1992-10-24;CENTRO_CAMPISTA;11;0;0;0;0
 JUGADOR;Eric;Martel;FC Köln;Alemania;2002-04-29;CENTRO_CAMPISTA;6;0;0;0;0
-JUGADOR;Dejan;Ljubicic;;Austria;1997-10-08;CENTRO_CAMPISTA;7;0;0;0;0
-JUGADOR;Linton;Maina;Köln;Alemania;1999-06-23;DELANTERO;37;0;0;0;0
-JUGADOR;Davie;Selke;Köln;Alemania;1995-01-20;DELANTERO;27;0;0;0;0
-JUGADOR;Mark;Uth;1Köln;Alemania;1991-08-24;DELANTERO;13;0;0;0;0
+JUGADOR;Dejan;Ljubicic;FC Köln;Austria;1997-10-08;CENTRO_CAMPISTA;7;0;0;0;0
+JUGADOR;Linton;Maina;FC Köln;Alemania;1999-06-23;DELANTERO;37;0;0;0;0
+JUGADOR;Davie;Selke;FC Köln;Alemania;1995-01-20;DELANTERO;27;0;0;0;0
+JUGADOR;Mark;Uth;FC Köln;Alemania;1991-08-24;DELANTERO;13;0;0;0;0
 JUGADOR;Jan;Thielmann;FC Köln;Alemania;2002-05-26;DELANTERO;29;0;0;0;0
 
-JUGADOR;Kevin;Müller;Heidenheim;Alemania;1991-03-15;PORTERO;1;0;0;0;0
-JUGADOR;Omar;Traoré;Heidenheim;Alemania;1998-02-24;DEFENSA;23;0;0;0;0
+JUGADOR;Kevin;Müller;FC Heidenheim;Alemania;1991-03-15;PORTERO;1;0;0;0;0
+JUGADOR;Omar;Traoré;FC Heidenheim;Alemania;1998-02-24;DEFENSA;23;0;0;0;0
 JUGADOR;Patrick;Mainka;FC Heidenheim;Alemania;1994-11-06;DEFENSA;6;0;0;0;0
 JUGADOR;Benedikt;Gimber;FC Heidenheim;Alemania;1997-02-19;DEFENSA;5;0;0;0;0
 JUGADOR;Lennard;Maloney;FC Heidenheim;Estados Unidos;1999-10-08;CENTRO_CAMPISTA;33;0;0;0;0
